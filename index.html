@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700" rel="stylesheet">
+  <title>KodaGraphik; Design</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+  <div class="container-fluid header sticky-top">
+    <div class="hamburger"><span class="hamburger" id="hamburger">
+      ☰</span></div>
+    <div class="logo"><span>KODAGRAPHIK;</span></div>
+    <div class="navigation puff-in-center" row id="navigation">
+      <div class="navitem col-lg-3 col-md-3 col-sm-6 col-xs-12" id="navitem">
+        Services</div>
+      <div class="navitem col-lg-3 col-md-3 col-sm-6 col-xs-12" id="navitem">
+        Portfolio</div>
+      <div class="navitem col-lg-3 col-md-3 col-sm-6 col-xs-12" id="navitem">
+        About Us</div>
+      <div class="navitem col-lg-3 col-md-3 col-sm-6 col-xs-12" id="navitem">
+        Contact</div>
+    </div>
+  </div>
+  <div class="pinline id=" pinline></div>
+  <div class="wrapper">
+    <div class="block color-change-2x">
+      <div class="circle">
+        <img src="bench.png" class="bench">
+        <img src="clouds.png" class="clouds slide-in-left">
+      </div>
+    </div>
+    <h4>PAGE UNDER CONSTRUCTION
+    </h4>
+    <p> Please come back in a few days!</p>
+  </div>
+
+
+
+
+  <div JS-STUFF>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#hamburger").click(function() {
+          $("#navigation").slideToggle("fast");
+        });
+      });
+    </script>
+  </div>
+</body>
+
+</html>
