@@ -24,10 +24,12 @@
   color: white;
   position: absolute;
   font-size: 18px;
+transition: 0.5s;
+transition-timing-function: ease-in-out;
 }
 
 .hamburger:hover {
-  color: rgb(22, 186, 196);
+  color: #006bc2;
 }
 
 .navigation {
@@ -39,75 +41,102 @@
   font-weight: 100;
   letter-spacing: 1px;
 }
-
-.block {
-  align-items: center;
-  border-radius: 200px;
-  width: 40vw;
-  height: 40vw;
-  z-index: -5;
-  overflow: hidden;
-  display: block;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4vh;
-  box-shadow: 0px 0px 0px 10px #666666;
-  @media only screen and (min-width: 600px) {
-    height: 20vh;
-  }
-  }
-
-}
-.circle{
-  overflow: hidden;
-}
-
-.clouds {
-  height: 50vw;
-  position: absolute;
-  z-index: -1;
-}
-
-.bench {
-  height: 40vw;
-  position: absolute;
-  border-radius: 100px;
-  margin-top: 20px;
-  margin-left: -10vw;
-}
-
 .navitem {
   cursor: pointer;
   height: 34px;
   line-height: 34px;
   transition: 1s;
   font-family: Oswald;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 
 .navitem:hover {
-  background-color: #9d9d9d;
+  background-color: #006bc2;
+  color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .pinline {
-  display: none;
+  display: block;
   height: 5px;
   width: 100%;
-  background-color: lightblue;
+  background-color: #006bc2;
 }
-
-h4{
+.phone{
+  background-image: url(Phone.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  background-origin: padding-box;
+  background-attachment: local;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.cta{
+  padding-left: 40vw;
+  padding-top: 160px;
+  color: white;
   font-family: Oswald;
   font-weight: 100;
   text-align: center;
-  margin-top: 30px;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  white-space: nowrap;
 }
-p{
-  font-family: Oswald;
-  font-weight: 100;
-  text-transform: uppercase;
+@media only screen and (max-width: 800px) {
+    .cta {
+        padding-left: 0vw;
+        color: #666666;
+        padding-top: 220px;
+        padding-left: 10vw;
+    }
+    .phone{
+      background-position: center;
+      padding-top: 20px;
+      padding-right: 50px;
+      height: 200px;
+    }
+    h1, h2{
+    font-size: 26px;
+    }
+    .iconpanel{
+    margin-top:100px;
+    }
+    .panel{
+      padding-bottom: 0px;
+    }
+}
+.iconpanel{
+  transition: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  padding-top: 40px;
+}
+.panel{
+  height: 80px;
+  background-size: auto;
   text-align: center;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  font-family: Oswald;
+  font-size: 16px;
+  line-height: 0px;
+  margin-top: 20px;
+}
+.design{
+  background-image: url(Design.png);
 
+}
+.mobile{
+background-image: url(PhoneTablet.png);
+
+}
+.print{
+  background-image: url(Print.png);
 }
 
 
