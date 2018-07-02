@@ -36,7 +36,7 @@
 }
 
 .hamburger:hover {
-  color: #006bc2;
+  color: #c21100;
 }
 
 .navigation {
@@ -60,10 +60,8 @@
 }
 
 .navitem:hover {
-  background-color: #006bc2;
+  background-color: #c21100;
   color: white;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 }
 
 .pinline {
@@ -133,8 +131,7 @@
 }
 
 .slide-in-left {
-  -webkit-animation: slide-in-left 9s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse backwards;
-  animation: slide-in-left 9s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse backwards;
+  animation: slide-in-left 2.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 }
 
 .puff-in-center {
