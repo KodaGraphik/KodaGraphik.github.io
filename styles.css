@@ -97,16 +97,29 @@
  .responsive{
    text-align: center;
    margin-top: 15px;
-   font-size: 3vw;
+   font-size: 26px;
    font-family: Oswald;
  }
  .business{
    text-align: center;
    font-family: Oswald;
-   font-size: 2.5vw;
+   font-size: 20px;
    color: #888888;
    position: relative;
-   margin-bottom: 100px;
+   margin-bottom: 30px;
+ }
+ .icons{
+   text-align: center;
+   transition: 0.5s;
+ }
+ .icon{
+   padding-left: 50px;
+   padding-right: 50px;
+   height: 64px;
+ }
+ .icons p{
+   font-size: 14px;
+   font-family: Oswald;
  }
 /**
  * ----------------------------------------
