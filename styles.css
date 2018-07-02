@@ -114,6 +114,7 @@
    padding-left: 50px;
    padding-right: 50px;
    height: 64px;
+   margin-top: 30px;
  }
  .icons p{
    font-size: 14px;
@@ -124,20 +125,54 @@
  * ANIMATION
  * ----------------------------------------
  */
-
+ .scale-in-ver-center1 {
+ 	-webkit-animation: scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+ 	        animation: scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+ }
+ .scale-in-ver-center2 {
+ 	-webkit-animation: scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.7s both;
+ 	        animation: scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.7s both;
+ }
+ .scale-in-ver-center3 {
+ 	-webkit-animation: scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.9s both;
+ 	        animation: scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.9s both;
+ }
 .color-change-2x {
   -webkit-animation: color-change-2x 4.5s ease-in-out 4s infinite alternate both;
   animation: color-change-2x 4.5s ease-in-out 4s infinite alternate both;
 }
 
 .slide-in-left {
-  animation: slide-in-left 2.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+  animation: slide-in-left 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 }
 
 .puff-in-center {
   -webkit-animation: puff-in-center 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
   animation: puff-in-center 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
+@-webkit-keyframes scale-in-ver-center {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-ver-center {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
 
 @-webkit-keyframes color-change-2x {
   0% {
