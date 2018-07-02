@@ -79,14 +79,14 @@
  */
 .mainbox {
   color: black;
-  height: 50%
+  height: 30%
 }
 
 .carousel-item {
   background-position: top;
 }
 .first-slide{
-  max-height: 40%;
+  max-height: 30%;
 }
 /**
  * ----------------------------------------
@@ -96,10 +96,17 @@
 
  .responsive{
    text-align: center;
-   margin: 20px;
-   font-size: 4vw;
+   margin-top: 15px;
+   font-size: 3vw;
    font-family: Oswald;
-
+ }
+ .business{
+   text-align: center;
+   font-family: Oswald;
+   font-size: 2.5vw;
+   color: #888888;
+   position: relative;
+   margin-bottom: 100px;
  }
 /**
  * ----------------------------------------
