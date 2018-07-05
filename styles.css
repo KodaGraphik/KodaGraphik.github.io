@@ -3,30 +3,34 @@
  *  NAV CSS
  * ----------------------------------------
  */
- html {
-   overflow-x: hidden;
-   overflow-y: scroll;
-    height: 100%;
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
 }
 
 body {
-    height: 100%;
-    overflow-x: hidden;
-    background-color: lightblue;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: lightblue;
 }
-body{
+
+body {
   width: 100%;
   margin: 0px;
   padding: 0px;
 }
-.container-fluid{
+
+.container-fluid {
   padding: 0px;
   margin: 0px;
   width: 100%;
 }
+
 .header {
   background-color: #363636;
-  position: absolute;
+  position: fixed;
   left: 0px;
   right: 0px;
   top: 0px;
@@ -64,9 +68,7 @@ body{
   color: #c21100;
   content: "☰";
   text-decoration: none;
-
 }
-
 
 .navigation {
   display: none;
@@ -107,45 +109,53 @@ a {
   background-color: #c21100;
 }
 
-.footer{
+.footer {
   position: fixed;
   bottom: 0px;
   left: 0px;
-  right:0px;
+  right: 0px;
   height: 60px;
   background-color: #363636;
   color: #dbdbdb;
   text-align: center;
   font-size: 10px;
 }
-.footer img{
+
+.footer img {
   margin-top: 15px;
-  height:2.5vh;
+  height: 2.5vh;
   padding-left: 10px;
   padding-right: 10px;
 }
-.icons{
+
+.icons {
   text-align: right;
   padding-right: 20px;
 }
-.copyright{
+
+.copyright {
   margin-top: 18px;
 }
-.content{
+
+.content {
   text-align: center;
   height: 100%;
   width: 100%;
 }
-.contentbox{
+
+.contentbox {
   position: absolute;
   left: 4vw;
   right: 4vw;
-  margin-top: 12vh;
-  margin-bottom: 12vh;
+  margin-top: 18vh;
+  margin-bottom: 18vh;
   padding: 30px;
-height: 800px;
+  height: 800px;
   background-color: white;
+  z-index: -1;
+  border-radius: 10px;
 }
+
 /**
  * ----------------------------------------
  * ANIMATION
