@@ -24,7 +24,10 @@ body{
 }
 .header {
   background-color: #363636;
-  position: sticky;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
 }
 
 .container-fluid {
@@ -95,6 +98,7 @@ a {
 }
 
 .pinline {
+  z-index: 1;
   display: block;
   height: 3px;
   width: 100%;
@@ -127,6 +131,8 @@ a {
 }
 .content{
   text-align: center;
+  height: 1000px;
+  background-color: lightblue;
 }
 /**
  * ----------------------------------------
