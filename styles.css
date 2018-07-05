@@ -12,6 +12,7 @@
 body {
     height: 100%;
     overflow-x: hidden;
+    background-color: lightblue;
 }
 body{
   width: 100%;
@@ -132,9 +133,18 @@ a {
 }
 .content{
   text-align: center;
-  height: 1000px;
-  background-color: lightblue;
+  height: 100%;
   width: 100%;
+}
+.contentbox{
+  position: absolute;
+  left: 4vw;
+  right: 4vw;
+  margin-top: 12vh;
+  margin-bottom: 12vh;
+  padding: 30px;
+height: 800px;
+  background-color: white;
 }
 /**
  * ----------------------------------------
