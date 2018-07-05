@@ -4,13 +4,14 @@
  * ----------------------------------------
  */
  html {
-    overflow: hidden;
+   overflow-x: hidden;
+   overflow-y: scroll;
     height: 100%;
 }
 
 body {
     height: 100%;
-    overflow: auto;
+    overflow-x: hidden;
 }
 body{
   width: 100%;
