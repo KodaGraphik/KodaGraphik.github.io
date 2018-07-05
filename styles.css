@@ -3,7 +3,16 @@
  *  NAV CSS
  * ----------------------------------------
  */
-
+body{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.container-fluid{
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
 .header {
   background-color: #363636;
   position: sticky;
@@ -83,6 +92,24 @@ a {
   background-color: #c21100;
 }
 
+.footer{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right:0px;
+  height: 60px;
+  background-color: #363636;
+  color: #dbdbdb;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 10px;
+}
+.footer img{
+  height:2.5vh;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
 /**
  * ----------------------------------------
  * ANIMATION
