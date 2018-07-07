@@ -13,7 +13,7 @@ html {
 body {
   height: 100%;
   overflow-x: hidden;
-  background-color: lightblue;
+  background-color: lightgrey;
 }
 
 body {
@@ -89,22 +89,24 @@ a {
   transition: 0.5s;
   transition-timing-function: ease-in-out;
   color: #dbdbdb;
-}
-
-.navitem a:hover {
-  color: white;
+  text-transform: uppercase;
   text-decoration: none;
 }
-
-.navitem:hover {
-  transition: 0.5s;
-  background-color: #c21100;
+a:hover{
+  color: #dbdbdb;
+  text-decoration: none;
+}
+.navitem:hover{
+  transition: 0.3s;
+  background-color:#535353;
+  transition-timing-function: ease-in-out;
 }
 
+
 .pinline {
-  z-index: 1;
-  display: block;
-  height: 3px;
+  position: relative;
+  top: 50px;
+  height: 4px;
   width: 100%;
   background-color: #c21100;
 }
