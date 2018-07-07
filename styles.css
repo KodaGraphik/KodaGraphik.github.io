@@ -91,6 +91,7 @@ a {
   color: #dbdbdb;
   text-transform: uppercase;
   text-decoration: none;
+  user-select: none;
 }
 a:hover{
   color: #dbdbdb;
