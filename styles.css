@@ -13,7 +13,7 @@ html {
 body {
   height: 100%;
   overflow-x: hidden;
-  background-color: lightgrey;
+  background-image: url(trianglify.svg);
 }
 
 body {
@@ -55,7 +55,7 @@ body {
   margin-left: 20px;
   line-height: 50px;
   user-select: none;
-  color: white;
+  color: white#d0d0d0;
   position: absolute;
   font-size: 20px;
   font-weight: 100;
@@ -65,7 +65,7 @@ body {
 }
 
 .hamburger:hover a {
-  color: #c21100;
+  color: #ffffff;
   content: "☰";
   text-decoration: none;
 }
@@ -147,12 +147,12 @@ a:hover{
 
 .contentbox {
   position: absolute;
-  left: 4vw;
-  right: 4vw;
-  margin-top: 18vh;
-  margin-bottom: 18vh;
+  left: 3vw;
+  right: 3vw;
+  margin-top: 12vh;
+  margin-bottom: 12vh;
   padding: 30px;
-  height: 800px;
+  height: 550px;
   background-color: white;
   z-index: -1;
   border-radius: 10px;
