@@ -1,0 +1,34 @@
+.container.footer {
+  position:sticky;
+  bottom:0px;
+  height:100px;
+}
+
+.container.headertop {
+  position:sticky;
+  top:0px;
+  z-index:+1;
+}
+
+.align-items-center {
+}
+
+t {
+}
+
+.container.footer {
+  text-align:center;
+}
+
+.navitems {
+  text-align:center;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  align-content:center;
+  text-align:center;
+}
+
