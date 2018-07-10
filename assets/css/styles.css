@@ -32,3 +32,29 @@ t {
   text-align:center;
 }
 
+.colitems {
+  text-align:center;
+}
+
+.itemrow {
+  background:#314755;
+  /* fallback for old browsers */background:-webkit-linear-gradient(to right, #26a0da, #314755);
+  /* Chrome 10-25, Safari 5.1-6 */background:linear-gradient(to right, #26a0da, #314755);
+}
+
+.colitems:hover {
+  background-color:rgba(54,54,54,0.11);
+}
+
+.blc {
+  font-size:24px;
+  font-family:'Oswald';
+}
+
+.cd-words-wrapper {
+  font-size:24px;
+  /*padding-top:5px;*/
+  margin-top:10px;
+  font-family:'Oswald';
+}
+
