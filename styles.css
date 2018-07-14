@@ -5,7 +5,6 @@
  */
 html{
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 body {
   background-image: url(Topography.png);
@@ -137,13 +136,13 @@ body {
 .rowhead{
   text-align: center;
   font-family: Oswald;
-  margin-top: 50px;
   padding-top: 13vw;
   color: black;
   font-weight: 400;
 }
 .rowhead h1{
-  font-size: 80px;
+  padding-top: 20px;
+  font-size: 8vw;
   font-weight: 100;
 }
 
