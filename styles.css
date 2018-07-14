@@ -3,9 +3,11 @@
  *  NAV CSS
  * ----------------------------------------
  */
-html{
+
+html {
   overflow-x: hidden;
 }
+
 body {
   background-image: url(Topography.png);
   background-size: 35em;
@@ -86,24 +88,26 @@ body {
 }
 
 .parallax {
-  background-image: url(TopHeader.jpg);
-  height: 35vw;
+  background-image: url(TopHeader.png);
+  height: 350px
   width: 100%;
   background-attachment: fixed;
   background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
+  background-color: #FFD3DA;
+
 }
 
-
 .parallax2 {
-  background-image: url(TopHeader.jpg);
+  background-image: url(TopHeader.png);
   height: 35vw;
   width: 100%;
   background-attachment: fixed;
   background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
+  background-color: #FFD3DA;
 }
 
 .contentbox {
@@ -134,35 +138,41 @@ body {
   margin-bottom: 40px;
   font-family: Playfair Display;
 }
-.rowhead{
+
+.rowhead {
   text-align: center;
+  padding-top: 180px;
+  padding-bottom: 100px;
+}
+
+.rowhead h1 {
   font-family: Oswald;
-  padding-top: 13vw;
   color: black;
-  font-weight: 400;
+  padding-top: 0px;
+  font-size: 9vw;
+  font-weight: 500;
 }
-.rowhead h1{
-  padding-top: 20px;
-  font-size: 8vw;
-  font-weight: 100;
-}
-.footer{
+
+.footer {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
   box-shadow: 6px 0px 0px 6px red;
   background-color: #fff;
 }
-.footertext{
+
+.footertext {
   padding-bottom: 40px;
 }
-.footertext h4{
+
+.footertext h4 {
   font-size: 22px;
   text-transform: uppercase;
   color: black;
   font-family: Oswald;
 }
-.footertext a{
+
+.footertext a {
   color: #383838;
   font-family: Playfair Display;
 }
@@ -194,24 +204,27 @@ body {
   -webkit-animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
   animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
+
 .fade-in-bottom {
-	-webkit-animation: fade-in-bottom 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: fade-in-bottom 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  -webkit-animation: fade-in-bottom 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: fade-in-bottom 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 .puff-in-center {
   -webkit-animation: puff-in-center 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
   animation: puff-in-center 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
+
 .tracking-in-contract-bck {
-	-webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
+
 @-webkit-keyframes tracking-in-contract-bck {
   0% {
     letter-spacing: 1em;
     -webkit-transform: translateZ(400px);
-            transform: translateZ(400px);
+    transform: translateZ(400px);
     opacity: 0;
   }
   40% {
@@ -219,51 +232,53 @@ body {
   }
   100% {
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    opacity: 1;
-  }
-}
-@keyframes tracking-in-contract-bck {
-  0% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(400px);
-            transform: translateZ(400px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fade-in-bottom {
-  0% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes fade-in-bottom {
-  0% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateZ(0);
     opacity: 1;
   }
 }
 
+@keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+    transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 @-webkit-keyframes color-change-2x {
   0% {
