@@ -3,7 +3,10 @@
  *  NAV CSS
  * ----------------------------------------
  */
-
+html{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 body {
   background-image: url(Topography.png);
   background-size: 35em;
