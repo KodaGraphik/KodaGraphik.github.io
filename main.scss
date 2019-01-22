@@ -58,7 +58,7 @@ button:focus {
 }
 
 .hamburger {
-  font-size: 22px;
+  font-size: 24px;
   cursor: pointer;
   user-select: none;
   z-index: 10;
@@ -66,16 +66,9 @@ button:focus {
   position: absolute;
   top: 14px;
   left: 24px;
-}
-.hamburger:checked::after{
-content: "close"
-}
-.menu{
-  position: absolute;
-  top: 3px;
-  left: 30px;
   font-family: $sansserif;
-  color: white;
-  cursor: pointer;
-  user-select: none;
+.h4{
+  display: inline;
+  font-size: 4px;
+}
 }
