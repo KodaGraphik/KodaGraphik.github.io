@@ -14,12 +14,10 @@ button:focus {
 .navigation {
   display: none;
   position: absolute;
-  height: 100%;
   top: 0px;
   left: 0px;
   right: 0px;
-  bottom: 0px;
-  width: 100%;
+  bottom: 10vh;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -10;
   text-align: center;
@@ -43,7 +41,7 @@ button:focus {
 .navitem:hover {
   background-color: rgba(255, 255, 255, 0.05);
   font-style: italic;
-  color: #bd0303;
+  color: #cd4848;
   padding-right: 10px;
   transition: 0.4s;
 }
@@ -71,6 +69,16 @@ button:focus {
 
 .hamburger:checked::after {
   content: "close";
+}
+
+.menu {
+  position: absolute;
+  top: 3px;
+  left: 30px;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  cursor: pointer;
+  user-select: none;
 }
 
 /*# sourceMappingURL=main.css.map */
