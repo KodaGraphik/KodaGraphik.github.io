@@ -1,0 +1,70 @@
+//Main CSS
+@import "variables";
+
+body {
+  background-color: $background;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.navigation {
+  display: none;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(#000000, 0.5);
+  z-index: -10;
+  text-align: center;
+  padding-top: 25vh;
+}
+
+.navitem {
+  color: white;
+  font-family: $sansserif;
+  padding: 2vh 0;
+  margin: 0 30vw;
+  font-size: 2.7vw;
+  font-weight: 200;
+  cursor: pointer;
+  border-radius: 5px;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.navitem:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  font-style: italic;
+  color: $light-primary;
+  padding-right: 10px;
+  transition: 0.4s;
+}
+.navitem:hover::before{
+  content:"> "
+}
+@media screen and (max-width: 900px) {
+  .navitem {
+    font-size: 5vw;
+  }
+}
+
+.hamburger {
+  font-size: 22px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+  color: white;
+  position: absolute;
+  top: 14px;
+  left: 24px;
+}
+.hamburger:checked::after{
+content: "close"
+}
