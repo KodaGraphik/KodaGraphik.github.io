@@ -121,9 +121,6 @@ button:focus {
   user-select: none;
 }
 .main {
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(95vh);
-  scroll-snap-type: y mandatory;
 }
 .section{
   height: 95vh;
@@ -131,7 +128,6 @@ button:focus {
   padding: 25%;
   color: white;
   text-align: center;
-  scroll-snap-align: start;
 
   .sectionhead{
     font-family: $serif;
