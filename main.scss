@@ -21,10 +21,9 @@ button:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(#000000, 0.6);
-  z-index: -10;
+  background-color: rgba(#000000, 0.95);
   text-align: center;
-  padding-top: 25vh;
+  padding-top: 20vh;
 }
 
 .navitem {
@@ -43,7 +42,7 @@ button:focus {
 }
 
 .navitem:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #2e2e2e;
   font-style: italic;
   padding-right: 10px;
   transition: 0.4s;
@@ -53,27 +52,27 @@ button:focus {
 .navitem:hover::before {
   content: "> ";
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   .navitem {
     font-size: 5vw;
   }
 }
 .socials{
   user-select: none;
+  display: none;
 }
 
 .socialicon {
   display: inline-block;
   margin: 2vh 15px;
   padding: 10px;
+  width: 5vh;
+  height: 5vh;
   cursor: pointer;
   user-select: none;
-  min-height: 60px;
-  min-width: 60px;
-  max-width: 100px;
-  max-height: 100px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:5vh ;
+  background-position: center;
 }
 
 .socialicon1 {
@@ -87,16 +86,19 @@ button:focus {
   background-image: url("/Images/LinkdIn.png");
 }
 .socialicon:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #2e2e2e;
   transition: 0.4s;
   border-radius: 40px;
 }
-
+.hamburgercontainer{
+  position: absolute;
+  z-index: 200;
+  width: 200px;
+}
 .hamburger {
   font-size: 24px;
   cursor: pointer;
   user-select: none;
-  z-index: 10;
   color: white;
   position: absolute;
   top: 14px;
@@ -116,4 +118,29 @@ button:focus {
   font-style: 22px;
   color: white;
   cursor: pointer;
+  user-select: none;
+}
+.section{
+  height: 95vh;
+  width: 100vw;
+  padding: 25%;
+  color: white;
+  text-align: center;
+
+  .sectionhead{
+    font-family: $serif;
+    font-size: 5vh;
+
+}
+.sectiontext{
+  margin-top: 20px;
+  font-family: $serif;
+  line-height: 26px;
+}
+img{
+  width: 200px;
+}
+}
+.section2{
+  background-color: rgb(175, 187, 26);
 }
