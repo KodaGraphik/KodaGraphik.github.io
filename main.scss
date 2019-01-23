@@ -21,7 +21,7 @@ button:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(#000000, 0.7);
+  background-color: rgba(#000000, 0.6);
   z-index: -10;
   text-align: center;
   padding-top: 25vh;
@@ -58,6 +58,9 @@ button:focus {
     font-size: 5vw;
   }
 }
+.socials{
+  user-select: none;
+}
 
 .socialicon {
   display: inline-block;
@@ -65,8 +68,8 @@ button:focus {
   padding: 10px;
   cursor: pointer;
   user-select: none;
-  min-height: 50px;
-  min-width: 50px;
+  min-height: 60px;
+  min-width: 60px;
   max-width: 100px;
   max-height: 100px;
   background-repeat: no-repeat;
@@ -80,15 +83,13 @@ button:focus {
 .socialicon2 {
   background-image: url("/Images/Insta.png");
 }
-
 .socialicon3 {
   background-image: url("/Images/LinkdIn.png");
 }
-
 .socialicon:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
   transition: 0.4s;
-  border-radius: 25px;
+  border-radius: 40px;
 }
 
 .hamburger {
@@ -114,4 +115,5 @@ button:focus {
   font-family: $sansserif;
   font-style: 22px;
   color: white;
+  cursor: pointer;
 }
