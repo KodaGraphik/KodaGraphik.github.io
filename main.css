@@ -1,5 +1,7 @@
 body {
   background-color: #0a5b58;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 button:focus {
@@ -123,9 +125,14 @@ button:focus {
   user-select: none;
 }
 
+.main {
+  width: 100%;
+  height: 100%;
+}
+
 .section {
   height: 95vh;
-  width: 100vw;
+  width: 100%;
   padding: 25%;
   color: white;
   text-align: center;
@@ -140,10 +147,6 @@ button:focus {
   margin-top: 20px;
   font-family: "Playfair Display", serif;
   line-height: 26px;
-}
-
-.section img {
-  width: 200px;
 }
 
 .section2 {

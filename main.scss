@@ -3,6 +3,8 @@
 
 body {
   background-color: $background;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 button:focus {
@@ -120,10 +122,14 @@ button:focus {
   cursor: pointer;
   user-select: none;
 }
+.main{
+  width: 100%;
+  height: 100%;
+}
 
 .section{
   height: 95vh;
-  width: 100vw;
+  width: 100%;
   padding: 25%;
   color: white;
   text-align: center;
@@ -137,9 +143,6 @@ button:focus {
   margin-top: 20px;
   font-family: $serif;
   line-height: 26px;
-}
-img{
-  width: 200px;
 }
 }
 .section2{
