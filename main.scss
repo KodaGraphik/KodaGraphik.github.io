@@ -24,7 +24,7 @@ button:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(#000000, 0.95);
+  background-color: rgba(#000000, 0.85);
   text-align: center;
   padding-top: 20vh;
 }
@@ -129,7 +129,7 @@ button:focus {
 }
 
 .section {
-  height: 60vh;
+  height: 70vh;
   width: 100vw;
   color: white;
   text-align: center;
@@ -140,7 +140,7 @@ button:focus {
     letter-spacing: 15px;
     font-weight: 200;
     font-size: 30px;
-    padding-top: 10vh;
+    padding-top: 20vh;
     margin: 0;
     user-select: none;
     font-weight: 100;
@@ -154,6 +154,16 @@ button:focus {
     font-family: 'Roboto Slab';
     font-weight: 100;
   }
+}
+.circles{
+}
+.circle{
+    display: inline-block;
+    background-color: white;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 200px;
+    margin: 10px;
 }
 
 .section2 {
