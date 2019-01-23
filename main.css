@@ -135,6 +135,7 @@ button:focus {
 .section h2 {
   font-family: "Playfair Display", serif;
   padding-top: 10vh;
+  margin: 0px;
 }
 
 .section2 {
