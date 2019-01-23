@@ -122,28 +122,16 @@ button:focus {
   cursor: pointer;
   user-select: none;
 }
-.main{
-  width: 100%;
-  height: 100%;
-}
 
 .section{
-  height: 95vh;
-  width: 100%;
-  padding: 25%;
+  height: 40vh;
+  width: 100vw;
   color: white;
   text-align: center;
-
-  .sectionhead{
-    font-family: $serif;
-    font-size: 5vh;
-
-}
-.sectiontext{
-  margin-top: 20px;
+  h2{
   font-family: $serif;
-  line-height: 26px;
-}
+  padding-top: 10vh;
+  }
 }
 .section2{
   background-color: #1a7875;
