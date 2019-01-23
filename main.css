@@ -158,7 +158,7 @@ button:focus {
   font-weight: 100;
 }
 
-.section .arrow {
+.arrow {
   transform: translateY(10vh);
   font-size: 40px;
   color: rgba(255, 255, 255, 0.3);
