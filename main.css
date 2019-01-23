@@ -139,6 +139,7 @@ button:focus {
   text-transform: uppercase;
   padding-top: 10vh;
   margin: 0px;
+  user-select: none;
 }
 
 .section2 {
