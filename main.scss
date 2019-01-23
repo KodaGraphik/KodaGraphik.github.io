@@ -129,7 +129,9 @@ button:focus {
   color: white;
   text-align: center;
   h2{
-  font-family: $serif;
+  font-family: $sansserif;
+  font-weight: 200;
+  text-transform: uppercase;
   padding-top: 10vh;
   margin: 0px;
   }

@@ -133,7 +133,9 @@ button:focus {
 }
 
 .section h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
   padding-top: 10vh;
   margin: 0px;
 }
