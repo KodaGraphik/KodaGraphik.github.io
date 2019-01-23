@@ -156,6 +156,11 @@ button:focus {
     font-family: 'Roboto Slab';
     font-weight: 100;
   }
+  .arrow{
+  transform: translateY(10vh);
+  font-size: 40px;
+  color: rgba(#ffffff, 0.3)
+  }
 }
 .circles{
 }
