@@ -14,28 +14,43 @@
   <!-- Style Sheet SCSS Compiled -->
   <link rel="stylesheet" href="/main.css">
   <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Oswald:200,400|Playfair+Display:400,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400|Playfair+Display:400,900" rel="stylesheet">
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 </head>
 <div class="navigation" id="navigation">
-  <div class="navitem">Portfolio</div>
-  <div class="navitem">About Me</div>
-  <div class="navitem">Services</div>
-  <div class="navitem">Contact</div>
+  <div class="navitem" id="navitem1">Portfolio</div>
+  <div class="navitem" id="navitem2">About Me</div>
+  <div class="navitem" id="navitem3">Services</div>
+  <div class="navitem" id="navitem4">Contact</div>
+  <div class="socials">
+    <div class="socialicon1 socialicon"></div>
+    <div class="socialicon2 socialicon"></div>
+    <div class="socialicon3 socialicon"></div>
+  </div>
+</div>
 </div>
 <div class="hamburger" id="hamburger">☰</div>
+<div class="menuclose menu" id="menu">CLOSE MENU</div>
+<div class="menu" id="menu2">MENU</div>
+
 <body>
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="http://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js"></script>
   <script>
-$(document).ready(function(){
-  $("#hamburger").click(function(){
-    $("#navigation").fadeToggle("slow");
-  });
-});
-</script>
+    $(document).ready(function() {
+      $("#hamburger").click(function() {
+        $("#navigation").fadeToggle("fast");
+        $("#menu").slideToggle("slow");
+        $("#menu2").slideToggle("slow");
+        $("#navitem1").slideToggle("slow");
+        $("#navitem2").slideToggle("slow");
+        $("#navitem3").slideToggle("slow");
+        $("#navitem4").slideToggle("slow");
+      });
+    });
+  </script>
 </body>
 
 </html>
