@@ -16,7 +16,7 @@ button:focus {
 
 .navigation {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -86,12 +86,12 @@ button:focus {
   background-image: url("/Images/LinkdIn.png");
 }
 .socialicon:hover {
-  background-color: #2e2e2e;
+  background-color: #4b4b4b;
   transition: 0.4s;
   border-radius: 40px;
 }
 .hamburgercontainer{
-  position: absolute;
+  position: fixed;
   z-index: 200;
   width: 200px;
 }
@@ -120,12 +120,18 @@ button:focus {
   cursor: pointer;
   user-select: none;
 }
+.main {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(95vh);
+  scroll-snap-type: y mandatory;
+}
 .section{
   height: 95vh;
   width: 100vw;
   padding: 25%;
   color: white;
   text-align: center;
+  scroll-snap-align: start;
 
   .sectionhead{
     font-family: $serif;
@@ -142,5 +148,8 @@ img{
 }
 }
 .section2{
-  background-color: rgb(175, 187, 26);
+  background-color: #1a7875;
+}
+.section3{
+  background-color: #5a8a99
 }
