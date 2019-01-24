@@ -27,7 +27,6 @@ button:focus {
 }
 
 .navitem {
-  display: none;
   color: white;
   font-family: "Oswald", sans-serif;
   padding: 2vh 0;
@@ -59,9 +58,12 @@ button:focus {
   }
 }
 
+.navcontents {
+  display: none;
+}
+
 .socials {
   user-select: none;
-  display: none;
 }
 
 .socialicon {

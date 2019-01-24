@@ -30,7 +30,6 @@ button:focus {
 }
 
 .navitem {
-  display: none;
   color: white;
   font-family: $sansserif;
   padding: 2vh 0;
@@ -60,10 +59,11 @@ button:focus {
     font-size: 4vw;
   }
 }
-
+.navcontents{
+  display: none;
+}
 .socials {
   user-select: none;
-  display: none;
 }
 
 .socialicon {

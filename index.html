@@ -67,10 +67,11 @@
   </div>
 </div>
 <div class="navigation" id="navigation">
+  <div class="navcontents" id="navcontents">
   <div class="navitem" id="navitem1">Portfolio</div>
   <div class="navitem" id="navitem2">About Me</div>
-  <div class="navitem" id="navitem3">Services</div>
-  <div class="navitem" id="navitem4">Contact</div>
+  <div class="navitem" id="navitem3"> Services</div>
+  <div class="navitem" id="navitem4" data-aos="fade-up">Contact</div>
   <div class="socials" id="socials">
     <div class="socialicon1 socialicon"></div>
     <div class="socialicon2 socialicon"></div>
@@ -85,34 +86,23 @@
   <script>
     $(document).ready(function() {
       $("#hamburger").click(function() {
-        $("#navigation").slideToggle("fast");
+        $("#navigation").slideToggle("400","swing");
         $("#menu").slideToggle("fast");
         $("#menu2").slideToggle("fast");
-        $("#navitem1").slideToggle("slow");
-        $("#navitem2").slideToggle("slow");
-        $("#navitem3").slideToggle("slow");
-        $("#navitem4").slideToggle("slow");
-        $("#socials").slideToggle("slow");
+        $("#navcontents").fadeToggle("1000").delay("500");
       });
       $("#menu2").click(function() {
-        $("#navigation").slideToggle("fast");
+        $("#navigation").slideToggle("400","swing");
         $("#menu").slideToggle("fast");
         $("#menu2").slideToggle("fast");
-        $("#navitem1").slideToggle("slow");
-        $("#navitem2").slideToggle("slow");
-        $("#navitem3").slideToggle("slow");
-        $("#navitem4").slideToggle("slow");
-        $("#socials").slideToggle("slow");
+        $("#navcontents").fadeToggle("1000").delay("500");
       });
       $("#menu").click(function() {
-        $("#navigation").slideToggle("fast");
+        $("#navigation").slideToggle("400","swing");
         $("#menu").slideToggle("fast");
         $("#menu2").slideToggle("fast");
-        $("#navitem1").slideToggle("slow");
-        $("#navitem2").slideToggle("slow");
-        $("#navitem3").slideToggle("slow");
-        $("#navitem4").slideToggle("slow");
-        $("#socials").slideToggle("slow");
+        $("#navcontents").fadeToggle("1000").delay("500");
+
       });
     });
   </script>
