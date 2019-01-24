@@ -24,7 +24,7 @@ button:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(#000000, 0.85);
+  background-color: $navbackground;
   text-align: center;
   padding-top: 20vh;
 }
@@ -34,17 +34,18 @@ button:focus {
   color: white;
   font-family: $sansserif;
   padding: 2vh 0;
-  margin: 0 30vw;
-  font-size: 2.7vw;
+  margin: 10px 30vw;
+  font-size: 2vw;
   font-weight: 200;
   cursor: pointer;
   letter-spacing: -0.5px;
   text-transform: uppercase;
   user-select: none;
+  background-color: $navitemtrans;
 }
 
 .navitem:hover {
-  background-color: #2e2e2e;
+  background-color: $navitemhover;
   font-style: italic;
   padding-right: 10px;
   transition: 0.4s;
@@ -56,7 +57,7 @@ button:focus {
 }
 @media screen and (max-width: 700px) {
   .navitem {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 }
 
@@ -69,13 +70,14 @@ button:focus {
   display: inline-block;
   margin: 2vh 15px;
   padding: 10px;
-  width: 5vh;
-  height: 5vh;
+  width: 10vh;
+  height: 10vh;
   cursor: pointer;
   user-select: none;
   background-repeat: no-repeat;
-  background-size: 5vh;
+  background-size: 8vh;
   background-position: center;
+  background-color: $navitemtrans;
 }
 
 .socialicon1 {
@@ -91,9 +93,9 @@ button:focus {
 }
 
 .socialicon:hover {
-  background-color: #4b4b4b;
+  background-color: $navitemhover;
   transition: 0.4s;
-  border-radius: 40px;
+  border-radius: 10px;
 }
 
 .hamburgercontainer {
