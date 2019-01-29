@@ -2,22 +2,34 @@
 <html lang="en">
 
 <head>
+
+  <!-- BROWSER STUFF -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="Kodagraphik - Graphic Design by Rob Brown">
+
+  <!-- META TAGS -->
+  <meta name="description" content="Kodagraphik">
   <meta name="author" content="Rob Brown">
+
+  <!-- TAB TITLE -->
   <title>Kodagraphik</title>
-  <!-- Bootstrap core CSS -->
+
+  <!-- BOOTSTRAP CSS -->
   <link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Style Sheet SCSS Compiled -->
+
+
+  <!-- SASS COMPILED SHEET -->
   <link rel="stylesheet" href="/main.css">
+
+  <!-- OTHER FOUNDATIONS  -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- Google Fonts -->
+
+  <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Oswald:200,400|Playfair+Display:400,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+  <!-- IE10 VIEWPORT FIX -->
   <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 </head>
 
@@ -26,83 +38,53 @@
   <div class="menuclose menu" id="menu">CLOSE MENU</div>
   <div class="menu" id="menu2">MENU</div>
 </div>
-<div class="container-fluid mainstuff">
-  <div class="container-fluid section ">
-    <h2 data-aos="fade-up"> Graphic Design</h2>
-    <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo fugit illo in ad praesentium, corrupti quae qui impedit similique fugiat molestias, porro saepe, debitis doloremque atque, aperiam necessitatibus autem tempora!</p>
-    <div class="circles">
-      <div class="circle" data-aos="fade-up-right">
-      </div>
-      <div class="circle" data-aos="fade-up">
-      </div>
-      <div class="circle" data-aos="fade-up-left">
-      </div>
-    </div>
-    <div class="arrow" data-aos="fade-up" data-aos-delay="300">↓</div>
-  </div>
-  <div class="container-fluid section section2">
-    <h2 data-aos="fade-up"> Web Design</h2>
-    <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo fugit illo in ad praesentium, corrupti quae qui impedit similique fugiat molestias, porro saepe, debitis doloremque atque, aperiam necessitatibus autem tempora!</p>
-    <div class="circles">
-      <div class="circle" data-aos="fade-up-right">
-      </div>
-      <div class="circle" data-aos="fade-up">
-      </div>
-      <div class="circle" data-aos="fade-up-left">
-      </div>
-    </div>
-    <div class="arrow" data-aos="fade-up" data-aos-delay="300">↓</div>
-  </div>
-  <div class="container-fluid section section3">
-    <h2 data-aos="fade-up"> Print Design</h2>
-    <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo fugit illo in ad praesentium, corrupti quae qui impedit similique fugiat molestias, porro saepe, debitis doloremque atque, aperiam necessitatibus autem tempora!</p>
-    <div class="circles">
-      <div class="circle" data-aos="fade-up-right">
-      </div>
-      <div class="circle" data-aos="fade-up">
-      </div>
-      <div class="circle" data-aos="fade-up-left">
-      </div>
+<div class="navigation" id="navigation">
+  <div class="navcontents" id="navcontents">
+    <div class="navitem" id="navitem1" data-aos="fade-up">Portfolio</div>
+    <div class="navitem" id="navitem2" data-aos="fade-up">About Me</div>
+    <div class="navitem" id="navitem3" data-aos="fade-up"> Services</div>
+    <div class="navitem" id="navitem4" data-aos="fade-up">Contact</div>
+    <div class="socials" id="socials">
+      <div class="socialicon1 socialicon"></div>
+      <div class="socialicon2 socialicon"></div>
+      <div class="socialicon3 socialicon"></div>
     </div>
   </div>
 </div>
-<div class="navigation" id="navigation">
-  <div class="navcontents" id="navcontents">
-  <div class="navitem" id="navitem1">Portfolio</div>
-  <div class="navitem" id="navitem2">About Me</div>
-  <div class="navitem" id="navitem3"> Services</div>
-  <div class="navitem" id="navitem4" data-aos="fade-up">Contact</div>
-  <div class="socials" id="socials">
-    <div class="socialicon1 socialicon"></div>
-    <div class="socialicon2 socialicon"></div>
-    <div class="socialicon3 socialicon"></div>
+<div class="bg">
+  <div class="circle">
+    <div class="logo"
+    data-aos="zoom-in"
+    data-aos-easing="ease-out-quad"
+    data-aos-duration="1000">
+    <img src="Images/Logo.png"</img>
   </div>
+</div>
 </div>
 
 <body>
-  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- SCRIPT STUFF  -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="http://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function() {
       $("#hamburger").click(function() {
-        $("#navigation").slideToggle("400","swing");
+        $("#navigation").slideToggle("400", "swing");
         $("#menu").slideToggle("fast");
         $("#menu2").slideToggle("fast");
         $("#navcontents").fadeToggle("1000").delay("500");
       });
       $("#menu2").click(function() {
-        $("#navigation").slideToggle("400","swing");
+        $("#navigation").slideToggle("400", "swing");
         $("#menu").slideToggle("fast");
         $("#menu2").slideToggle("fast");
         $("#navcontents").fadeToggle("1000").delay("500");
       });
       $("#menu").click(function() {
-        $("#navigation").slideToggle("400","swing");
+        $("#navigation").slideToggle("400", "swing");
         $("#menu").slideToggle("fast");
         $("#menu2").slideToggle("fast");
         $("#navcontents").fadeToggle("1000").delay("500");
-
       });
     });
   </script>
