@@ -90,17 +90,19 @@
   transition: 0.4s;
 }
 
-//-------- HAMBURGER BUTTON ------------//
+//-------- HAMBURGER BUTTON
 
 .hamburgercontainer {
   position: fixed;
-  width: 200px;
+  width: 100vw;
   z-index: 200;
+  background-color:$background;
+  height: 60px;
 }
 
 .hamburger {
   position: absolute;
-  top: 14px;
+  top: 10px;
   left: 24px;
   font-family: $sansserif;
   font-size: 24px;
@@ -115,7 +117,7 @@
 
 .menu {
   position: absolute;
-  top: 23px;
+  top: 18px;
   left: 54px;
   font-family: $sansserif;
   font-style: 22px;

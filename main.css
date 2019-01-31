@@ -1012,7 +1012,7 @@
 }
 
 body {
-  background-color: #cd4848;
+  background-color: #A83636;
   overflow-x: hidden;
   overflow-y: scroll;
   margin: 0 !important;
@@ -1114,13 +1114,15 @@ button:focus {
 
 .hamburgercontainer {
   position: fixed;
-  width: 200px;
+  width: 100vw;
   z-index: 200;
+  background-color: #A83636;
+  height: 60px;
 }
 
 .hamburger {
   position: absolute;
-  top: 14px;
+  top: 10px;
   left: 24px;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -1135,7 +1137,7 @@ button:focus {
 
 .menu {
   position: absolute;
-  top: 23px;
+  top: 18px;
   left: 54px;
   font-family: "Oswald", sans-serif;
   font-style: 22px;
@@ -1145,41 +1147,44 @@ button:focus {
 }
 
 .circle {
-  position: relative;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
   margin: 0 auto;
   text-align: center;
-  padding-top: 0.5vh;
-  height: 51vh;
-  width: 51vh;
+  padding: 0.5vh 0.5vh;
+  height: 41vh;
+  width: 41vh;
   background-color: white;
   -webkit-clip-path: circle(48.8% at 50% 50%);
   clip-path: circle(48.8% at 50% 50%);
+  transform: translateX(-300px);
 }
 
 .circle img {
-  height: 50vh;
-  width: 50vh;
+  height: 40vh;
+  width: 40vh;
 }
 
 .bg1 {
-  padding-top: 200px;
+  height: 50vh;
   width: 100vw;
-  height: 60vh;
+  padding-top: 11vh;
+  background-image: url(Images/18.png);
+  background-size: 100vw;
+  background-position: bottom;
+  background-blend-mode: lighten;
+  background-color: #A83636;
+  -webkit-clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+  clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
 }
 
 .bg2 {
-  background-color: #A83636;
   width: 100vw;
   height: 100vh;
   color: white;
   font-size: 18px;
   font-family: "Oswald", sans-serif;
   text-align: center;
-  padding-top: 100px;
-  -webkit-clip-path: polygon(0 3%, 100% 10%, 100% 100%, 0% 100%);
-  clip-path: polygon(0 3%, 100% 10%, 100% 100%, 0% 100%);
+}
+
+.maincol {
+  padding-top: 20px;
 }
