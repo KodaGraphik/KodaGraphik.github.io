@@ -33,8 +33,31 @@
 	font-size: 18px;
 	font-family: $sansserif;
 	text-align: center;
+	span{
+		letter-spacing: 3px;
+	}
+	p{
+		font-family: $serif;
+		font-size: 13px;
+		word-wrap: break-word;
+		line-height: 1.6;
+	}
+	img{
+		height: 40px;
+		width: 40px;
+		padding-bottom: 10px;
+	}
 }
 
 .maincol{
+	padding-left: 50px;
+	padding-right: 50px;
 	padding-top: 50px;
+
+}
+@media (max-width: 767.98px) {
+.maincol{
+	padding-left: 20vw;
+	padding-right: 20vw;
+}
 }
