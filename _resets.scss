@@ -1,3 +1,5 @@
+.element::-webkit-scrollbar { width: 0 !important }
+
 html{
   overflow-x: hidden;
 }
@@ -6,7 +8,10 @@ body {
   overflow-x: hidden!important;
   margin: 0 !important;
 }
-
+body::-webkit-scrollbar {
+  width: 4px!important
+  background-color: red!important;
+}
 button:focus {
   outline: none;
 }
