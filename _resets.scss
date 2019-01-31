@@ -9,8 +9,7 @@ body {
   margin: 0 !important;
 }
 body::-webkit-scrollbar {
-  width: 4px!important
-  background-color: red!important;
+  width: 0px!important;
 }
 button:focus {
   outline: none;

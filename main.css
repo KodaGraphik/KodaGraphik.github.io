@@ -1015,7 +1015,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 2px !important;
+  width: 0px !important;
 }
 
 button:focus {
@@ -1231,5 +1231,8 @@ button:focus {
   .maincol {
     padding-left: 20vw;
     padding-right: 20vw;
+  }
+  .maincol:hover {
+    border-radius: 0px;
   }
 }
