@@ -27,18 +27,20 @@
 }
 
 .bg2{
-	width: 100vw;
-	height: 100vh;
+	@include horizontal-center;
+	width: 95vw;
+	height: 50vh;
 	color: white;
 	font-size: 18px;
 	font-family: $sansserif;
 	text-align: center;
+	margin-top: 20px;
 	span{
 		letter-spacing: 3px;
 	}
 	p{
 		font-family: $serif;
-		font-size: 13px;
+		font-size: 12px;
 		word-wrap: break-word;
 		line-height: 1.6;
 	}
@@ -47,12 +49,26 @@
 		padding-bottom: 10px;
 	}
 }
+.mainhead{
+	text-align: center;
+	width: 100vw;
+	padding-top: 30px;
+	font-family: $sansserif;
+	font-size: 40px;
+	letter-spacing: 6px;
+	color: white;
+}
 
 .maincol{
 	padding-left: 50px;
 	padding-right: 50px;
-	padding-top: 50px;
-
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.maincol:hover{
+	background-color: rgba(#FFF,.05);
+	transition: 0.5s;
+	border-radius: 20px;
 }
 @media (max-width: 767.98px) {
 .maincol{
