@@ -1,4 +1,7 @@
 
+
+// ------- MENU AND NAVIGATION STYLES
+
 .navigation {
   position: fixed;
 	z-index: 10;
@@ -47,6 +50,10 @@
   display: none;
 }
 
+
+//-------- SOCIAL ICONS -------------
+
+
 .socials {
   user-select: none;
 }
@@ -82,6 +89,8 @@
   border-radius: 10px;
   transition: 0.4s;
 }
+
+//-------- HAMBURGER BUTTON ------------//
 
 .hamburgercontainer {
   position: fixed;

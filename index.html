@@ -3,95 +3,105 @@
 
 <head>
 
-  <!-- BROWSER STUFF -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- BROWSER STUFF -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- META TAGS -->
-  <meta name="description" content="Kodagraphik">
-  <meta name="author" content="Rob Brown">
+	<!-- META TAGS -->
+	<meta name="description" content="Kodagraphik">
+	<meta name="author" content="Rob Brown">
 
-  <!-- TAB TITLE -->
-  <title>Kodagraphik</title>
+	<!-- TAB TITLE -->
+	<title>Kodagraphik</title>
 
-  <!-- BOOTSTRAP CSS -->
-  <link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- BOOTSTRAP CSS -->
+	<link rel="stylesheet" href="SCSS/Bootstrap12.css">
 
+	<!-- SASS COMPILED SHEET -->
+	<link rel="stylesheet" href="/main.css">
 
-  <!-- SASS COMPILED SHEET -->
-  <link rel="stylesheet" href="/main.css">
+	<!-- OTHER FOUNDATIONS  -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <!-- OTHER FOUNDATIONS  -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald:200,400|Playfair+Display:400,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
 
-  <!-- GOOGLE FONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400|Playfair+Display:400,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
-
-  <!-- IE10 VIEWPORT FIX -->
-  <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+	<!-- IE10 VIEWPORT FIX -->
+	<script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 </head>
 
 <div class="hamburgercontainer">
-  <div class="hamburger" id="hamburger">☰</div>
-  <div class="menuclose menu" id="menu">CLOSE MENU</div>
-  <div class="menu" id="menu2">MENU</div>
+	<div class="hamburger" id="hamburger">☰</div>
+	<div class="menuclose menu" id="menu">CLOSE MENU</div>
+	<div class="menu" id="menu2">MENU</div>
 </div>
 <div class="navigation" id="navigation">
-  <div class="navcontents" id="navcontents">
-    <div class="navitem" id="navitem1" data-aos="fade-up">Portfolio</div>
-    <div class="navitem" id="navitem2" data-aos="fade-up">About Me</div>
-    <div class="navitem" id="navitem3" data-aos="fade-up"> Services</div>
-    <div class="navitem" id="navitem4" data-aos="fade-up">Contact</div>
-    <div class="socials" id="socials">
-      <div class="socialicon1 socialicon"></div>
-      <div class="socialicon2 socialicon"></div>
-      <div class="socialicon3 socialicon"></div>
+	<div class="navcontents" id="navcontents">
+		<div class="navitem">Portfolio</div>
+		<div class="navitem">About Me</div>
+		<div class="navitem"> Services</div>
+		<div class="navitem">Contact</div>
+		<div class="socials" id="socials">
+			<div class="socialicon1 socialicon"></div>
+			<div class="socialicon2 socialicon"></div>
+			<div class="socialicon3 socialicon"></div>
+		</div>
+	</div>
+</div>
+<div class="bg1 container-fluid">
+	<div class="circle">
+		<div class="logo" data-aos="zoom-in" data-aos-easing="ease-out-quad" data-aos-duration="1000">
+			<img src="Images/Logo.png" </img>
     </div>
   </div>
 </div>
-<div class="bg">
-  <div class="circle">
-    <div class="logo"
-    data-aos="zoom-in"
-    data-aos-easing="ease-out-quad"
-    data-aos-duration="1000">
-    <img src="Images/Logo.png"</img>
-  </div>
+<div class="bg2 container-fluid row">
+      <div class="col-sm-4 left">
+        GRAPHIC DESIGN
+      </div>
+      <div class="col-sm-4 center">
+        WEB DESIGN
+      </div>
+      <div class="col-sm-4 right">
+        PRINT DESIGN
+      </div>
 </div>
+  Testing
 </div>
+  <body>
 
-<body>
-  <!-- SCRIPT STUFF  -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="http://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $("#hamburger").click(function() {
-        $("#navigation").slideToggle("400", "swing");
-        $("#menu").slideToggle("fast");
-        $("#menu2").slideToggle("fast");
-        $("#navcontents").fadeToggle("1000").delay("500");
-      });
-      $("#menu2").click(function() {
-        $("#navigation").slideToggle("400", "swing");
-        $("#menu").slideToggle("fast");
-        $("#menu2").slideToggle("fast");
-        $("#navcontents").fadeToggle("1000").delay("500");
-      });
-      $("#menu").click(function() {
-        $("#navigation").slideToggle("400", "swing");
-        $("#menu").slideToggle("fast");
-        $("#menu2").slideToggle("fast");
-        $("#navcontents").fadeToggle("1000").delay("500");
-      });
-    });
-  </script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
+
+			<!-- SCRIPT STUFF  -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+			<script src="http://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js"></script>
+			<script>
+				$(document).ready(function() {
+					$("#hamburger").click(function() {
+						$("#navigation").slideToggle("400", "swing");
+						$("#menu").slideToggle("fast");
+						$("#menu2").slideToggle("fast");
+						$("#navcontents").fadeToggle("1000").delay("500");
+					});
+					$("#menu2").click(function() {
+						$("#navigation").slideToggle("400", "swing");
+						$("#menu").slideToggle("fast");
+						$("#menu2").slideToggle("fast");
+						$("#navcontents").fadeToggle("1000").delay("500");
+					});
+					$("#menu").click(function() {
+						$("#navigation").slideToggle("400", "swing");
+						$("#menu").slideToggle("fast");
+						$("#menu2").slideToggle("fast");
+						$("#navcontents").fadeToggle("1000").delay("500");
+					});
+				});
+			</script>
+			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+			<script>
+				AOS.init();
+			</script>
+			</body>
 
 </html>

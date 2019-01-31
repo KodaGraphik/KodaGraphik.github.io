@@ -1,20 +1,33 @@
 .circle {
 	@include vertical-center;
 	@include horizontal-center;
-  height: 51vh;
-  width: 51vh;
 	padding-top: 0.5vh;
-  background-color: white;
-  -webkit-clip-path: circle(48.8% at 50% 50%);
-  clip-path: circle(48.8% at 50% 50%);
-img{
-	height: 50vh;
-	width: 50vh;
+	height: 51vh;
+	width: 51vh;
+	background-color: white;
+	-webkit-clip-path: circle(48.8% at 50% 50%);
+	clip-path: circle(48.8% at 50% 50%);
+
+	img {
+		height: 50vh;
+		width: 50vh;
+	}
 }
+.bg1{
+	padding-top: 200px;
+	width: 100vw;
+	height: 60vh;
 }
 
-.bg {
-  height: 100vh;
-  width: 100vw;
-  padding-top: 10vh;
+.bg2{
+	background-color: $background-lighter;
+	width: 100vw;
+	height: 100vh;
+	color: white;
+	font-size: 18px;
+	font-family: $sansserif;
+	text-align: center;
+	padding-top: 100px;
+	-webkit-clip-path: polygon(0 3%, 100% 10%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 3%, 100% 10%, 100% 100%, 0% 100%);
 }
