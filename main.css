@@ -1000,10 +1000,13 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #871A1A;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-x: hidden !important;
   margin: 0 !important;
 }
 
