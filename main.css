@@ -1009,7 +1009,7 @@ html {
 }
 
 body {
-  background-color: #871A1A;
+  background-color: #E8E8E8;
   overflow-x: hidden !important;
   margin: 0 !important;
 }
@@ -1116,7 +1116,7 @@ button:focus {
   position: fixed;
   width: 100vw;
   z-index: 200;
-  background-color: #871A1A;
+  background-color: #E8E8E8;
   height: 60px;
 }
 
@@ -1126,7 +1126,7 @@ button:focus {
   left: 24px;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
-  color: white;
+  color: #111880;
   cursor: pointer;
   user-select: none;
 }
@@ -1141,7 +1141,7 @@ button:focus {
   left: 54px;
   font-family: "Oswald", sans-serif;
   font-style: 22px;
-  color: white;
+  color: #111880;
   cursor: pointer;
   user-select: none;
 }
@@ -1170,8 +1170,7 @@ button:focus {
   background-image: url(Images/18.png);
   background-size: 100vw;
   background-position: bottom;
-  background-blend-mode: lighten;
-  background-color: #871A1A;
+  background-color: #E8E8E8;
   -webkit-clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
   clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
 }
@@ -1181,7 +1180,7 @@ button:focus {
   text-align: center;
   width: 95vw;
   height: 50vh;
-  color: white;
+  color: #111880;
   font-size: 18px;
   font-family: "Oswald", sans-serif;
   text-align: center;
@@ -1193,7 +1192,7 @@ button:focus {
 }
 
 .bg2 p {
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   word-wrap: break-word;
   line-height: 1.6;
@@ -1211,7 +1210,7 @@ button:focus {
   font-family: "Oswald", sans-serif;
   font-size: 40px;
   letter-spacing: 6px;
-  color: white;
+  color: #111880;
 }
 
 .maincol {
@@ -1222,7 +1221,7 @@ button:focus {
 }
 
 .maincol:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 0, 0, 0.05);
   transition: 0.5s;
   border-radius: 20px;
 }
@@ -1233,6 +1232,6 @@ button:focus {
     padding-right: 20vw;
   }
   .maincol:hover {
-    border-radius: 0px;
+    border-radius: 20px;
   }
 }

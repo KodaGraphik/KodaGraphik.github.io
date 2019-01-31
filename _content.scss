@@ -20,7 +20,7 @@
 	background-image: url(Images/18.png);
 	background-size: 100vw;
 	background-position: bottom;
-	background-blend-mode: lighten;
+	// background-blend-mode: lighten;
 	background-color: $background;
 	-webkit-clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
 	clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
@@ -30,7 +30,7 @@
 	@include horizontal-center;
 	width: 95vw;
 	height: 50vh;
-	color: white;
+	color: $fontcolor;
 	font-size: 18px;
 	font-family: $sansserif;
 	text-align: center;
@@ -56,7 +56,7 @@
 	font-family: $sansserif;
 	font-size: 40px;
 	letter-spacing: 6px;
-	color: white;
+	color: $fontcolor;
 }
 
 .maincol{
@@ -66,7 +66,7 @@
 	padding-bottom: 30px;
 }
 .maincol:hover{
-	background-color: rgba(#FFF,.05);
+	background-color: rgba(#000,.05);
 	transition: 0.5s;
 	border-radius: 20px;
 }
@@ -76,6 +76,6 @@
 	padding-right: 20vw;
 }
 .maincol:hover{
-		border-radius: 0px;
+		border-radius: 20px;
 }
 }
