@@ -1001,7 +1001,7 @@
 }
 
 body {
-  background-color: #A83636;
+  background-color: #871A1A;
   overflow-x: hidden;
   overflow-y: scroll;
   margin: 0 !important;
@@ -1105,7 +1105,7 @@ button:focus {
   position: fixed;
   width: 100vw;
   z-index: 200;
-  background-color: #A83636;
+  background-color: #871A1A;
   height: 60px;
 }
 
@@ -1160,7 +1160,7 @@ button:focus {
   background-size: 100vw;
   background-position: bottom;
   background-blend-mode: lighten;
-  background-color: #A83636;
+  background-color: #871A1A;
   -webkit-clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
   clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
 }
@@ -1169,7 +1169,7 @@ button:focus {
   margin: 0 auto;
   text-align: center;
   width: 95vw;
-  height: 40vh;
+  height: 50vh;
   color: white;
   font-size: 18px;
   font-family: "Oswald", sans-serif;
