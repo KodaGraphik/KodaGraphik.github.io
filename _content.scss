@@ -30,7 +30,7 @@
 .bg2{
 	@include horizontal-center;
 	width: 95vw;
-	height: 50vh;
+	height: auto;
 	color: $fontcolor;
 	font-size: 18px;
 	font-family: $sansserif;

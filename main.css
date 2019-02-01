@@ -1155,6 +1155,7 @@ img {
 }
 
 .footertop {
+  margin-top: 5vw;
   width: 100vw;
   height: 20vh;
   background-image: url(Images/21.png);
@@ -1166,7 +1167,7 @@ img {
 
 .footer {
   background-color: #00ADB5;
-  position: sticky;
+  position: relative;
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -1206,7 +1207,7 @@ img {
   margin: 0 auto;
   text-align: center;
   width: 95vw;
-  height: 50vh;
+  height: auto;
   color: #393E46;
   font-size: 18px;
   font-family: "Oswald", sans-serif;
