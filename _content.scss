@@ -17,10 +17,10 @@
 	height: 50vh;
 	width: 100vw;
 	padding-top: 11vh;
-	background-image: url(Images/18.png);
-	background-size: 100vw;
+	background-image: url(Images/21.png);
+	background-size: cover;
 	background-position: bottom;
-	// background-blend-mode: lighten;
+	// background-blend-mode: soft-light;
 	background-color: $background;
 	-webkit-clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
 	clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
@@ -62,13 +62,13 @@
 .maincol{
 	padding-left: 50px;
 	padding-right: 50px;
+	background-color: rgba(#000,.05);
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
 .maincol:hover{
-	background-color: rgba(#000,.05);
+	background-color: rgba(#000,.1);
 	transition: 0.5s;
-	border-radius: 20px;
 }
 @media (max-width: 767.98px) {
 .maincol{

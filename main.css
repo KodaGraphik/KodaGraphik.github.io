@@ -1009,7 +1009,7 @@ html {
 }
 
 body {
-  background-color: #E8E8E8;
+  background-color: #FFF4E0;
   overflow-x: hidden !important;
   margin: 0 !important;
 }
@@ -1032,7 +1032,7 @@ button:focus {
   z-index: 10;
   top: 0;
   left: 0;
-  background-color: #E7E7E7;
+  background-color: #00ADB5;
   right: 0;
   bottom: 0;
   display: none;
@@ -1116,7 +1116,7 @@ button:focus {
   position: fixed;
   width: 100vw;
   z-index: 200;
-  background-color: #E7E7E7;
+  background-color: #00ADB5;
   height: 60px;
 }
 
@@ -1126,7 +1126,7 @@ button:focus {
   left: 24px;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
-  color: #111880;
+  color: #393E46;
   cursor: pointer;
   user-select: none;
 }
@@ -1141,7 +1141,7 @@ button:focus {
   left: 54px;
   font-family: "Oswald", sans-serif;
   font-style: 22px;
-  color: #111880;
+  color: #393E46;
   cursor: pointer;
   user-select: none;
 }
@@ -1167,10 +1167,10 @@ button:focus {
   height: 50vh;
   width: 100vw;
   padding-top: 11vh;
-  background-image: url(Images/18.png);
-  background-size: 100vw;
+  background-image: url(Images/21.png);
+  background-size: cover;
   background-position: bottom;
-  background-color: #E8E8E8;
+  background-color: #FFF4E0;
   -webkit-clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
   clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
 }
@@ -1180,7 +1180,7 @@ button:focus {
   text-align: center;
   width: 95vw;
   height: 50vh;
-  color: #111880;
+  color: #393E46;
   font-size: 18px;
   font-family: "Oswald", sans-serif;
   text-align: center;
@@ -1210,20 +1210,20 @@ button:focus {
   font-family: "Oswald", sans-serif;
   font-size: 40px;
   letter-spacing: 6px;
-  color: #111880;
+  color: #393E46;
 }
 
 .maincol {
   padding-left: 50px;
   padding-right: 50px;
+  background-color: rgba(0, 0, 0, 0.05);
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .maincol:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.2);
   transition: 0.5s;
-  border-radius: 20px;
 }
 
 @media (max-width: 767.98px) {
@@ -1235,3 +1235,5 @@ button:focus {
     border-radius: 20px;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
