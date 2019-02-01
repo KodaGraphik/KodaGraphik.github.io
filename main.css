@@ -1154,26 +1154,6 @@ img {
   user-select: none;
 }
 
-.footertop {
-  margin-top: 5vw;
-  width: 100vw;
-  height: 20vh;
-  background-image: url(Images/21.png);
-  background-size: cover;
-  background-position: bottom;
-  -webkit-clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%);
-  clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%);
-}
-
-.footer {
-  background-color: #00ADB5;
-  position: relative;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  height: 300px;
-}
-
 .circle {
   margin: 0 auto;
   text-align: center;
@@ -1195,12 +1175,32 @@ img {
   height: 50vh;
   width: 100vw;
   padding-top: 11vh;
-  background-image: url(Images/21.png);
+  background-image: url(Images/18.png);
   background-size: cover;
   background-position: bottom;
   background-color: #FFF4E0;
   -webkit-clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
   clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+}
+
+.footertop {
+  margin-top: 5vw;
+  width: 100vw;
+  height: 20vh;
+  background-image: url(Images/18.png);
+  background-size: cover;
+  background-position: bottom;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%);
+}
+
+.footer {
+  background-color: #00ADB5;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 300px;
 }
 
 .bg2 {

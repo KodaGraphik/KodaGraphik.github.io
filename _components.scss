@@ -126,12 +126,43 @@
   user-select: none;
 }
 
+// TOP CIRLCE AND //
+
+.circle {
+	@include horizontal-center;
+	padding: 0.5vh 0.5vh;
+	height: 41vh;
+	width: 41vh;
+	background-color: white;
+	-webkit-clip-path: circle(48.8% at 50% 50%);
+	clip-path: circle(48.8% at 50% 50%);
+	transform: translateX(-300px);
+
+	img {
+		height: 40vh;
+		width: 40vh;
+
+	}
+}
+.bg1{
+	height: 50vh;
+	width: 100vw;
+	padding-top: 11vh;
+	background-image:$BGImage;
+	background-size: cover;
+	background-position: bottom;
+	// background-blend-mode: soft-light;
+	background-color: $background;
+	-webkit-clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+	clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+}
+
 // FOOTER ELEMENTS
 .footertop{
   margin-top: 5vw;
   width: 100vw;
   height: 20vh;
-  background-image: url(Images/21.png);
+  background-image:$BGImage;
   background-size: cover;
   background-position: bottom;
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%);
