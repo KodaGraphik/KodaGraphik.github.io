@@ -174,5 +174,41 @@
   bottom: 0px;
   left: 0px;
   right: 0px;
-  height: 300px
+  height: 300px;
+
+  .footericons {
+    user-select: none;
+  }
+
+  .footericon {
+    @include horizontal-center;
+    display: inline-block;
+    height: 10vh;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    background-repeat: no-repeat;
+    background-size: 5vh;
+    background-position: center;
+  }
+
+  .footericon1 {
+    background-image: url("/Images/Behance.png");
+    padding: 20px;
+  }
+
+  .footericon2 {
+    background-image: url("/Images/Insta.png");
+    padding: 20px;
+  }
+
+  .footericon3 {
+    background-image: url("/Images/LinkdIn.png");
+    padding: 20px;
+  }
+
+  .footericon:hover {
+    background-color: $navitemtrans;
+    transition: 0.4s;
+  }
 }

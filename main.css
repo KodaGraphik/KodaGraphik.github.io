@@ -1203,6 +1203,43 @@ img {
   height: 300px;
 }
 
+.footer .footericons {
+  user-select: none;
+}
+
+.footer .footericon {
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  height: 10vh;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  background-repeat: no-repeat;
+  background-size: 5vh;
+  background-position: center;
+}
+
+.footer .footericon1 {
+  background-image: url("/Images/Behance.png");
+  padding: 20px;
+}
+
+.footer .footericon2 {
+  background-image: url("/Images/Insta.png");
+  padding: 20px;
+}
+
+.footer .footericon3 {
+  background-image: url("/Images/LinkdIn.png");
+  padding: 20px;
+}
+
+.footer .footericon:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+}
+
 .bg2 {
   margin: 0 auto;
   text-align: center;
