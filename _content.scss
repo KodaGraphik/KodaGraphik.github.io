@@ -36,8 +36,8 @@
 	user-select: none;
 	padding-left: 50px;
 	padding-right: 50px;
-	background-color: rgba(#000,.05);
-	padding-top: 30px;
+	height: 300px;
+	padding-top: 50px;
 	padding-bottom: 30px;
 	cursor: pointer;
 }
@@ -51,7 +51,7 @@
 .right{
 	border-radius: 0px 20px 20px 00px
 }
-@media (max-width: 767.98px) {
+@media (min-width: 768px) {
 .maincol{
 	padding-left: 20vw;
 	padding-right: 20vw;
