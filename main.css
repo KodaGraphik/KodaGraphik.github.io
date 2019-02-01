@@ -1210,7 +1210,7 @@ a:link {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  height: 200px;
+  height: auto;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -1256,6 +1256,7 @@ a:link {
   font-size: 11px;
   line-height: 20px;
   padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center !important;
   color: #FFF4E0;
   cursor: pointer;
