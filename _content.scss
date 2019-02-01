@@ -11,6 +11,7 @@
 	img {
 		height: 40vh;
 		width: 40vh;
+
 	}
 }
 .bg1{
@@ -57,14 +58,17 @@
 	font-size: 40px;
 	letter-spacing: 6px;
 	color: $fontcolor;
+	user-select: none;
 }
 
 .maincol{
+	user-select: none;
 	padding-left: 50px;
 	padding-right: 50px;
 	background-color: rgba(#000,.05);
 	padding-top: 30px;
 	padding-bottom: 30px;
+	cursor: pointer;
 }
 .maincol:hover{
 	background-color: rgba(#000,.1);

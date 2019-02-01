@@ -125,3 +125,22 @@
   cursor: pointer;
   user-select: none;
 }
+
+// FOOTER ELEMENTS
+.footertop{
+  width: 100vw;
+  height: 20vh;
+  background-image: url(Images/21.png);
+  background-size: cover;
+  background-position: bottom;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%);
+}
+.footer{
+  background-color: #00ADB5;
+  position: sticky;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 300px
+}
