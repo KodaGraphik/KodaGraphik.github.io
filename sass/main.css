@@ -1035,14 +1035,20 @@ img {
   user-drag: none;
 }
 
-a {
+a:link {
   text-decoration: none;
 }
 
-a:link {
-  font-weight: bold;
-  text-decoration: underline;
-  color: #06c;
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }
 
 .navigation {
@@ -1186,7 +1192,7 @@ a:link {
   height: 50vh;
   width: 100vw;
   padding-top: 11vh;
-  background-image: url(Images/21.png);
+  background-image: url("/Images/21.png");
   background-size: cover;
   background-position: bottom;
   background-color: #FFF4E0;
@@ -1198,7 +1204,7 @@ a:link {
   margin-top: 5vw;
   width: 100vw;
   height: 20vh;
-  background-image: url(Images/21.png);
+  background-image: url("/Images/21.png");
   background-size: cover;
   background-position: bottom;
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%);
