@@ -1136,6 +1136,7 @@ a:link {
   z-index: 200;
   background-color: #00ADB5;
   height: 60px;
+  border-bottom: 5px solid white;
 }
 
 .hamburger {
@@ -1316,8 +1317,16 @@ a:link {
   cursor: pointer;
 }
 
-.maincol:hover {
+.col-md-4:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.col-md-4:nth-child(even) {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.maincol:hover {
+  background-color: rgba(0, 0, 0, 0.15);
   transition: 0.5s;
 }
 

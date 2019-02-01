@@ -41,8 +41,15 @@
 	padding-bottom: 30px;
 	cursor: pointer;
 }
+
+.col-md-4:nth-child(odd){
+background-color: rgba(#000, 0.12);
+}
+.col-md-4:nth-child(even){
+	background-color: rgba(#000, 0.10);
+}
 .maincol:hover{
-	background-color: rgba(#000,.1);
+	background-color: rgba(#000,0.15);
 	transition: 0.5s;
 }
 .left{
