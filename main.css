@@ -1175,7 +1175,7 @@ img {
   height: 50vh;
   width: 100vw;
   padding-top: 11vh;
-  background-image: url(Images/18.png);
+  background-image: url(Images/21.png);
   background-size: cover;
   background-position: bottom;
   background-color: #FFF4E0;
@@ -1187,7 +1187,7 @@ img {
   margin-top: 5vw;
   width: 100vw;
   height: 20vh;
-  background-image: url(Images/18.png);
+  background-image: url(Images/21.png);
   background-size: cover;
   background-position: bottom;
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%);
