@@ -70,12 +70,27 @@
 	background-color: rgba(#000,.1);
 	transition: 0.5s;
 }
+.left{
+	border-radius: 20px 0px 0px 20px
+}
+.right{
+	border-radius: 0px 20px 20px 00px
+}
 @media (max-width: 767.98px) {
 .maincol{
 	padding-left: 20vw;
 	padding-right: 20vw;
 }
-.maincol:hover{
-		border-radius: 20px;
+.left{
+	border-radius: 20px 20px 0px 0px
+}
+.right{
+	border-radius: 0px 0px 20px 20px
+}
+.left:hover{
+	border-radius: 20px 20px 0px 0px
+}
+.right:hover{
+	border-radius: 0px 0px 20px 20px;
 }
 }
