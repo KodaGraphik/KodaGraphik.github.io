@@ -1,0 +1,206 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  user-select: none;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navigation {
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+
+.navigation .nav-container {
+  display: none;
+  width: 60vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.navigation .buttons {
+  background-color: #245657;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.navigation a:hover {
+  color: white;
+}
+
+.navigation .navitem {
+  height: 12vh;
+  line-height: 12vh;
+  background-color: #245657;
+}
+
+.navitem:hover {
+  background-color: #59A684;
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.icon-container {
+  transform: translateY(-1px);
+  webkit-clip-path: polygon(100% 0, 100% 74%, 50% 100%, 0 75%, 0 0);
+  clip-path: polygon(100% 0, 100% 74%, 50% 100%, 0 75%, 0 0);
+  background-image: url("/Images/21.png");
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: #245657;
+}
+
+.icon-container img {
+  height: 40px;
+}
+
+.icon-container .icon {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.icon-container .icon:hover {
+  background-color: #245657;
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+}
+
+.hamburger {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  cursor: pointer;
+  z-index: 20;
+  font-family: "Oswald", sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+  background-color: #245657;
+  width: 100vw;
+  height: 50px;
+  font-size: 17px;
+  border-bottom: 3px solid white;
+}
+
+.hamburger .burger {
+  position: absolute;
+  color: white;
+  top: 13px;
+  left: 20px;
+}
+
+.hamburger .menu {
+  font-size: 14px;
+  position: absolute;
+  color: white;
+  top: 16px;
+  left: 40px;
+}
+
+.hamburger .close {
+  font-size: 14px;
+  display: none;
+  position: absolute;
+  color: white;
+  top: 16px;
+  left: 40px;
+}
+
+.circle {
+  margin: 0 auto;
+  padding: 0.5vh 0.5vh;
+  height: 41vh;
+  width: 41vh;
+  background-color: white;
+  -webkit-clip-path: circle(48.8% at 50% 50%);
+  clip-path: circle(48.8% at 50% 50%);
+  transform: translateX(-300px);
+}
+
+.circle img {
+  height: 40vh;
+  width: 40vh;
+}
+
+.bg1 {
+  height: 50vh;
+  width: 100vw;
+  padding-top: 11vh;
+  background-image: url("/Images/21.png");
+  background-size: cover;
+  background-position: bottom;
+  background-color: #FFF4E0;
+  -webkit-clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+  clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+}
+
+/*# sourceMappingURL=main.css.map */
