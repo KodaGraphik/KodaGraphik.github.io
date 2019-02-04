@@ -121,23 +121,23 @@ body {
 .circle {
   margin: 0 auto;
 	padding: 0.5vh 0.5vh;
-	height: 41vh;
-	width: 41vh;
+	height: 31vh;
+	width: 31vh;
 	background-color: white;
 	-webkit-clip-path: circle(48.8% at 50% 50%);
 	clip-path: circle(48.8% at 50% 50%);
 	transform: translateX(-300px);
 
 	img {
-		height: 40vh;
-		width: 40vh;
+		height: 30vh;
+		width: 30vh;
 
 	}
 }
 .bg1{
-	height: 50vh;
+	height: 30vh;
 	width: 100vw;
-	padding-top: 11vh;
+	padding-top: 2vh;
 	background-image: url("/Images/21.png");
 	background-size: cover;
 	background-position: bottom;
