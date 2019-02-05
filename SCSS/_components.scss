@@ -28,7 +28,7 @@ body {
     text-decoration: none;
     color: white;
     font-family: $sansserif;
-    font-size: 14px;
+    font-size: 2vh;
     letter-spacing: 2px;
     font-weight: 100;
   }
@@ -39,7 +39,7 @@ body {
 
   .navitem {
     height: 12vh;
-    line-height: 6vh;
+    padding-top: 5vh;
     background-color: $navitem;
   }
 }
@@ -121,21 +121,21 @@ body {
 .circle {
   margin: 0 auto;
 	padding: 0.5vh 0.5vh;
-	height: 31vh;
-	width: 31vh;
+	height: 21vh;
+	width: 21vh;
 	background-color: white;
 	-webkit-clip-path: circle(48.8% at 50% 50%);
 	clip-path: circle(48.8% at 50% 50%);
 	transform: translateX(-300px);
 
 	img {
-		height: 30vh;
-		width: 30vh;
+		height: 20vh;
+		width: 20vh;
 
 	}
 }
 .bg1{
-	height: 30vh;
+	height: 24vh;
 	width: 100vw;
 	padding-top: 2vh;
 	background-image: url("/Images/21.png");
@@ -147,6 +147,7 @@ body {
 	clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
 }
 .footer{
+  position: relative;
   border-top: 3px solid white;
   padding: 20px 0px 10px 0px;
   text-align: center;
@@ -155,7 +156,7 @@ body {
   line-height: 15px;
   background-color: $navitem;
   z-index: 10;
-}
+
 .col-md-6{
   height: 20px;
 }
@@ -166,6 +167,7 @@ a{
 p{
   padding-top: 20px;
   color: white;
+}
 }
 .footerimage{
 	height: 20vh;
@@ -178,7 +180,4 @@ p{
 	background-color: $background;
   -webkit-clip-path: polygon(50% 0%, 100% 23%, 100% 100%, 0 100%, 0 23%);
   clip-path: polygon(50% 0%, 100% 23%, 100% 100%, 0 100%, 0 23%);
-}
-.bgcontent{
-  height: 100vh;
 }

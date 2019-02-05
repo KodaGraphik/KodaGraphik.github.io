@@ -86,7 +86,7 @@ body {
   text-decoration: none;
   color: white;
   font-family: "Oswald", sans-serif;
-  font-size: 14px;
+  font-size: 2vh;
   letter-spacing: 2px;
   font-weight: 100;
 }
@@ -97,7 +97,7 @@ body {
 
 .navigation .navitem {
   height: 12vh;
-  line-height: 6vh;
+  padding-top: 5vh;
   background-color: #245657;
 }
 
@@ -178,8 +178,8 @@ body {
 .circle {
   margin: 0 auto;
   padding: 0.5vh 0.5vh;
-  height: 31vh;
-  width: 31vh;
+  height: 21vh;
+  width: 21vh;
   background-color: white;
   -webkit-clip-path: circle(48.8% at 50% 50%);
   clip-path: circle(48.8% at 50% 50%);
@@ -187,12 +187,12 @@ body {
 }
 
 .circle img {
-  height: 30vh;
-  width: 30vh;
+  height: 20vh;
+  width: 20vh;
 }
 
 .bg1 {
-  height: 30vh;
+  height: 24vh;
   width: 100vw;
   padding-top: 2vh;
   background-image: url("/Images/21.png");
@@ -204,6 +204,7 @@ body {
 }
 
 .footer {
+  position: relative;
   border-top: 3px solid white;
   padding: 20px 0px 10px 0px;
   text-align: center;
@@ -214,16 +215,16 @@ body {
   z-index: 10;
 }
 
-.col-md-6 {
+.footer .col-md-6 {
   height: 20px;
 }
 
-a {
+.footer a {
   color: white;
   text-decoration: none;
 }
 
-p {
+.footer p {
   padding-top: 20px;
   color: white;
 }
@@ -240,8 +241,92 @@ p {
   clip-path: polygon(50% 0%, 100% 23%, 100% 100%, 0 100%, 0 23%);
 }
 
-.bgcontent {
-  height: 100vh;
+.bg2 {
+  width: 95vw;
+  color: #393E46;
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.bg2 span {
+  letter-spacing: 3px;
+}
+
+.bg2 p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  word-wrap: break-word;
+  line-height: 1.6;
+  padding-top: 10px;
+}
+
+.bg2 img {
+  width: 40px;
+  padding-bottom: 10px;
+}
+
+.mainhead {
+  text-align: center;
+  width: 100vw;
+  padding-top: 30px;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  letter-spacing: 6px;
+  color: #393E46;
+  user-select: none;
+}
+
+.maincol {
+  user-select: none;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 300px;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  cursor: pointer;
+}
+
+.col-md-4:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.col-md-4:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.maincol:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+
+.left {
+  border-radius: 20px 0px 0px 20px;
+}
+
+.right {
+  border-radius: 0px 20px 20px 00px;
+}
+
+@media (max-width: 992px) {
+  .maincol {
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
+  .left {
+    border-radius: 20px 20px 0px 0px;
+  }
+  .right {
+    border-radius: 0px 0px 20px 20px;
+  }
+  .left:hover {
+    border-radius: 20px 20px 0px 0px;
+  }
+  .right:hover {
+    border-radius: 0px 0px 20px 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

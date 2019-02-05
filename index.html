@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="icon"
-      type="image/png"
-      href="/Images/favicon.png">
-<head>
+<link rel="icon" type="image/png" href="/Images/favicon.png">
 
+<head>
   <!-- BROWSER STUFF -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <!-- META TAGS -->
   <meta name="description" content="Kodagraphik">
   <meta name="author" content="Rob Brown">
-
   <!-- TAB TITLE -->
   <title>𝗞𝗢𝗗𝗔𝗚𝗥𝗔𝗣𝗛𝗜𝗞</title>
-
   <!-- BOOTSTRAP CSS -->
   <link rel="stylesheet" href="/CSS/bootstrap.css">
   <!-- SASS COMPILED SHEET -->
@@ -30,13 +25,14 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <!-- Content -->
+
 <body>
   <div class="hamburger">
     <div class="navburgerbuttons" id="hamburger">
-    <div class="burger">☰</div>
-    <div class="menu" id="menu">MENU</div>
-    <div class="close" id="close">CLOSE</div>
-  </div>
+      <div class="burger">☰</div>
+      <div class="menu" id="menu">MENU</div>
+      <div class="close" id="close">CLOSE</div>
+    </div>
   </div>
   <div class="navigation" id="navigation">
     <div class="nav-container" id="navcontainer">
@@ -63,40 +59,75 @@
         </a>
       </div>
       <div class="icon-container row">
-        <div class="icon icon1 col-xs-3"><img src="Images\Behance.png" alt=""></div>
-        <div class="icon icon2 col-xs-3"><img src="Images\Insta.png" alt=""></div>
-        <div class="icon icon3 col-xs-3"><img src="Images\LinkdIn.png" alt=""></div>
-        <div class="icon icon3 col-xs-3"><img src="Images\Twitter.png" alt=""></div>
+        <a href="https://www.behance.net/robertjbrown">
+          <div class="icon icon1 col-xs-3"><img src="Images\Behance.png" alt=""></div>
+        </a>
+        <a href="https://www.instagram.com/kodagraphik/?hl=en">
+          <div class="icon icon2 col-xs-3"><img src="Images\Insta.png" alt=""></div>
+        </a>
+        <a href="https://www.linkedin.com/in/robert-brown-570000142/">
+          <div class="icon icon3 col-xs-3"><img src="Images\LinkdIn.png" alt=""></div>
+        </a>
+        <a href="#twitter">
+          <div class="icon icon3 col-xs-3"><img src="Images\Twitter.png" alt=""></div>
+        </a>
       </div>
     </div>
   </div>
-  <div class="bg1" data-aos="fade-down" data-aos-delay="200" data-aos-easing="ease-in-sine">
-  	<div class="circle" data-aos="zoom-in-up" data-aos-easing="ease-out-quad">
-  		<div class="logo" data-aos="zoom-in" data-aos-easing="ease-out-quad" data-aos-duration="1000" data-aos-delay="300">
-  			<a href="/index.html">
+  <div class="bg1">
+    <div class="circle" data-aos="zoom-in">
+      <div class="logo" data-aos="zoom-in" data-aos-easing="ease-out-quad" data-aos-duration="1000" data-aos-delay="300">
+        <a href="/index.html">
   				<img src="/Images/Logo.png" </img>
   			</a>
-  		</div>
+      </div>
+    </div>
+  </div>
+  <!-- CONTENT -->
+  <div class="mainhead" data-aos="zoom-in" data-aos-delay="800" data-aos-anchor-placement="top-bottom">
+  	HOW CAN WE HELP?
+  </div>
+  <div class="bg2 container row" data-aos="fade-up" data-aos-delay="1000">
+  	<div class="col-md-4 maincol left">
+  		<img src="Images/design.png"><br>
+  		<span>GRAPHIC DESIGN</span>
+  		<p>No matter how big or small the project, we can help bring your vision to reality; from brand identity to digital advertising - with a deep knowledge of modern design, and a track record of real-world industry experience.</p>
+  	</div>
+  	<div class="col-md-4 maincol center">
+  		<img src="Images/web.png"><br>
+  		<span>WEB DESIGN</span>
+  		<p>Using the latest in web technologies, we hand code websites from the ground up using a mobile-first approach, this means no matter what device your users have, they always get the very best experience - and you see the best return on investment.<strong></strong></p>
+  	</div>
+  	<div class="col-md-4 maincol right">
+  		<img src="Images/print.png"><br>
+  		<span>PRINT DESIGN</span>
+  		<p>We understand how important it is to businesses to have the highest quality print collateral, from business cards to catalogs and more, we have experience working with some world leading brands and strive to help bring your project into the real world.</p>
   	</div>
   </div>
-<div class="bgcontent"></div>
 
+  <!-- FOOTER -->
+  <div class="footerimage" data-aos="fade-up" data-aos-delay="400"></div>
+  <div class="footer row">
+    <div class="col-md-6"><a href="https://www.linkedin.com/in/robert-brown-570000142/">Linkedin</a></div>
+    <div class="col-md-6"><a href="https://www.behance.net/robertjbrown">Behance</a></div>
+    <div class="col-md-6"><a href="https://www.instagram.com/kodagraphik/?hl=en">Instagram</a></div>
+    <div class="col-md-6"><a href="">Twitter</a></div>
+    <div class="col-md-12">
+      <p>©2019 Robert Brown</p>
+    </div>
 
-
-<div class="footerimage" data-aos="fade-up" ></div>
-<div class="footer row">
-  <div class="col-md-6"><a href="">Linkedin</a></div>
-  <div class="col-md-6"><a href="">Behance</a></div>
-  <div class="col-md-6"><a href="">Instagram</a></div>
-  <div class="col-md-6"><a href="">Twitter</a></div>
-  <div class="col-md-12"><p>©2019 Robert Brown</p></div>
-
-</div>
+  </div>
   <!-- SCRIPT STUFF  -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
       $("#hamburger").click(function() {
+        $("#navigation").fadeToggle("fast");
+        $("#navcontainer").slideToggle("slow");
+        $("#menu").slideToggle("fast");
+        $("#close").slideToggle("fast");
+      });
+      $("#navigation").click(function() {
         $("#navigation").fadeToggle("fast");
         $("#navcontainer").slideToggle("slow");
         $("#menu").slideToggle("fast");
