@@ -241,6 +241,17 @@ body {
   clip-path: polygon(50% 0%, 100% 23%, 100% 100%, 0 100%, 0 23%);
 }
 
+.mainhead {
+  text-align: center;
+  width: 100vw;
+  padding-top: 30px;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  letter-spacing: 6px;
+  color: #393E46;
+  user-select: none;
+}
+
 .bg2 {
   width: 95vw;
   color: #393E46;
@@ -248,7 +259,6 @@ body {
   font-family: "Oswald", sans-serif;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 100px;
 }
 
 .bg2 span {
@@ -268,7 +278,88 @@ body {
   padding-bottom: 10px;
 }
 
-.mainhead {
+.bg2 .maincol {
+  user-select: none;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 300px;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  cursor: pointer;
+}
+
+.bg2 .center {
+  background-image: url(/Images/design.gif);
+  background-size: cover;
+}
+
+.bg2 .col-md-4:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.bg2 .col-md-4:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.bg2 .maincol:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+
+.bg2 .left {
+  border-radius: 20px 0px 0px 0px;
+}
+
+.bg2 .right {
+  border-radius: 0px 20px 0px 00px;
+}
+
+@media (max-width: 992px) {
+  .bg2 .maincol {
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
+  .bg2 .left {
+    border-radius: 20px 20px 0px 0px;
+  }
+  .bg2 .right {
+    border-radius: 0px 0px 0px 0px;
+  }
+  .bg2 .left:hover {
+    border-radius: 20px 20px 0px 0px;
+  }
+  .bg2 .right:hover {
+    border-radius: 0px 0px 0px 0px;
+  }
+}
+
+.bg3 {
+  width: 95vw;
+  color: #393E46;
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bg3 span {
+  letter-spacing: 3px;
+}
+
+.bg3 p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  word-wrap: break-word;
+  line-height: 1.6;
+  padding-top: 10px;
+}
+
+.bg3 img {
+  width: 40px;
+  padding-bottom: 10px;
+}
+
+.bg3 .mainhead {
   text-align: center;
   width: 100vw;
   padding-top: 30px;
@@ -279,7 +370,7 @@ body {
   user-select: none;
 }
 
-.maincol {
+.bg3 .maincol {
   user-select: none;
   padding-left: 50px;
   padding-right: 50px;
@@ -289,42 +380,42 @@ body {
   cursor: pointer;
 }
 
-.col-md-4:nth-child(odd) {
+.bg3 .col-md-4:nth-child(even) {
   background-color: rgba(0, 0, 0, 0.12);
 }
 
-.col-md-4:nth-child(even) {
+.bg3 .col-md-4:nth-child(odd) {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.maincol:hover {
+.bg3 .maincol:hover {
   background-color: rgba(0, 0, 0, 0.15);
   transition: 0.5s;
 }
 
-.left {
-  border-radius: 20px 0px 0px 20px;
+.bg3 .left {
+  border-radius: 0px 0px 0px 20px;
 }
 
-.right {
-  border-radius: 0px 20px 20px 00px;
+.bg3 .right {
+  border-radius: 0px 0px 20px 00px;
 }
 
 @media (max-width: 992px) {
-  .maincol {
+  .bg3 .maincol {
     padding-left: 20vw;
     padding-right: 20vw;
   }
-  .left {
-    border-radius: 20px 20px 0px 0px;
+  .bg3 .left {
+    border-radius: 0px 0px 0px 0px;
   }
-  .right {
+  .bg3 .right {
     border-radius: 0px 0px 20px 20px;
   }
-  .left:hover {
-    border-radius: 20px 20px 0px 0px;
+  .bg3 .left:hover {
+    border-radius: 0px 0px 0px 0px;
   }
-  .right:hover {
+  .bg3 .right:hover {
     border-radius: 0px 0px 20px 20px;
   }
 }
