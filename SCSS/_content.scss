@@ -43,6 +43,7 @@
 .center{
   background-image: url(/Images/design.gif);
   background-size: cover;
+  background-position: center;
 }
 
 .col-md-4:nth-child(odd){
@@ -87,7 +88,7 @@ background-color: rgba(#000, 0.12);
 	font-size: 18px;
 	font-family: $sansserif;
 	text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 	span{
 		letter-spacing: 3px;
 	}
