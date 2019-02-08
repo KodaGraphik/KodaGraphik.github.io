@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
   <link rel="icon" type="image/png" href="/Images/favicon.png">
   <!-- BROWSER STUFF -->
@@ -133,14 +131,14 @@
   <script>
     $(document).ready(function() {
       $("#hamburger").click(function() {
-        $("#navigation").fadeToggle("fast");
-        $("#navcontainer").slideToggle("slow");
+        $("#navigation").toggle("fast");
+        $("#navcontainer").toggle("slow");
         $("#menu").slideToggle("fast");
         $("#close").slideToggle("fast");
       });
       $("#navigation").click(function() {
-        $("#navigation").fadeToggle("fast");
-        $("#navcontainer").slideToggle("slow");
+        $("#navigation").hide("fast");
+        $("#navcontainer").hide("slow");
         $("#menu").slideToggle("fast");
         $("#close").slideToggle("fast");
       });
