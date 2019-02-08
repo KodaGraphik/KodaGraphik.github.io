@@ -130,36 +130,52 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
-      var isAnimating = false;
-$('#hamburger').click(function() {
-    if (isAnimating) {
-        return;
-    }
-
-    isAnimating = true;
+      var isAnimating
+      var isAnimating2
+      $("#hamburger").click(function() {
+          if (isAnimating) {
+              return;
+          }
+          isAnimating = true;
+          $("#navigation").fadeToggle("fast");
+          $("#navcontainer").slideToggle("slow");
+          $("#menu").slideToggle("fast");
+          $("#close").slideToggle("fast");
+          setTimeout(function() {
+              isAnimating = false;
+          }, 1500);
+      });
+      $("#navigation").click(function() {
+          if (isAnimating2) {
+              return;
+          }
+          isAnimating = true;
+          $("#navigation").fadeOut("fast");
+          $("#navcontainer").slideUp("slow");
+          $("#menu").slideToggle("fast");
+          $("#close").slideToggle("fast");
+          setTimeout(function() {
+              isAnimating2 = false;
+          }, 1500);
+      });
+    });
+  </script>
+  <!-- <script>
+    $(document).ready(function() {
       $("#hamburger").click(function() {
         $("#navigation").fadeToggle("fast");
         $("#navcontainer").slideToggle("slow");
         $("#menu").slideToggle("fast");
         $("#close").slideToggle("fast");
-        setTimeout(function() {
-            isAnimating = false;
-        }, 2000);
-    });
       });
-      $("#navigation").slideUp(function() {
-        $("#navigation").slideUp("fast");
+      $("#navigation").click(function() {
+        $("#navigation").fadeToggle("fast");
         $("#navcontainer").slideToggle("slow");
         $("#menu").slideToggle("fast");
         $("#close").slideToggle("fast");
       });
-
-    // Start animation. Add a css class or do this by javascript or whatever
-
-    // Assuming the animation duration is 2 seconds
-
     });
-  </script>
+  </script> -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
