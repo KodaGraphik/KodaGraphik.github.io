@@ -39,7 +39,6 @@ body {
   user-select: none;
   outline: none;
   font-family: Oswald;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   border: 1px solid silver;
   font-weight: 700;
@@ -49,7 +48,7 @@ body {
   font-size: 13px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .btn {
@@ -230,20 +229,20 @@ body {
 }
 
 .navbg .btn {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   padding: 1.2em 1em;
-  background-color: #213640;
+  background-color: #428D8A;
   border: none;
   margin: 0;
   width: 70vw;
   overflow: hidden;
-  transition: 0.2s ease-in-out;
+  transition: 0.15s ease-in-out;
   color: whitesmoke;
 }
 
 .navbg .btn:hover {
   background-image: url(/Images/21.png);
-  background-blend-mode: exclusion;
+  background-color: #213640;
+  background-blend-mode: saturation;
   background-size: contain;
   background-size: 100vw;
   border-radius: 5px;
