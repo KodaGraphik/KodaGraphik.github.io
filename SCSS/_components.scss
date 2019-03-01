@@ -85,7 +85,8 @@ background-color: white;
   -webkit-clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
   clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
   background-image: url(/Images/21.png);
-  background-size: cover;
+  background-blend-mode: saturation;
+  background-color: $color4;
   img{
     height: 22vh;
     width: 22vh;
@@ -162,6 +163,9 @@ color: white;
     letter-spacing: 3px;
     text-align: center;
     font-weight: 200;
+    b{
+      color: seagreen;
+    }
   }
 
   hr {

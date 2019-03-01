@@ -91,7 +91,8 @@ body {
   -webkit-clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
   clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
   background-image: url(/Images/21.png);
-  background-size: cover;
+  background-blend-mode: saturation;
+  background-color: #428D8A;
 }
 
 .header img {
@@ -182,6 +183,10 @@ body {
   letter-spacing: 3px;
   text-align: center;
   font-weight: 200;
+}
+
+.topbox .lead b {
+  color: seagreen;
 }
 
 .topbox hr {
