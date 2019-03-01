@@ -103,7 +103,50 @@ background-color: white;
 height: 60vh;
 background-color: $color4;
 color: white;
+background-image: url(/Images/21.png);
+background-blend-mode: saturation;
 }
+.third{
+  z-index: -10;
+height: 60vh;
+background-image: url(/Images/21.png);
+background-blend-mode: saturation;
+background-color: $color4;
+color: white;
+}
+.images{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+  clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+  }
+  .img{
+    margin: 10px;
+    height: 20vh;
+    width: 20vw;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
+  }
+  .image1{
+    background-image: url(//picsum.photos/400/400);
+  }
+  .image2{
+    background-image: url(//picsum.photos/400/300);
+  }
+  .image3{
+    background-image: url(//picsum.photos/400/500);
+  }
+  .image4{
+    background-image: url(//picsum.photos/900/400);
+  }
+  .image5{
+    background-image: url(//picsum.photos/700/300);
+  }
+  .image6{
+    background-image: url(//picsum.photos/910/500);
+  }
 .topbox {
   display: flex;
   flex-direction: column;
