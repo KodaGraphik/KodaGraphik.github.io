@@ -5,6 +5,8 @@ html {
 body {
   background-color: whitesmoke;
   height: 200vh;
+  margin: 0px;
+  padding: 0px;
 }
 
 * {
@@ -108,7 +110,7 @@ body {
 .second {
   z-index: -10;
   height: 60vh;
-  background-color: #213640;
+  background-color: #428D8A;
   color: white;
 }
 
@@ -192,11 +194,6 @@ body {
 .navbg .btn:hover::before {
   content: "-";
   color: white;
-}
-
-.grey {
-  transition: all 0.5s;
-  filter: blur(3px);
 }
 
 /*# sourceMappingURL=main.css.map */

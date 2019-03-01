@@ -104,7 +104,7 @@ background-color: white;
 .second{
   z-index: -10;
 height: 60vh;
-background-color: $color5;
+background-color: $color4;
 color: white;
 }
 .topbox {
@@ -190,6 +190,6 @@ color: white;
 }
 
 .grey {
-  transition: all 0.5s;
-  filter:blur(3px);
+  // transition: all 0.5s;
+  // filter:blur(3px);
 }
