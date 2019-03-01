@@ -1,9 +1,14 @@
+html{
+  overflow-x: hidden;
+}
 body {
   background-color: whitesmoke;
   height: 200vh;
 }
 *{
   user-select: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .hamburger {
