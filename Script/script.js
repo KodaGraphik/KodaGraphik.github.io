@@ -1,10 +1,7 @@
-<script>
-  $(document).ready(function() {
-    $("#hamburger").click(function() {
-      $("#navigation").fadeToggle("fast");
-      $("#navcontainer").slideToggle("slow");
-      $("#menu").slideToggle("fast");
-      $("#close").slideToggle("fast");
-    });
+$(document).ready(function() {
+  $('.navbg').hide(0)
+  $('.hamburger').click(function(){
+    $('.navbg').fadeToggle(300);
+    $('.container-fluid').delay(300).toggleClass('grey');
   });
-</script>
+});

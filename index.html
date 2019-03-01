@@ -1,186 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="icon" type="image/png" href="/Images/favicon.png">
-  <!-- BROWSER STUFF -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- META TAGS -->
-  <meta name="description" content="Kodagraphik">
-  <meta name="author" content="Rob Brown">
-  <!-- TAB TITLE -->
-  <title>𝗞𝗢𝗗𝗔𝗚𝗥𝗔𝗣𝗛𝗜𝗞</title>
-  <!-- BOOTSTRAP CSS -->
-  <link rel="stylesheet" href="/CSS/bootstrap.css">
-  <!-- SASS COMPILED SHEET -->
-  <link rel="stylesheet" href="/SCSS/main.css">
-  <!-- OTHER FOUNDATIONS  -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <!-- GOOGLE FONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400|Playfair+Display:400,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<head>
+
+	<!-- BROWSER STUFF -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- META TAGS -->
+	<meta name="description" content="Kodagraphik">
+	<meta name="author" content="Rob Brown">
+	<!-- TAB TITLE -->
+	<title>KODAGRAPHK</title>
+	<!-- BOOTSTRAP CSS -->
+	<link rel="stylesheet" href="/CSS/Bootstrap.css">
+	<!-- SASS COMPILED SHEET -->
+	<link rel="stylesheet" href="/SCSS/main.css">
+	<!-- OTHER FOUNDATIONS  -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald:200,400|Playfair+Display:400,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<!-- IE10 VIEWPORT FIX -->
+	<script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 </head>
 <!-- Content -->
-
 <body>
-  <div class="hamburger">
-    <div class="navburgerbuttons" id="hamburger">
-      <div class="burger">☰</div>
-      <div class="menu" id="menu">MENU</div>
-      <div class="close" id="close">CLOSE</div>
-    </div>
-  </div>
-  <div class="navigation" id="navigation">
-    <div class="nav-container" id="navcontainer">
-      <div class="buttons row">
-        <a href="#portfolio">
-          <div class="navitem col-md-12">
-            <p>PORTFOLIO</p>
-          </div>
-        </a>
-        <a href="#services">
-          <div class="navitem col-md-12">
-            <p>WHAT I DO</p>
-          </div>
-        </a>
-        <a href="#skills">
-          <div class="navitem col-md-12">
-            <p>SKILLS</p>
-          </div>
-        </a>
-        <a href="#contact">
-          <div class="navitem col-md-12">
-            <p>CONTACT ME</p>
-          </div>
-        </a>
-      </div>
-      <div class="icon-container row">
-        <a href="https://www.behance.net/robertjbrown">
-          <div class="icon icon1 col-xs-3"><img src="Images\Behance.png" alt=""></div>
-        </a>
-        <a href="https://www.instagram.com/kodagraphik/?hl=en">
-          <div class="icon icon2 col-xs-3"><img src="Images\Insta.png" alt=""></div>
-        </a>
-        <a href="https://www.linkedin.com/in/robert-brown-570000142/">
-          <div class="icon icon3 col-xs-3"><img src="Images\LinkdIn.png" alt=""></div>
-        </a>
-        <a href="#twitter">
-          <div class="icon icon3 col-xs-3"><img src="Images\Twitter.png" alt=""></div>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="bg1">
-    <div class="circle" data-aos="zoom-in">
-      <div class="logo" data-aos="zoom-in" data-aos-easing="ease-out-quad" data-aos-duration="500" data-aos-delay="300">
-        <a href="/index.html">
-  				<img src="/Images/Logo.png" </img>
-  			</a>
-      </div>
-    </div>
-  </div>
-  <!-- CONTENT -->
-  <div class="mainhead" data-aos="zoom-in" data-aos-delay="800" data-aos-anchor-placement="top-bottom">
-  	HOW CAN I HELP?
-  </div>
-  <div class="bg2 container row" data-aos="fade-up" data-aos-delay="500">
-  	<div class="col-md-4 maincol left">
-  		<img src="Images/design.png"><br>
-  		<span>GRAPHIC DESIGN</span>
-  		<p>No matter how big or small the project, we can help bring your vision to reality; from brand identity to digital advertising - with a deep knowledge of modern design, and a track record of real-world industry experience.</p>
-  	</div>
-  	<div class="col-md-4 maincol center">
+	<div class="navbg">
+		<button class="btn btn-white btn-nav">
+			PORTFOLIO
+		</button>
+		<button class="btn btn-white btn-nav">
+			SERVICES
+		</button>
+		<button class="btn btn-white btn-nav">
+			ABOUT
+		</button>
+		<button class="btn btn-white btn-nav">
+			CONTACT ME
+		</button>
+	</div>
+	<div class="hamburger"data-aos="slide-down" data-aos-delay="1000">
+		<span>☰</span>
+	</div>
+	<div class="container-fluid header" data-aos="slide-down"><img src="/Images/Logo.png" alt=""></div>
+	<div class="container-fluid topbox first" data-aos="fade-left" data-aos-duration="300">
+		<h4 class="lead heading" data-aos="fade-left" data-aos-delay="300">
+			DO YOU NEED A <br><strong>GRAPHIC DESIGNER?</strong>
+		</h4>
+		<button class="btn btn-grey" data-aos="fade-left" data-aos-delay="300">CLICK HERE TO SEE<br>OUR WORK</button>
+	</div>
+	<div class="container-fluid topbox second" data-aos="fade-down" data-aos-duration="300" data-aos-delay="500">
+		<h4 class="lead heading" data-aos="fade-right" data-aos-delay="300">
+			HOW ABOUT A<br><strong>WEB DESIGNER?</strong>
+		</h4>
+		<button class="btn btn-white" data-aos="fade-right" data-aos-delay="300">CLICK HERE TO SEE<br>OUR SERVICES</button>
+	</div>
 
-  	</div>
-  	<div class="col-md-4 maincol right">
-      <img src="Images/web.png"><br>
-  		<span>WEB DESIGN</span>
-  		<p>Using the latest in web technologies, we hand code websites from the ground up using a mobile-first approach, this means no matter what device your users have, they always get the very best experience - and you see the best return on investment.</p>
-  	</div>
-  </div>
-  <div class="bg3 container row" data-aos="fade-up" data-aos-delay="550" data-aos-offset="-300">
-    <div class="col-md-4 maincol left">
-    </div>
-    <div class="col-md-4 maincol center">
-      <img src="Images/print.png"><br>
-      <span>PRINT DESIGN</span>
-      <p>We understand how important it is to businesses to have the highest quality print collateral, from business cards to catalogs and more, we have experience working with some world leading brands and strive to help bring your project into the real world.</p>
-    </div>
-    <div class="col-md-4 maincol right">
-
-    </div>
-  </div>
-
-  <!-- FOOTER -->
-  <div class="footerimage" data-aos="fade-up" data-aos-delay="0"></div>
-  <div class="footer row">
-    <div class="col-md-6"><a href="https://www.linkedin.com/in/robert-brown-570000142/">Linkedin</a></div>
-    <div class="col-md-6"><a href="https://www.behance.net/robertjbrown">Behance</a></div>
-    <div class="col-md-6"><a href="https://www.instagram.com/kodagraphik/?hl=en">Instagram</a></div>
-    <div class="col-md-6"><a href="">Twitter</a></div>
-    <div class="col-md-12">
-      <p>©2019 Robert Brown</p>
-    </div>
-
-  </div>
-  <!-- SCRIPT STUFF  -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      var isAnimating
-      var isAnimating2
-      $("#hamburger").click(function() {
-          if (isAnimating) {
-              return;
-          }
-          isAnimating = true;
-          $("#navigation").fadeToggle("fast");
-          $("#navcontainer").slideToggle("slow");
-          $("#menu").slideToggle("fast");
-          $("#close").slideToggle("fast");
-          setTimeout(function() {
-              isAnimating = false;
-          }, 400);
-      });
-      $("#navigation").click(function() {
-          if (isAnimating2) {
-              return;
-          }
-          isAnimating = true;
-          $("#navigation").fadeOut("fast");
-          $("#navcontainer").slideUp("slow");
-          $("#menu").slideToggle("fast");
-          $("#close").slideToggle("fast");
-          setTimeout(function() {
-              isAnimating2 = false;
-          }, 400);
-      });
-    });
-  </script>
-  <!-- <script>
-    $(document).ready(function() {
-      $("#hamburger").click(function() {
-        $("#navigation").fadeToggle("fast");
-        $("#navcontainer").slideToggle("slow");
-        $("#menu").slideToggle("fast");
-        $("#close").slideToggle("fast");
-      });
-      $("#navigation").click(function() {
-        $("#navigation").fadeToggle("fast");
-        $("#navcontainer").slideToggle("slow");
-        $("#menu").slideToggle("fast");
-        $("#close").slideToggle("fast");
-      });
-    });
-  </script> -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
+	<!-- SCRIPT STUFF  -->
+	<script src="Script/jquery-3.3.1.js" charset="utf-8"></script>
+	<script src="Script/script.js" charset="utf-8"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 
 </html>
