@@ -92,7 +92,7 @@ body {
   min-width: 300px;
   width: 40vw;
   height: 10vh;
-  line-height: 7vh;
+  line-height: 10vh;
   color: black;
   font-size: 1.4rem;
   transition: all 100ms cubic-bezier(0.61, 0.025, 0.4, 0.98);
