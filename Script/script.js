@@ -1,7 +1,6 @@
 $(document).ready(function() {
-  $('.navbg').hide(0)
-  $('.hamburger').click(function(){
-    $('.navbg').fadeToggle(200);
-    $('.container-fluid').delay(200).toggleClass('grey');
+  $('.hamburger').click(function() {
+    $('.nav').fadeToggle(200);
+    // $('.hamburger--item').text('⤬')
   });
 });

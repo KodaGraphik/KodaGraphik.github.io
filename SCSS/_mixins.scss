@@ -1,0 +1,9 @@
+@mixin hline{
+  font-family: Oswald;
+  text-transform: uppercase;
+  color: white;
+}
+@mixin reset{
+  padding: 0px;
+  margin: 0px;
+}

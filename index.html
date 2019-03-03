@@ -19,75 +19,59 @@
 	<!-- OTHER FOUNDATIONS  -->
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<!-- GOOGLE FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=Oswald:200,400|Playfair+Display:400,900" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<!-- IE10 VIEWPORT FIX -->
 	<script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-</head>
-<!-- Content -->
-
-<body>
-	<div class="navbg">
-		<button class="btn btn-white btn-nav">
-			PORTFOLIO
-		</button>
-		<button class="btn btn-white btn-nav">
-			SERVICES
-		</button>
-		<button class="btn btn-white btn-nav">
-			ABOUT
-		</button>
-		<button class="btn btn-white btn-nav">
-			CONTACT ME
-		</button>
-	</div>
-	<div class="hamburger" data-aos="slide-down" data-aos-delay="1000">
-		<span>☰</span>
-	</div>
-	<div class="container-fluid header" data-aos="slide-down">
-		<img src="/Images/Logo.png" alt="">
-	</div>
-
-	<!-- FIRST SECTION - GRAPHIC DESIGN-->
-	<div class="container-fluid topbox first" data-aos="fade-up" data-aos-duration="300">
-		<h4 class="lead heading" data-aos="fade-left" data-aos-delay="300">
-			DO YOU NEED A <br><b>GRAPHIC DESIGNER?</b>
-		</h4>
-		<button class="btn btn-grey" data-aos="fade-left" data-aos-delay="300">CLICK HERE TO SEE<br>OUR WORK</button>
-	</div>
-
-	<!-- SECOND SECTION - GRAPHICS IMAGES -->
-	<div class="container-fluid second images" data-aos="fade-up" data-aos-duration="300" data-aos-delay="500">
-		<div class="img image1" data-aos="fade-right" data-aos-delay="50"></div>
-		<div class="img image2" data-aos="fade-right"data-aos-delay="100"></div>
-		<div class="img image3" data-aos="fade-right"data-aos-delay="150"></div>
-	</div>
-
-	<!-- THIRD SECTION - WEB DESIGN -->
-	<div class="container-fluid topbox first" data-aos="fade-up" data-aos-duration="300" data-aos-delay="500">
-		<h4 class="lead heading" data-aos="fade-left" data-aos-delay="300">
-			HOW ABOUT A<br><b>WEB DESIGNER?</b>
-		</h4>
-		<button class="btn btn-grey" data-aos="fade-left" data-aos-delay="300">CLICK HERE TO SEE<br>OUR SERVICES</button>
-	</div>
-		<!-- FOURTH SECTION - WEB IMAGES -->
-		<div class="container-fluid third images" data-aos="fade-up" data-aos-duration="300" data-aos-delay="500">
-			<div class="img image4" data-aos="fade-right" data-aos-delay="50"></div>
-			<div class="img image5" data-aos="fade-right"data-aos-delay="100"></div>
-			<div class="img image6" data-aos="fade-right"data-aos-delay="150"></div>
-		</div>
-
-
-		<div class="container-fluid topbox first" data-aos="fade-up" data-aos-duration="300" data-aos-delay="500">
-		</div>
-
-
-
-	<!-- SCRIPT STUFF  -->
 	<script src="Script/jquery-3.3.1.js" charset="utf-8"></script>
 	<script src="Script/script.js" charset="utf-8"></script>
+</head>
+<!-- Content -->
+<body>
+
+<!-- HAMBURGER COMPONENT -->
+<div class="hamburger">
+  <div class="hamburger--container">
+    <div class="hamburger--item">☰</div>
+  </div>
+</div>
+<!-- HAMBURGER END -->
+
+<!-- NAV COMPONENT -->
+<div class="nav">
+  <div class="nav--bg"></div>
+  <div class="nav--container">
+    <div class="nav--itemcontainer">
+      <a href="#">
+        <div class="nav--item nav--item_top">
+          Portfolio
+        </div>
+      </a>
+      <a href="#">
+        <div class="nav--item ">
+          Services
+        </div>
+      </a>
+      <a href="#">
+        <div class="nav--item">
+          About
+        </div>
+      </a>
+      <a href="#">
+        <div class="nav--item nav--item_bottom">
+          Contact Us
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- NAV END -->
+<div class="main">
+<div class="tophero">
+	<div class="tophero--logo"></div>
+</div>
+</div>
+<!-- TOPBAR -->
+	<!-- SCRIPT STUFF  -->
+
 	<script>
 		AOS.init();
 	</script>

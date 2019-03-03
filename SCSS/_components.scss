@@ -1,255 +1,139 @@
-html{
-  overflow-x: hidden;
-}
 body {
-  background-color: whitesmoke;
-  height: 200vh;
-  margin: 0px;
-  padding: 0px;
+  background-image: url(/Images/Noise.png);
+  background-size: 400px;
+  margin: 0;
+  padding: 0;
 }
-*{
-  user-select: none;
-  margin: 0px;
-  padding: 0px;
-}
+// HAMBURUGER COMPONENT --------------------------- //
 
-.hamburger {
-  position: fixed;
-  z-index: 300;
-  padding: 0.8em 1em;
+.hamburger{
+  cursor: pointer;
+  @include hline;
+  position: absolute;
   left: 20px;
   top: 0px;
-  color: darkslategray;
-  -webkit-clip-path: polygon(0 80%, 0 0, 100% 0, 100% 80%, 50% 100%);
-clip-path: polygon(0 80%, 0 0, 100% 0, 100% 80%, 50% 100%);
-background-color: white;
+  font-size: 1.6em;
+  z-index: 2500;
+
+  &--container{
+    transition: transform 0.2s ease-in-out;
+    color: black;
+    padding: 0.5em 0.5em;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 0, 100% 0, 100% 63%, 50% 100%, 0 63%);
+  }
+  &--item{
+    margin-top: -5px;
+  }
+  &:hover &--container{
+    transform: scale(1.1);
+  }
+  &:active &--container{
+    transform: scale(1);
+  }
+}
+
+// END OF HAMBURUGER COMPONENT --------------------------- //
+
+// NAVIGATION COMPONENT --------------------------- //
+.nav {
+  display: none;
+  @include hline;
+  @include reset;
+
+  a {
+    text-decoration: none;
+  }
+
+  &--bg {
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  &--itemcontainer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    @include reset;
+  }
+
+  &--item {
     cursor: pointer;
-
-  span {
-    font-size: 1.6em;
-    user-select: none;
-    font-weight: 700;
-    font-family: $sansserif;
-  }
-}
-
-.btn, .btn-lg{
-  user-select: none;
-  outline: none;
-  font-family: Oswald;
-  border-radius: 5px;
-  border: 1px solid silver;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin: 10px 20px;
-  background-color: transparent;
-  font-size: 13px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all 0.15s ease-in-out;
-}
-.btn{
-    padding: 10px 40px;
-    font-weight: 100;
-}
-.btn-lg {
-  padding: 20px 40px;
-  font-size: 16px;
-  font-weight: 100;
-}
-.btn:hover, .btn-lg:hover{
-  background-color: #e2e2e2;
-}
-
-/* BUTTON COLOURS */
-
-.btn-white{
-  background-color: #fff;
-}
-.btn-grey {
-  background-color: darkslategray;
-  color: white;
-}
-.btn-grey:hover {
-  background-color: black;
-  color: white;
-}
-
-.header{
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 20vh;
-  -webkit-clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
-  clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
-  background-image: url(/Images/21.png);
-  background-blend-mode: saturation;
-  background-position: top;
-  background-color: firebrick;
-  background-size: cover;
-  img{
-    height: 22vh;
-    width: 22vh;
-  }
-}
-.first {
-  height: 50vh;
-  color: darkslategrey;
-  z-index: 20;
-  background-color: whitesmoke;
-  background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=f5f5f500&noise=626262&density=8&opacity=20);
-}
-.second{
-  z-index: -10;
-height: 60vh;
-background-color: $color5;
-color: white;
-background-image: url(/Images/21.png);
-background-blend-mode: saturation;
-background-position: middle;
-background-size: cover;
-}
-.third{
-  z-index: -10;
-height: 60vh;
-background-image: url(/Images/21.png);
-background-blend-mode: saturation;
-background-position: bottom;
-background-size: cover;
-background-color: $color3;
-color: white;
-}
-.images{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
-  clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
-  }
-  .img{
-    margin: 10px;
-    height: 25vh;
-    width: 22vw;
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.7);
-    cursor: pointer;
-  }
-  .image1{
-    background-image: url(//picsum.photos/g/403/400);
-    background-position: center;
-  }
-  .image2{
-    background-image: url(//picsum.photos/g/400/300);
-    background-position: center;
-  }
-  .image3{
-    background-image: url(//picsum.photos/g/600/910);
-    background-position: center;
-  }
-  .image4{
-    background-image: url(//picsum.photos/g/900/400);
-    background-position: center;
-  }
-  .image5{
-    background-image: url(//picsum.photos/g/700/300);
-    background-position: center;
-  }
-  .image6{
-    background-image: url(//picsum.photos/g/900/500);
-    background-position: center;
-  }
-.topbox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  -webkit-clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
-  clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
-
-  .lead {
-    font-family: $sansserif;
-    font-size: 2.2em;
-    line-height: 1.4;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+    padding: 10px 0;
+    background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
     text-align: center;
-    font-weight: 200;
-    b{
-      color: teal;
-      letter-spacing: 0px;
-      font-weight: 400;
+    background-color: #fff;
+    min-width: 300px;
+    width: 40vw;
+    height: 10vh;
+    line-height: 7vh;
+    color: black;
+    font-size: 1.4rem;
+    transition: all 100ms cubic-bezier(0.610, 0.025, 0.400, 0.980);
+
+    &_top {
+      border-radius: 5px 5px 0 0;
+    }
+
+    &_bottom {
+      border-radius: 0 0 5px 5px;
     }
   }
 
-  hr {
-    height: 1px;
-    width: 60%;
-    margin: 11px 0;
+  &--item:hover {
+    background: linear-gradient (to bottom, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
+    box-shadow: 0 0 30px 4px rgba(0,0,0,0.2);
+    transform: scale(1.1, 1.1);
+    font-size: 1.7rem;
+    border-radius: 0;
   }
 
-  p {
-    text-align: justify;
-    width: 60%;
-    font-size: 14px;
-    line-height: 1.75;
+  &--item:hover::after,
+  &--item:hover::before {
+    content: " - ";
+  }
+
+  &--item:active {
+    transform: scale(1.07,1.07);
+    border-radius: 10px;
+    background: linear-gradient(145deg, #ffffff 0%,#e5e5e5 100%);
   }
 }
 
-.navbg {
-  position: fixed;
-  z-index: 200;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(#000, 0.9);
+// END OF NAVIGATION COMPONENT --------------------------- //
+
+// TOP HEROCOMPONENT --------------------------- //
+.main{
+  position: relative;
+  z-index: -200;
+}
+.tophero{
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  button {
-    font-family: Oswald;
-    font-size: 22px;
-    font-weight: 100;
-    letter-spacing: 2px;
-    user-select: none;
-    cursor: pointer;
-    outline: none;
-    border-radius: 0px;
-  }
-  // BUTTON STYLE
+  align-items: center;
+  height: 20vh;
+  width: 100vw;
+  background-image: url(/Images/BG.png);
+  background-size: cover;
+  -webkit-clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+  clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
 
-  .btn {
-    padding: 1.2em 1em;
-    background-color: $color4;
-    border: none;
-    margin: 0;
-    width: 70vw;
-    overflow: hidden;
-    transition: 0.15s ease-in-out;
-    color: whitesmoke;
-  }
-
-  .btn:hover {
-    background-image: url(/Images/21.png);
-    background-color: $color4;
-    background-blend-mode: saturation;
-    background-size: cover;
-    background-size: 100vw;
-    border-radius: 5px;
-    transform: scale(1.05, 1.05);
-    font-size: 28px;
-    font-weight: 700;
-  }
-
-  .btn:hover::after,
-  .btn:hover::before {
-    content: "-";
-    color:white;
+  &--logo{
+  transform: translateY(10px);
+  background-image: url(/Images/Logo.png);
+  background-size: contain;
+  height: 22vh;
+  width: 22vh;
   }
 }
 
-.grey {
-  // transition: all 0.5s;
-  // filter:blur(3px);
-}
+// END OF HERO COMPONENT --------------------------- //
