@@ -1,58 +1,65 @@
 body {
-  background-image: url(/Images/Noise.png);
+  background-image: url("/Images/Noise.png");
   background-size: 400px;
   margin: 0;
   padding: 0;
 }
 // HAMBURUGER COMPONENT --------------------------- //
 
-.hamburger{
+.hamburger {
   cursor: pointer;
   @include hline;
-  position: absolute;
+  position: fixed;
   left: 20px;
-  top: 0px;
+  top: 0;
   font-size: 1.6em;
   z-index: 2500;
 
-  &--container, &--closecontainer{
+  &--closecontainer,
+  &--container {
     transition: transform 0.2s ease-in-out;
     color: black;
-    padding: 0.5em 0.5em;
+    padding: 0.5em;
     background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     clip-path: polygon(0 0, 100% 0, 100% 63%, 50% 100%, 0 63%);
   }
-  // &--closecontainer{
-  //   display: none;
-  // }
-  &--item{
+
+  &--closecontainer {
+    display: none;
+  }
+
+  &--item {
     margin-top: -5px;
   }
-  &--closeitem{
+
+  &--closeitem {
     margin-top: -5px;
     font-size: 0.7em;
     padding: 0.3em 0.2em;
   }
-  &:hover &--container{
+
+  &:hover &--container {
     transform: scale(1.1);
   }
-  &:active &--container{
+
+  &:active &--container {
     transform: scale(1);
   }
-  &:hover &--closecontainer{
+
+  &:hover &--closecontainer {
     transform: scale(1.1);
   }
-  &:active &--closecontainer{
+
+  &:active &--closecontainer {
     transform: scale(1);
   }
 }
-
 // END OF HAMBURUGER COMPONENT --------------------------- //
-
 // NAVIGATION COMPONENT --------------------------- //
+
 .nav {
   display: none;
   @include hline;
@@ -64,11 +71,13 @@ body {
 
   &--bg {
     background-color: rgba(0,0,0,0.8);
-    position: absolute;
+    box-shadow: inset 0 0 50vw 0 rgba(0,0,0,0.9);
+    position: fixed;
     width: 100vw;
     height: 100vh;
   }
-  &--container{
+
+  &--container {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -125,33 +134,59 @@ body {
     background: linear-gradient(145deg, #ffffff 0%,#e5e5e5 100%);
   }
 }
-
 // END OF NAVIGATION COMPONENT --------------------------- //
-
 // TOP HEROCOMPONENT --------------------------- //
-.main{
+
+.main {
   position: relative;
   z-index: -200;
 }
-.tophero{
+
+.tophero {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 20vh;
   width: 100vw;
-  background-image: url(/Images/BG2.png);
+  // background-color: MEDIUMSPRINGGREEN;
+  background-image: url("/Images/BG2.png");
+  background-blend-mode: luminosity;
   background-size: cover;
   background-position: bottom;
   -webkit-clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
   clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
 
-  &--logo{
-  transform: translateY(10px);
-  background-image: url(/Images/Logo.png);
-  background-size: contain;
-  height: 22vh;
-  width: 22vh;
+  &--logo {
+    transform: translateY(10px);
+    background-image: url("/Images/Logo.png");
+    background-size: contain;
+    height: 22vh;
+    width: 22vh;
   }
 }
-
 // END OF HERO COMPONENT --------------------------- //
+// CONTENT COMPONENT --------------------------- //
+
+.contentbox {
+  height: 60vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.02);
+  -webkit-clip-path: polygon(50% 8%, 100% 0, 100% 92%, 50% 100%, 0 92%, 0 0);
+  clip-path: polygon(50% 8%, 100% 0, 100% 92%, 50% 100%, 0 92%, 0 0);
+}
+
+.contentbox2 {
+  height: 90vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.02);
+  -webkit-clip-path: polygon(50% 5%, 100% 0, 100% 100%, 50% 95%, 0 100%, 0 0);
+clip-path: polygon(50% 5%, 100% 0, 100% 100%, 50% 95%, 0 100%, 0 0);
+}
+
+.contentbox3 {
+  height: 60vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.02);
+  -webkit-clip-path: polygon(50% 0, 100% 8%, 100% 100%, 0 100%, 0 8%);
+  clip-path: polygon(50% 0, 100% 8%, 100% 100%, 0 100%, 0 8%);
+}
