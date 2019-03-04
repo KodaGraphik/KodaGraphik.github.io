@@ -15,7 +15,7 @@ body {
   font-size: 1.6em;
   z-index: 2500;
 
-  &--container{
+  &--container, &--closecontainer{
     transition: transform 0.2s ease-in-out;
     color: black;
     padding: 0.5em 0.5em;
@@ -25,13 +25,27 @@ body {
     justify-content: center;
     clip-path: polygon(0 0, 100% 0, 100% 63%, 50% 100%, 0 63%);
   }
+  &--closecontainer{
+    display: none;
+  }
   &--item{
     margin-top: -5px;
+  }
+  &--closeitem{
+    margin-top: -5px;
+    font-size: 0.7em;
+    padding: 0.3em 0.2em;
   }
   &:hover &--container{
     transform: scale(1.1);
   }
   &:active &--container{
+    transform: scale(1);
+  }
+  &:hover &--closecontainer{
+    transform: scale(1.1);
+  }
+  &:active &--closecontainer{
     transform: scale(1);
   }
 }
@@ -54,15 +68,18 @@ body {
     width: 100vw;
     height: 100vh;
   }
-
-  &--itemcontainer {
-    position: fixed;
+  &--container{
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
+  }
+
+  &--itemcontainer {
+    position: fixed;
     @include reset;
   }
 
