@@ -85,7 +85,6 @@ body {
 
 .nav--item {
   cursor: pointer;
-  padding: 10px 0;
   background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
   text-align: center;
   background-color: #fff;
