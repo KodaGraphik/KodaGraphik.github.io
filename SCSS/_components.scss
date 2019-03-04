@@ -25,9 +25,9 @@ body {
     justify-content: center;
     clip-path: polygon(0 0, 100% 0, 100% 63%, 50% 100%, 0 63%);
   }
-  &--closecontainer{
-    display: none;
-  }
+  // &--closecontainer{
+  //   display: none;
+  // }
   &--item{
     margin-top: -5px;
   }
@@ -84,6 +84,7 @@ body {
   }
 
   &--item {
+    font-family: Oswald;
     cursor: pointer;
     background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
     text-align: center;

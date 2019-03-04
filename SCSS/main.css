@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:500|Oswald:2400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:500|Oswald:200,400");
 html {
   overflow-x: hidden;
 }
@@ -112,6 +112,7 @@ body {
 }
 
 .nav--item {
+  font-family: Oswald;
   cursor: pointer;
   background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
   text-align: center;
