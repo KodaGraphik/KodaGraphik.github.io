@@ -138,8 +138,9 @@ body {
   align-items: center;
   height: 20vh;
   width: 100vw;
-  background-image: url(/Images/BG.png);
+  background-image: url(/Images/BG2.png);
   background-size: cover;
+  background-position: bottom;
   -webkit-clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
   clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
 
