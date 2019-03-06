@@ -209,7 +209,6 @@ body {
       color: white;
       transform: scale(1.05, 1.05);
       border: inset 1px solid white;
-
       background-color: lightslategrey;
     }
 
@@ -231,11 +230,12 @@ body {
     margin: 2.5em auto;
     height: 20vh;
     width: 20vh;
-    transition: transform 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
   .topcontent--image:hover{
     transform: scale(1.05, 1.05);
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.2);
   }
   .image1{
     background-image: url(//unsplash.it/300/300?blur);
