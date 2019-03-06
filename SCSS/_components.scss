@@ -72,7 +72,7 @@ body {
   }
 
   &--bg {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.85);
     box-shadow: inset 0 0 80vw 0 rgba(0,0,0,0.9);
     position: fixed;
     width: 100vw;
@@ -150,7 +150,6 @@ body {
   align-items: center;
   height: 20vh;
   width: 100vw;
-  // background-color: MEDIUMSPRINGGREEN;
   background-image: url("/Images/BG2.png");
   background-blend-mode: luminosity;
   background-size: cover;
@@ -171,19 +170,19 @@ body {
 
 .topcontent {
   z-index: -20;
-  margin-top: 40px;
+  // margin-top: 20px;
   text-align: center;
   margin-bottom: 100px;
 
   &--row {
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(255,255,255,0.4);
     padding: 5em;
     border-radius:10px;
     -webkit-clip-path: polygon(50% 5%, 100% 0, 100% 100%, 50% 95%, 0 100%, 0 0);
     clip-path: polygon(50% 5%, 100% 0, 100% 100%, 50% 95%, 0 100%, 0 0);
     @include mq(mobile,desktop){
-      -webkit-clip-path: polygon(50% 3%, 100% 0, 100% 100%, 50% 97%, 0 100%, 0 0);
-      clip-path: polygon(50% 3%, 100% 0, 100% 100%, 50% 97%, 0 100%, 0 0);
+      -webkit-clip-path: polygon(50% 2%, 100% 0, 100% 100%, 50% 98%, 0 100%, 0 0);
+      clip-path: polygon(50% 2%, 100% 0, 100% 100%, 50% 98%, 0 100%, 0 0);
     }
   }
 
@@ -192,8 +191,10 @@ body {
       margin-top: 30px;
     }
     a{
+      box-sizing: content-box;
+      border-radius: 5px;
       margin: 30px auto;
-      color: white;
+      color: darkslategray;
       font-family: Oswald;
       letter-spacing: 2px;
       display: block;
@@ -201,22 +202,28 @@ body {
       padding: 0.5em 0.5em;
       background-color: #c3c3c3;
       cursor: pointer;
-      transition: transform 0.1s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
     }
     a:hover{
       color: white;
       transform: scale(1.05, 1.05);
+      border: inset 1px solid white;
+
+      background-color: lightslategrey;
     }
 
     h4 {
       @include hline;
-      font-size: 32px;
+      font-size: 30px;
       letter-spacing: 2px;
       font-weight: 200;
+      color: black;
     }
 
     p {
-      margin: 0 20px;
+      margin: 20px 10px;
+      color: lightslategray;
     }
   }
   &--image{
@@ -224,7 +231,7 @@ body {
     margin: 2.5em auto;
     height: 20vh;
     width: 20vh;
-    transition: transform 0.1s ease-in-out;
+    transition: transform 0.2s ease-in-out;
     cursor: pointer;
   }
   .topcontent--image:hover{
