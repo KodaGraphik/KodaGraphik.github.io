@@ -26,7 +26,6 @@ body {
   cursor: pointer;
   font-family: Oswald;
   text-transform: uppercase;
-  color: white;
   position: fixed;
   left: 20px;
   top: 0;
@@ -79,9 +78,10 @@ body {
   display: none;
   font-family: Oswald;
   text-transform: uppercase;
-  color: white;
   padding: 0px;
   margin: 0px;
+  z-index: 1000;
+  position: relative;
 }
 
 .nav a {
@@ -89,7 +89,7 @@ body {
 }
 
 .nav--bg {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
   box-shadow: inset 0 0 80vw 0 rgba(0, 0, 0, 0.9);
   position: fixed;
   width: 100vw;
@@ -180,28 +180,86 @@ body {
   width: 22vh;
 }
 
-.contentbox {
-  height: 60vh;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.02);
-  -webkit-clip-path: polygon(50% 8%, 100% 0, 100% 92%, 50% 100%, 0 92%, 0 0);
-  clip-path: polygon(50% 8%, 100% 0, 100% 92%, 50% 100%, 0 92%, 0 0);
+.topcontent {
+  z-index: -20;
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
-.contentbox2 {
-  height: 90vh;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.02);
+.topcontent--row {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 5em;
+  border-radius: 10px;
   -webkit-clip-path: polygon(50% 5%, 100% 0, 100% 100%, 50% 95%, 0 100%, 0 0);
   clip-path: polygon(50% 5%, 100% 0, 100% 100%, 50% 95%, 0 100%, 0 0);
 }
 
-.contentbox3 {
-  height: 60vh;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.02);
-  -webkit-clip-path: polygon(50% 0, 100% 8%, 100% 100%, 0 100%, 0 8%);
-  clip-path: polygon(50% 0, 100% 8%, 100% 100%, 0 100%, 0 8%);
+@media (min-width: 20em) and (max-width: 61.24em) {
+  .topcontent--row {
+    -webkit-clip-path: polygon(50% 3%, 100% 0, 100% 100%, 50% 97%, 0 100%, 0 0);
+    clip-path: polygon(50% 3%, 100% 0, 100% 100%, 50% 97%, 0 100%, 0 0);
+  }
+}
+
+@media (min-width: 20em) and (max-width: 61.24em) {
+  .topcontent--item {
+    margin-top: 30px;
+  }
+}
+
+.topcontent--item a {
+  margin: 30px auto;
+  color: white;
+  font-family: Oswald;
+  letter-spacing: 2px;
+  display: block;
+  width: 50%;
+  padding: 0.5em 0.5em;
+  background-color: #c3c3c3;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.topcontent--item a:hover {
+  color: white;
+  transform: scale(1.05, 1.05);
+}
+
+.topcontent--item h4 {
+  font-family: Oswald;
+  text-transform: uppercase;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.topcontent--item p {
+  margin: 0 20px;
+}
+
+.topcontent--image {
+  border-radius: 10vh;
+  margin: 2.5em auto;
+  height: 20vh;
+  width: 20vh;
+  transition: transform 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.topcontent .topcontent--image:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.topcontent .image1 {
+  background-image: url(//unsplash.it/300/300?blur);
+}
+
+.topcontent .image2 {
+  background-image: url(//unsplash.it/403/520?blur);
+}
+
+.topcontent .image3 {
+  background-image: url(//unsplash.it/400/320?blur);
 }
 
 /*# sourceMappingURL=main.css.map */
