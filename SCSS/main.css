@@ -168,11 +168,12 @@ body {
   background-blend-mode: luminosity;
   background-size: cover;
   background-position: bottom;
-  -webkit-clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
-  clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+  border-bottom: 5px solid white;
 }
 
 .tophero--logo {
+  background-color: black;
+  border-radius: 11vh;
   transform: translateY(10px);
   background-image: url("/Images/Logo.png");
   background-size: contain;
@@ -183,22 +184,23 @@ body {
 .topcontent {
   z-index: -20;
   text-align: center;
-  margin-bottom: 100px;
+  margin-top: 40px;
+}
+
+.topcontent--first {
+  margin-top: 80px;
 }
 
 .topcontent--row {
   background-color: rgba(255, 255, 255, 0.4);
-  padding: 5em;
-  border-radius: 10px;
-  -webkit-clip-path: polygon(50% 5%, 100% 0, 100% 100%, 50% 95%, 0 100%, 0 0);
-  clip-path: polygon(50% 5%, 100% 0, 100% 100%, 50% 95%, 0 100%, 0 0);
+  padding: 3em;
+  border-radius: 20px;
 }
 
-@media (min-width: 20em) and (max-width: 61.24em) {
-  .topcontent--row {
-    -webkit-clip-path: polygon(50% 2%, 100% 0, 100% 100%, 50% 98%, 0 100%, 0 0);
-    clip-path: polygon(50% 2%, 100% 0, 100% 100%, 50% 98%, 0 100%, 0 0);
-  }
+.topcontent--item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (min-width: 20em) and (max-width: 61.24em) {
@@ -233,7 +235,7 @@ body {
 .topcontent--item h4 {
   font-family: Oswald;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 32px;
   letter-spacing: 2px;
   font-weight: 200;
   color: black;
@@ -245,17 +247,18 @@ body {
 }
 
 .topcontent--image {
-  border-radius: 10vh;
-  margin: 2.5em auto;
-  height: 20vh;
-  width: 20vh;
+  margin: 0.5em auto;
+  height: 30vh;
+  width: 30vh;
+  border-radius: 20vh;
   transition: all 0.2s ease-in-out;
+  background-size: cover;
   cursor: pointer;
 }
 
 .topcontent .topcontent--image:hover {
   transform: scale(1.05, 1.05);
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
 }
 
 .topcontent .image1 {
@@ -268,6 +271,10 @@ body {
 
 .topcontent .image3 {
   background-image: url(//unsplash.it/400/320?blur);
+}
+
+.topcontent .image4 {
+  background-image: url(//unsplash.it/600/600?blur);
 }
 
 /*# sourceMappingURL=main.css.map */
