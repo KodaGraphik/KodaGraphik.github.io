@@ -109,7 +109,7 @@ button:hover,
 .tophero {
   display: flex;
   width: 100vw;
-  height: 20vh;
+  height: 21vh;
   background-image: url("/Images/BG.png");
   background-position: bottom;
   background-size: cover;
@@ -123,10 +123,20 @@ button:hover,
   width: 22vh;
   height: 22vh;
   border-radius: 11vh;
-  margin: -200px auto 150px auto;
+  margin: -150px auto;
   background-color: white;
   background-image: url("/Images/Logo.png");
   background-size: contain;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 }
 // END OF HERO COMPONENT
+.tophero--logo-scrolled {
+  transition: all 200ms ease-in-out;
+  height: 12vh;
+  width: 12vh;
+  margin-top:-100px;
+}
+.tophero-scrolled {
+  transition: all 200ms ease-in-out;
+margin-top: -10vh
+}
