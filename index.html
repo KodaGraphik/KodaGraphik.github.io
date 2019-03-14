@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
 	<!-- BROWSER STUFF -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,34 +13,19 @@
 	<link rel="shortcut icon" href="/Images/Icons/favicon.png">
 	<!-- BOOTSTRAP CSS -->
 	<link rel="stylesheet" href="/CSS/bootstrap.css">
-
 	<!-- SASS COMPILED SHEET -->
-	<link rel="stylesheet" href="/SCSS/main.css">
 	<!-- OTHER FOUNDATIONS  -->
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 	<link rel="stylesheet" href="CSS/jquery-ui.css">
 	<script src="Script/jquery-3.3.1.js" charset="utf-8"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js" charset="utf-8"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 	<script src="Script/script.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="/SCSS/main.css">
 </head>
-<!-- MARKUP -->
 
 <body>
-
-	<!-- HAMBURGER COMPONENT -->
-	<div class="hamburger" data-aos="slide-down" data-aos-delay="1000">
-		<div class="hamburger--container">
-			<div class="hamburger--item">☰</div>
-		</div>
-		<div class="hamburger--closecontainer">
-			<div class="hamburger--closeitem"><b>╳</b></div>
-		</div>
-	</div>
-	<!-- HAMBURGER END -->
-
-	<!-- NAV COMPONENT -->
+  <!-- NAV COMPONENT -->
 	<div class="nav">
 		<div class="nav--container">
 			<div class="nav--bg"></div>
@@ -70,15 +53,33 @@
 			</div>
 		</div>
 	</div>
-	<!-- NAV END -->
+  <!-- NAVIGATION BAR ---------------------------------->
+  <nav class="navbar fixed-top bg-dark navbar-dark">
+    <!-- Toggler/collapsibe Button ----------------------------->
+    <button class="navbar-toggler">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--- Navbar links --------------------------------->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-``item``">
+          <a class="nav-link" href="#">PORTFOLIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-	<!-- MAIN PAGE COMPONENTS -->
 	<div class="main">
-
 		<!-- TOP HERO -->
 		<div class="tophero" data-aos="slide-down" data-aos-duration="1000">
-			<div class="tophero--logo" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="600">
-			</div>
+		</div>
+		<div class="tophero--logo" data-aos="slide-down" data-aos-duration="1000">
 		</div>
 	</div>
 	<!-- END OF HERO HERO -->
@@ -143,12 +144,12 @@
 
 		</div>
 	</div>
-	<!-- END OF MAIN PAGE COMPONENTS -->
-	<!-- SCRIPT STUFF  -->
 	<script>
 		AOS.init();
 	</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" charset="utf-8"></script>
 </body>
-<!-- END OF SCRIPT STUFF  -->
 
 </html>
