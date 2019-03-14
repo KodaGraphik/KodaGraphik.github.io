@@ -126,11 +126,15 @@ button:hover,
   width: 22vh;
   height: 22vh;
   border-radius: 11vh;
-  margin: -150px auto;
+  left: 50%;
+  top: 40px;
+  transform: translateX(-50%);
+  position: absolute;
   background-color: white;
   background-image: url("/Images/Logo.png");
   background-size: contain;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  z-index: 2000;
 }
 .navbar--logo {
   display: none;
