@@ -111,29 +111,42 @@ button:hover,
 }
 
 .main {
-  position: fixed;
   z-index: 200;
 }
 
 .tophero {
   display: flex;
   width: 100vw;
-  height: 21vh;
+  height: 18vh;
+  margin-top: 55px;
   background-image: url("/Images/BG.png");
   background-position: bottom;
   background-size: cover;
   justify-content: center;
   align-items: center;
   background-blend-mode: luminosity;
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 55%, 0 100%, 0 0);
-  clip-path: polygon(100% 0, 100% 100%, 50% 55%, 0 100%, 0 0);
 }
 
 .tophero--logo {
   width: 22vh;
   height: 22vh;
   border-radius: 11vh;
-  margin: -150px auto;
+  margin: -100px auto;
+  background-color: white;
+  background-image: url("/Images/Logo.png");
+  background-size: contain;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar--logo {
+  display: none;
+  left: 50%;
+  top: 10px;
+  transform: translate(-50%);
+  position: absolute;
+  width: 10vh;
+  height: 10vh;
+  border-radius: 11vh;
   background-color: white;
   background-image: url("/Images/Logo.png");
   background-size: contain;
@@ -141,15 +154,12 @@ button:hover,
 }
 
 .tophero--logo-scrolled {
-  transition: all 200ms ease-in-out;
-  height: 12vh;
-  width: 12vh;
-  margin-top: -100px;
+  width: 10vh;
+  height: 10vh;
 }
 
 .tophero-scrolled {
-  transition: all 200ms ease-in-out;
-  margin-top: -10vh;
+  opacity: 1;
 }
 
 .topcontent {
@@ -159,7 +169,11 @@ button:hover,
 }
 
 .topcontent--first {
-  padding-top: 300px;
+  padding-top: 150px;
+}
+
+.topcontent--third {
+  margin-bottom: 150px;
 }
 
 .topcontent--row {
@@ -187,7 +201,7 @@ button:hover,
   font-family: Oswald;
   letter-spacing: 2px;
   display: block;
-  width: 50%;
+  width: 40%;
   padding: 0.5em 0.5em;
   background-color: firebrick;
   cursor: pointer;
@@ -220,7 +234,7 @@ button:hover,
 .topcontent--image {
   position: relative;
   margin: 0.5em auto;
-  height: 14vw;
+  height: 10vw;
   width: 100%;
   transition: all 0.2s ease-in-out;
   background-size: contain;
