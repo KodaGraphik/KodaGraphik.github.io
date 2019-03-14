@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:500|Oswald:200,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:500|Oswald:100,200,400");
 html {
   overflow-x: hidden;
 }
@@ -179,8 +179,17 @@ button:hover,
   max-width: 750px;
 }
 
-.topcontent--first {
-  padding-top: 150px;
+.topcontent .display-4 {
+  font-family: Oswald;
+  font-weight: 100;
+  margin: 50px 0px;
+  font-size: 44px;
+}
+
+@media (min-width: 20em) and (max-width: 61.24em) {
+  .topcontent .display-4 {
+    font-size: 40px;
+  }
 }
 
 .topcontent--third {

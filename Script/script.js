@@ -17,9 +17,9 @@ $(document).ready(function() {
    $(document).scroll(function() {
       scroll_start = $('html').scrollTop();
       if(scroll_start > 200) {
-          $(".navbar--logo").fadeIn(100);
+          $(".navbar--logo").fadeIn(300);
        } else {
-          $('.navbar--logo').fadeOut(100);
+          $('.navbar--logo').fadeOut(300);
        }
    });
 });

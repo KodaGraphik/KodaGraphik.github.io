@@ -3,9 +3,18 @@
   z-index: -20;
   text-align: center;
   margin-top: 40px;
-max-width: 750px;
+  max-width: 750px;
+
+  .display-4{
+    font-family: Oswald;
+    font-weight: 100;
+    margin: 50px 0px;
+    font-size: 44px;
+     @include mq(mobile, desktop) {
+      font-size: 40px;
+    }
+  }
 &--first{
-    padding-top: 150px;
 }
 &--third{
   margin-bottom: 150px;
