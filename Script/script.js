@@ -15,7 +15,7 @@ $(document).ready(function() {
   });
 
    $(document).scroll(function() {
-      scroll_start = $('html').scrollTop();
+      scroll_start = $(window).scrollTop();
       if(scroll_start > 200) {
           $(".navbar--logo").fadeIn(300);
        } else {
