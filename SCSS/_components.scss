@@ -7,8 +7,9 @@ html, body{
 body {
   margin: 0;
   padding: 0;
-  background-image: url("/Images/Noise.png");
-  background-size: 400px;
+
+  background-image: url(/Images/Noise.png);
+  background-image:linear-gradient( 180deg, rgba(#30e8bf, 0.3), rgba(#1eba97, 0.3)), url(/Images/Noise.png);
 }
 
 input:hover
@@ -60,14 +61,15 @@ button:hover,
   }
 
   &--item {
-    text-transform: uppercase;
-    letter-spacing: 1px;
     width: 40vw;
     min-width: 300px;
     height: 10vh;
+
     cursor: pointer;
     transition: all 100ms cubic-bezier(.610, .025, .400, .980);
     text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     color: black;
     background: linear-gradient(to bottom, #fff 0%,#e5e5e5 100%);
     background-color: #fff;
@@ -108,6 +110,7 @@ button:hover,
 
 .main {
   z-index: 200;
+
   margin-top: 55px;
 }
 
@@ -115,42 +118,48 @@ button:hover,
   display: flex;
   width: 100vw;
   height: 18vh;
-  background-image: url("/Images/BG.png");
+  background-image: url("/Images/BG3.png");
   background-position: bottom;
   background-size: cover;
   justify-content: center;
   align-items: center;
-  background-blend-mode: luminosity;
+  background-blend-mode: overlay;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 55%, 0 100%, 0 0);
   clip-path: polygon(100% 0, 100% 100%, 50% 55%, 0 100%, 0 0);
 }
 .tophero--logo {
+  position: absolute;
+  z-index: 1300;
+  top: 40px;
+  left: 50%;
   width: 22vh;
   height: 22vh;
-  border-radius: 11vh;
-  left: 50%;
-  top: 40px;
+  transition: transform 0.2s ease-in-out;
   transform: translateX(-50%);
-  position: absolute;
+  border-radius: 11vh;
   background-color: white;
   background-image: url("/Images/Logo.png");
   background-size: contain;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-  z-index: 1300;
 }
 .navbar--logo {
-  display: none;
-  left: 50%;
-  top: 10px;
-  transform: translate(-50%);
   position: absolute;
+  top: 10px;
+  left: 50%;
+  display: none;
   width: 10vh;
   height: 10vh;
+  transition: transform 0.2s ease-in-out;
+  transform: translate(-50%);
   border-radius: 11vh;
   background-color: white;
   background-image: url("/Images/Logo.png");
   background-size: contain;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+.tophero--logo:hover, .navbar--logo:hover{
+  cursor:pointer;
+  transform: translateX(-50%) scale(1.05,1.05);
 }
 // END OF HERO COMPONENT
 .tophero--logo-scrolled {
