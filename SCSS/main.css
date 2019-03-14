@@ -129,13 +129,15 @@ button:hover,
   justify-content: center;
   align-items: center;
   background-blend-mode: luminosity;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 55%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 100%, 50% 55%, 0 100%, 0 0);
 }
 
 .tophero--logo {
   width: 22vh;
   height: 22vh;
   border-radius: 11vh;
-  margin: -100px auto;
+  margin: -180px auto;
   background-color: white;
   background-image: url("/Images/Logo.png");
   background-size: contain;
@@ -174,7 +176,7 @@ button:hover,
 }
 
 .topcontent--first {
-  padding-top: 100px;
+  padding-top: 200px;
 }
 
 .topcontent--third {
@@ -239,7 +241,7 @@ button:hover,
 .topcontent--image {
   position: relative;
   margin: 0.5em auto;
-  height: 15vh;
+  height: 12vh;
   width: 100%;
   transition: all 0.2s ease-in-out;
   background-size: contain;

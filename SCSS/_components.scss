@@ -119,14 +119,14 @@ button:hover,
   justify-content: center;
   align-items: center;
   background-blend-mode: luminosity;
-  // -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 55%, 0 100%, 0 0);
-  // clip-path: polygon(100% 0, 100% 100%, 50% 55%, 0 100%, 0 0);
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 55%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 100%, 50% 55%, 0 100%, 0 0);
 }
 .tophero--logo {
   width: 22vh;
   height: 22vh;
   border-radius: 11vh;
-  margin: -100px auto;
+  margin: -180px auto;
   background-color: white;
   background-image: url("/Images/Logo.png");
   background-size: contain;
