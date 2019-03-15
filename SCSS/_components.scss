@@ -1,8 +1,6 @@
 
 
-
 // MAIN BODY --------------------------------------//
-
 body,
 html {
   overflow-x: hidden;
@@ -109,50 +107,16 @@ textarea:hover {
   }
 }
 // END OF NAVIGATION COMPONENT ----------------------------------//
-
 // HAMBUGER ----------------------------------------------//
-.navbar-toggler{
-color: white;
-  &-icon{
+
+.navbar-toggler {
+  color: white;
+
+  &-icon {
     color: white;
   }
 }
 // TOP HEROCOMPONENT ----------------------------------------------------- //
-
-.main {
-  z-index: 200;
-  margin-top: 55px;
-}
-
-.tophero {
-  display: flex;
-  width: 100vw;
-  height: 18vh;
-  background-image: url("/Images/BG3.png");
-  background-position: bottom;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
-  background-blend-mode: overlay;
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 55%, 0 100%, 0 0);
-  clip-path: polygon(100% 0, 100% 100%, 50% 55%, 0 100%, 0 0);
-}
-
-.tophero--logo {
-  position: absolute;
-  z-index: 1300;
-  top: 40px;
-  left: 50%;
-  width: 22vh;
-  height: 22vh;
-  transition: transform 0.2s ease-in-out;
-  transform: translateX(-50%);
-  border-radius: 11vh;
-  background-color: white;
-  background-image: url("/Images/Logo.png");
-  background-size: contain;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
 
 .navbar--logo {
   position: absolute;
@@ -175,7 +139,6 @@ color: white;
   cursor: pointer;
   transform: translateX(-50%) scale(1.05,1.05);
 }
-// END OF HERO COMPONENT
 
 .tophero--logo-scrolled {
   width: 10vh;
@@ -185,8 +148,59 @@ color: white;
 .tophero-scrolled {
   opacity: 1;
 }
-// FOOTER ---------------------------------------------------------
 
+.tophero2 {
+  display: flex;
+  flex-direction: column;
+  height: 50vmin;
+  margin-top: 100px;
+  padding: 2em;
+  background-image: url("/Images/BG3.png");
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-clip: text;
+  background-size: 100vw;
+  font-family: Work Sans;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    margin: 0;
+    padding: 0;
+    line-height: 0.65;
+  }
+
+  &--class1 {
+    letter-spacing: -2vmin;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 30vmin;
+    font-weight: 700;
+  }
+
+  &--class2 {
+    letter-spacing: 2vmin;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 12vmin;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  &--class3 {
+    margin-top: 20px;
+    padding: 0.3em 2em;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    border-radius: 20px;
+    background-color: #109d88;
+    background-size: 100vw;
+    font-family: Oswald;
+    font-weight: 400;
+  }
+}
+// FOOTER ---------------------------------------------------------
 .footertopper {
   width: 100vw;
   height: 18vh;
@@ -201,9 +215,8 @@ color: white;
 }
 
 .footer {
-  margin: 0px;
-  padding: 0px;
   width: 100vw;
+  margin: 0;
   padding: 3em;
   text-align: center;
   color: #b2b2b2;
@@ -235,55 +248,55 @@ color: white;
   }
 }
 // FOOTER END -----------------------------------------------------------
-
 // THEME SELECTOR ---------------------------------------------------------
-
-.themeslider{
-  &--heading{
+.themeslider {
+  &--heading {
     position: absolute;
-    right: 100px;
     top: 12px;
-    font-family: Roboto;
+    right: 100px;
+    user-select: none;
+    transition: color 0.2s ease-out;
+    text-align: center;
     color: lightgrey;
+    font-family: Roboto;
     font-size: 12px;
     line-height: 16px;
-    text-align: center;
-    transition: color 0.2s ease-out;
-    user-select: none;
   }
 
-  &--bubble{
-  position: absolute;
-  cursor: pointer;
-  top: 15px;
-  right: 20px;
-  width: 60px;
-  height: 25px;
-  border-radius: 15px;
-  box-shadow: 0px 0px 0px 2px lightgrey;
+  &--bubble {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px lightgrey;
   }
 
-  &--circle{
+  &--circle {
     position: absolute;
     top: 14px;
     right: 61px;
-    height: 20px;
     width: 20px;
-    background-color: lightgrey;
-    border-radius: 13px;
-    transform: translate(3px, 3px);
+    height: 20px;
     cursor: pointer;
     transition: all 0.2s ease-out;
+    transform: translate(3px, 3px);
+    border-radius: 13px;
+    background-color: lightgrey;
   }
-}
-  .themeslider--clicked{
-    transform: translate(39px, 3px);
-    background-color: whitesmoke;
-  }
-.themebubble--clicked{
-  box-shadow: 0px 0px 0px 2px whitesmoke;
 }
 
-.themeheading--clicked{
+.themeslider--clicked {
+  transform: translate(39px, 3px);
+  background-color: whitesmoke;
+}
+
+.themebubble--clicked {
+  box-shadow: 0 0 0 2px whitesmoke;
+}
+
+.themeheading--clicked {
   color: whitesmoke;
 }
