@@ -1,34 +1,37 @@
 
-// MAIN BODY --------------------------------------//
-html, body{
-  overflow-x: hidden;
 
+
+// MAIN BODY --------------------------------------//
+
+body,
+html {
+  overflow-x: hidden;
 }
+
 body {
   margin: 0;
   padding: 0;
-
-  background-image: url(/Images/Noise.png);
-  background-image:linear-gradient( 180deg, rgba(#30e8bf, 0.3), rgba(#1eba97, 0.3)), url(/Images/Noise.png);
+  background-image: url("/Images/Noise.png");
+  background-image: linear-gradient(180deg, rgba(#30e8bf, 0.3), rgba(#1eba97, 0.3)), url("/Images/Noise.png");
 }
 
-input:hover
-input:active,
-input:focus,
-textarea:active,
-textarea:hover,
-textarea:focus,
-button:focus,
+*,
 button:active,
+button:focus,
 button:hover,
-*
-{
-    outline:0px !important;
+input:focus,
+input:hover input:active,
+textarea:active,
+textarea:focus,
+textarea:hover {
+  outline: 0 !important;
 }
 // NAVIGATION COMPONENT ---------------------- //
-.navbar{
+
+.navbar {
   z-index: 1200;
 }
+
 .nav {
   position: relative;
   z-index: 1500;
@@ -61,21 +64,20 @@ button:hover,
   }
 
   &--item {
-    font-weight: 100;
     width: 40vw;
     min-width: 300px;
     height: 10vh;
-
     cursor: pointer;
     transition: all 100ms cubic-bezier(.610, .025, .400, .980);
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     color: black;
     background: linear-gradient(to bottom, #fff 0%,#e5e5e5 100%);
     background-color: #fff;
     font-family: Oswald;
     font-size: 1.4rem;
+    font-weight: 100;
     line-height: 10vh;
 
     &_top {
@@ -111,7 +113,6 @@ button:hover,
 
 .main {
   z-index: 200;
-
   margin-top: 55px;
 }
 
@@ -119,7 +120,7 @@ button:hover,
   display: flex;
   width: 100vw;
   height: 18vh;
-  background-image: url("/Images/BG3.png");
+  background-image: url("/Images/BG3.jpg");
   background-position: bottom;
   background-size: cover;
   justify-content: center;
@@ -128,6 +129,7 @@ button:hover,
   -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 55%, 0 100%, 0 0);
   clip-path: polygon(100% 0, 100% 100%, 50% 55%, 0 100%, 0 0);
 }
+
 .tophero--logo {
   position: absolute;
   z-index: 1300;
@@ -141,8 +143,9 @@ button:hover,
   background-color: white;
   background-image: url("/Images/Logo.png");
   background-size: contain;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+
 .navbar--logo {
   position: absolute;
   top: 10px;
@@ -156,17 +159,68 @@ button:hover,
   background-color: white;
   background-image: url("/Images/Logo.png");
   background-size: contain;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
-.tophero--logo:hover, .navbar--logo:hover{
-  cursor:pointer;
+
+.navbar--logo:hover,
+.tophero--logo:hover {
+  cursor: pointer;
   transform: translateX(-50%) scale(1.05,1.05);
 }
 // END OF HERO COMPONENT
+
 .tophero--logo-scrolled {
   width: 10vh;
   height: 10vh;
 }
+
 .tophero-scrolled {
   opacity: 1;
+}
+// FOOTER ---------------------------------------------------------
+
+.footertopper {
+  width: 100vw;
+  height: 18vh;
+  margin-bottom: -10px;
+  background-image: url("/Images/BG3.jpg");
+  background-position: top;
+  background-size: cover;
+  justify-content: center;
+  background-blend-mode: overlay;
+  -webkit-clip-path: polygon(51% 35%, 100% 0, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(51% 35%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.footer {
+  width: 100vw;
+  padding: 3em;
+  text-align: center;
+  color: #b2b2b2;
+  background-color: rgb(52, 58, 64);
+  font-family: Oswald;
+  line-height: 2.2;
+
+  img {
+    padding: 1em;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  img:hover {
+    opacity: 1;
+  }
+
+  a {
+    text-decoration: none;
+    color: #b2b2b2;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  span {
+    font-size: 11px;
+  }
 }
