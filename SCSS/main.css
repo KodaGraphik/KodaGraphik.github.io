@@ -120,6 +120,14 @@ textarea:hover {
   background: linear-gradient(145deg, #fff 0%, #e5e5e5 100%);
 }
 
+.navbar-toggler {
+  color: white;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
 .main {
   z-index: 200;
   margin-top: 55px;
@@ -129,7 +137,7 @@ textarea:hover {
   display: flex;
   width: 100vw;
   height: 18vh;
-  background-image: url("/Images/BG3.jpg");
+  background-image: url("/Images/BG3.png");
   background-position: bottom;
   background-size: cover;
   justify-content: center;
@@ -190,7 +198,7 @@ textarea:hover {
   width: 100vw;
   height: 18vh;
   margin-bottom: -10px;
-  background-image: url("/Images/BG3.jpg");
+  background-image: url("/Images/BG3.png");
   background-position: top;
   background-size: cover;
   justify-content: center;
@@ -212,7 +220,7 @@ textarea:hover {
 .footer img {
   padding: 1em;
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .footer img:hover {
@@ -249,7 +257,7 @@ textarea:hover {
   position: absolute;
   cursor: pointer;
   top: 15px;
-  right: 30px;
+  right: 20px;
   width: 60px;
   height: 25px;
   border-radius: 15px;
@@ -259,7 +267,7 @@ textarea:hover {
 .themeslider--circle {
   position: absolute;
   top: 14px;
-  right: 71px;
+  right: 61px;
   height: 20px;
   width: 20px;
   background-color: lightgrey;
