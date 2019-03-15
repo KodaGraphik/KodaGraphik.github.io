@@ -240,21 +240,21 @@ textarea:hover {
 }
 
 .topcontent .display-4 {
+  padding: 5px;
+  width: 50%;
+  border-radius: 5px;
   font-family: Oswald;
   font-weight: 100;
-  font-size: 48px;
-  margin: 50px 0px;
-  color: mediumseagreen;
-}
-
-@media (min-width: 20em) and (max-width: 61.24em) {
-  .topcontent .display-4 {
-    font-size: 42px;
-  }
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  margin: -20px auto 60px;
+  -webkit-clip-path: polygon(4% 0, 96% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(4% 0, 96% 0, 100% 100%, 0% 100%);
 }
 
 .topcontent--row {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-image: linear-gradient(145deg, rgba(255, 255, 255, 0.1), white);
   padding: 2em;
 }
@@ -310,7 +310,7 @@ textarea:hover {
   background-color: mediumseagreen;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
 }
 
@@ -362,19 +362,19 @@ textarea:hover {
 }
 
 .topcontent .image1 {
-  background-image: url(/Images/Icons/graphic-red.png);
+  background-image: url("/Images/Icons/graphic-red.png");
 }
 
 .topcontent .image2 {
-  background-image: url(/Images/Icons/web-red.png);
+  background-image: url("/Images/Icons/web-red.png");
 }
 
 .topcontent .image3 {
-  background-image: url(/Images/Icons/print-red.png);
+  background-image: url("/Images/Icons/print-red.png");
 }
 
 .topcontent .image4 {
-  background-image: url(//unsplash.it/600/600/);
+  background-image: url("//unsplash.it/600/600/");
 }
 
 .hrstyle9 {
