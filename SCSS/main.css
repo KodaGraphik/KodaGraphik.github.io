@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100|Oswald:100,200,400,400i");
+@import url("https://fonts.googleapis.com/css?family=Roboto:500|Oswald:100,200,400,400i");
 @import url("https://fonts.googleapis.com/css?family=EB+Garamond");
 html {
   overflow-x: hidden;
@@ -230,6 +230,56 @@ textarea:hover {
 
 .footer span {
   font-size: 11px;
+}
+
+.themeslider--heading {
+  position: absolute;
+  right: 100px;
+  top: 12px;
+  font-family: Roboto;
+  color: lightgrey;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  transition: color 0.2s ease-out;
+  user-select: none;
+}
+
+.themeslider--bubble {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 30px;
+  width: 60px;
+  height: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 0px 2px lightgrey;
+}
+
+.themeslider--circle {
+  position: absolute;
+  top: 14px;
+  right: 71px;
+  height: 20px;
+  width: 20px;
+  background-color: lightgrey;
+  border-radius: 13px;
+  transform: translate(3px, 3px);
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.themeslider--clicked {
+  transform: translate(39px, 3px);
+  background-color: whitesmoke;
+}
+
+.themebubble--clicked {
+  box-shadow: 0px 0px 0px 2px whitesmoke;
+}
+
+.themeheading--clicked {
+  color: whitesmoke;
 }
 
 .topcontent {

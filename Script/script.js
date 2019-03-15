@@ -13,7 +13,16 @@ $(document).ready(function() {
   $('.nav--container').click(function() {
     $('.nav').fadeOut(300);
   });
-
+  $('.themeslider--bubble').click(function() {
+    $('.themeslider--circle').toggleClass('themeslider--clicked');
+    $('.themeslider--bubble').toggleClass('themebubble--clicked');
+    $('.themeslider--heading').toggleClass('themeheading--clicked');
+  });
+    $('.themeslider--circle').click(function() {
+    $('.themeslider--circle').toggleClass('themeslider--clicked');
+    $('.themeslider--bubble').toggleClass('themebubble--clicked');
+    $('.themeslider--heading').toggleClass('themeheading--clicked');
+  });
    $(document).scroll(function() {
       scroll_start = $(window).scrollTop();
       if(scroll_start > 200) {
