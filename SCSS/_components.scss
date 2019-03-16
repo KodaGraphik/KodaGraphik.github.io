@@ -12,7 +12,13 @@ body {
   background-image: url("/Images/Noise.png");
   background-image: linear-gradient(180deg, rgba(#30e8bf, 0.3), rgba(#1eba97, 0.3)), url("/Images/Noise.png");
 }
-
+a:hover{
+  color:transparent;
+  text-decoration: none;
+}
+a{
+  color: transparent;
+}
 *,
 button:active,
 button:focus,
@@ -198,6 +204,10 @@ textarea:hover {
     background-size: 100vw;
     font-family: Oswald;
     font-weight: 400;
+  }
+  &--class3__header{
+    font-size: 22px;
+    font-weight: 100;
   }
 }
 // FOOTER ---------------------------------------------------------
