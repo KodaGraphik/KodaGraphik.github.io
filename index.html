@@ -4,7 +4,7 @@
 <head>
 	<!-- BROWSER STUFF -->
 	<meta charset="utf-8">
-	<meta name="theme-color" content="#000">
+	<meta name="theme-color" content="#db5945">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- META TAGS -->
@@ -17,6 +17,12 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="/SCSS/main.css">
+	<script src="Script/home.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="Script/vanilla-tilt.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
+<script src="/Script/vanta.fog.min.js"></script>
 </head>
 <!-- Content -->
 <body class="black-body"id="animated">
@@ -40,24 +46,10 @@
 </div>
 
 	<!-- SCRIPT STUFF  -->
-	<script src="Script/home.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="Script/vanilla-tilt.js"></script>
 	<script>
 		AOS.init();
 	</script>
-	<!-- <script src="/Script/p5.min.js"></script>
-	<script src="/Script/vanta.topology.min.js"></script>
-	<script>
-	VANTA.TOPOLOGY({
-	  el: "#animated",
-		color: 0xff0000,
-	  backgroundColor: 0x0
-	})
-	</script> -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
-<script src="/Script/vanta.fog.min.js"></script>
+
 <script>
 VANTA.FOG({
   el: "#animated",

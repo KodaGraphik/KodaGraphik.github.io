@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.scroll').hide();
+  // $('.scroll').hide();
   $('.navigation').slideDown(400, 'swing');
 
 
@@ -67,5 +67,5 @@ $(document).ready(function() {
   //     left: 0,
   //     behavior: 'smooth'
   //   });
-  });
+  // });
 });
