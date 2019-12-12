@@ -841,6 +841,12 @@ body {
   padding: 30px;
 }
 
+@media (max-width: 991px) {
+  .home .topwrapper {
+    margin-top: -20vh;
+  }
+}
+
 .home .homenav-buttons {
   display: -webkit-flex;
   display: -ms-flex;
