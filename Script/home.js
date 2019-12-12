@@ -1,7 +1,6 @@
 
 $(document).ready(function() {
-  $(document.body).css('overflow' 'hidden');
-
+  $(document.body).css('overflow', 'hidden');
   $('a[href^="#"]').on('click', function(e) {
     // e.preventDefault();
     var target = this.hash,
@@ -17,30 +16,13 @@ $(document).ready(function() {
   $('.navbutton').click(function() {
     event.preventDefault();
     newLocation = this.href;
-    $(document.body).css('backgroundColor' 'black');
-    //     $(document.body).addClass('black-body');
-      $('.fadecontainer').fadeOut(300);
-    $.when($('.home').fadeOut())
+    $(document.body).css('backgroundColor', 'black');
+      $('#animated').fadeOut(200);
+    $.when($('#animated').fadeOut())
       .then(function() {
         setTimeout(function() {
           window.location = newLocation;
-        }, 0);
+        }, 200);
       });
-  });
-
-
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('.scroll').fadeIn();
-    } else {
-      $('.scroll').fadeOut();
-    }
-  });
-  $('.scroll').click(function() {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
-    });
   });
 });
