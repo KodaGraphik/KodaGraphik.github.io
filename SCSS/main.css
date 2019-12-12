@@ -21,6 +21,7 @@ body {
 
 #animated {
   background-image: url("");
+  position: fixed;
 }
 
 ::-webkit-scrollbar {
@@ -858,6 +859,12 @@ body {
   border-bottom: 0 solid black;
   background-color: rgba(0, 0, 0, 0);
   backdrop-filter: blur 0px;
+}
+
+@media (max-width: 768px) {
+  .home .navigation .buttons {
+    bottom: 100px;
+  }
 }
 
 .home .navigation .homenav-btn {
