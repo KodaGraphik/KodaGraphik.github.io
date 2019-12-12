@@ -54,18 +54,18 @@ $(document).ready(function() {
   });
 
 
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('.scroll').fadeIn();
-    } else {
-      $('.scroll').fadeOut();
-    }
-  });
-  $('.scroll').click(function() {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
-    });
+  // $(window).scroll(function() {
+  //   if ($(this).scrollTop() > 100) {
+  //     $('.scroll').fadeIn();
+  //   } else {
+  //     $('.scroll').fadeOut();
+  //   }
+  // });
+  // $('.scroll').click(function() {
+  //   window.scroll({
+  //     top: 0,
+  //     left: 0,
+  //     behavior: 'smooth'
+  //   });
   });
 });
