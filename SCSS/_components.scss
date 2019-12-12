@@ -830,6 +830,7 @@ body {
 }
 
 .home {
+  overflow: hidden;
   // background-color: #000;
   min-height: calc(100vh - 425px);
   user-select: none;
