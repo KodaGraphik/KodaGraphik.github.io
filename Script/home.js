@@ -1,10 +1,6 @@
 
 $(document).ready(function() {
-  $('#hidden-nav').hide();
-  $('.body').css('backgroundColor','black');
-  $(window).load(function(){
-  $(body, html).css('overflow','hidden');
-  });
+  $(document.body).css('overflow' 'hidden');
 
   $('a[href^="#"]').on('click', function(e) {
     // e.preventDefault();
@@ -23,23 +19,8 @@ $(document).ready(function() {
     newLocation = this.href;
     $(document.body).css('backgroundColor' 'black');
     //     $(document.body).addClass('black-body');
-      $('#animated').fadeOut(300);
+      $('.fadecontainer').fadeOut(300);
     $.when($('.home').fadeOut())
-      .then(function() {
-        setTimeout(function() {
-          window.location = newLocation;
-        }, 0);
-      });
-  });
-
-  // Home Button Click to Fade Out
-  $('.homebutton').click(function() {
-    event.preventDefault();
-    newLocation = this.href;
-    $('.bottomfooter').fadeOut(400, 'swing');
-    $('.fadecontainer').fadeOut(400, 'swing');
-      window.scrollTo({top: 400, behavior: 'smooth'});
-    $.when($('.fadecontainer').fadeOut())
       .then(function() {
         setTimeout(function() {
           window.location = newLocation;
