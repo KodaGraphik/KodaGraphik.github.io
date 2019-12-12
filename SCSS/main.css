@@ -826,15 +826,12 @@ body {
 }
 
 .home .top .homebutton img {
-  width: 80vw;
+  width: 100vw;
   height: 20vmax;
 }
 
 .home .navigation {
   backdrop-filter: blur(0px);
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -844,13 +841,12 @@ body {
 }
 
 .home .navigation .topwrapper {
+  margin-top: 20vh;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 50px;
-  height: 60vh;
+  height: 30vh;
   width: 100vw;
 }
 
