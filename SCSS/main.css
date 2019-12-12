@@ -801,7 +801,6 @@ body {
 
 .home {
   overflow: hidden;
-  min-height: calc(100vh - 425px);
   user-select: none;
   width: 100vw;
   height: 100vh;
@@ -851,11 +850,13 @@ body {
   align-items: center;
   justify-content: center;
   padding: 50px;
-  height: 80vh;
+  height: 60vh;
   width: 100vw;
 }
 
 .home .navigation .buttons {
+  position: absolute;
+  bottom: 50px;
   margin-top: 0;
   border-bottom: 0 solid black;
   background-color: rgba(0, 0, 0, 0);
