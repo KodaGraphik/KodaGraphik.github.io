@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $('.scroll').hide();
   $('.navigation').slideDown(400, 'swing');
+  $('html, body').css("overflow-y", "scroll");
 
 
     // $('.homelogo').removeClass('biggerlogo');
