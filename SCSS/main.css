@@ -29,6 +29,14 @@ body {
   transition: width 0.2s ease-out;
 }
 
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 2px;
+    opacity: 0.5;
+    transition: width 0.2s ease-out;
+  }
+}
+
 ::-webkit-scrollbar-track {
   background: black;
 }
