@@ -2,7 +2,9 @@
 $(document).ready(function() {
   $('#hidden-nav').hide();
   $('.body').css('backgroundColor','black');
-
+  $(window).load(function(){
+  $(body, html).css('overflow','hidden');
+  });
 
   $('a[href^="#"]').on('click', function(e) {
     // e.preventDefault();
