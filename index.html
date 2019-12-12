@@ -21,8 +21,10 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="Script/vanilla-tilt.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
-	<script src="/Script/vanta.fog.min.js"></script>
+	<script src="/Script/p5.min.js"></script>
+	<script src="/Script/vanta.topology.min.js"></script>
+	<script src="/Script/three-r92.min.js"></script>
+	<script src="/Script/vanta.birds.min.js"></script>
 </head>
 <!-- Content -->
 
@@ -48,17 +50,31 @@
 				AOS.init();
 			</script>
 
-			<script>
-				VANTA.FOG({
-					el: "#animated",
-					highlightColor: 0xacacac,
-					lowlightColor: 0x6900ff,
-					baseColor: 0x20013c,
-					blurFactor: 1.5,
-					speed: 5,
-					zoom: 1,
-				})
-			</script>
+
+			<!-- <script>
+			VANTA.TOPOLOGY({
+			  el: "#animated",
+			  color: 0x0,
+				speed: 1000,
+			  backgroundColor: 0xd400e7
+			})
+			</script> -->
+
+<script>
+VANTA.BIRDS({
+  el: "#animated",
+  backgroundColor: 0x19232f,
+  color1: 0xffffff,
+  color2: 0xa4a4a4,
+  colorMode: "lerp",
+  birdSize: 0.5,
+  wingSpan: 17.00,
+  speedLimit: 3.00,
+  separation: 50.00,
+  alignment: 0.1,
+  cohesion: 50.00
+})
+</script>
 
 </body>
 
