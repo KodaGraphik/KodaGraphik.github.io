@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto&display=swap");
 html, body {
+  position: relative;
   overflow-y: hidden;
   overflow-x: hidden;
 }
