@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto&display=swap");
-html, body {
+body,
+html {
   position: relative;
   overflow-x: hidden;
   background-color: #000;
@@ -32,7 +33,7 @@ body {
 
 @media (max-width: 768px) {
   ::-webkit-scrollbar {
-    width: 0px;
+    width: 0;
     opacity: 0.5;
     transition: width 0.2s ease-out;
   }
@@ -817,9 +818,56 @@ body {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+}
+
+.home .horizontalrule {
+  width: 100%;
+  background-color: white;
+  opacity: 1;
+  height: 4px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.home .topwrapper {
+  width: calc(90vmin - 3vh);
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(30px);
+  padding: 30px;
+}
+
+.home .homenav-buttons {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.home .homenav-buttons a {
+  padding-bottom: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-family: Poppins;
+  font-size: 2.5vmin;
+  color: white;
+  font-weight: 700;
+}
+
+@media (min-width: 991px) {
+  .home .homenav-buttons a {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.home .homenav-buttons a:hover {
+  text-decoration: none;
 }
 
 .home p {
@@ -831,68 +879,8 @@ body {
   opacity: 0.4;
 }
 
-.home .top .homenav {
-  background-color: rgba(19, 19, 19, 0.2);
-}
-
-.home .top .homebutton img {
-  width: 100vw;
-  height: 20vmax;
-}
-
-.home .navigation {
-  backdrop-filter: blur(0px);
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100vh;
-  transition: all 0.6s ease-out;
-}
-
-.home .navigation .topwrapper {
-  margin-top: 20vh;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  align-items: center;
-  height: 30vh;
-  width: 100vw;
-}
-
-.home .navigation .buttons {
-  position: absolute;
-  bottom: 50px;
-  margin-top: 0;
-  border-bottom: 0 solid black;
-  background-color: rgba(0, 0, 0, 0);
-  backdrop-filter: blur 0px;
-}
-
-@media (max-width: 768px) {
-  .home .navigation .buttons {
-    bottom: 100px;
-  }
-}
-
-.home .navigation .homenav-btn {
-  font-weight: 700;
-  font-size: 3.5vmin;
-}
-
-.home .navigation .active {
-  font-weight: 700;
-  margin-top: 10px;
-  border: 0 solid black;
-}
-
-.home .homebutton img {
-  height: 200px;
-}
-
-.home .buttons {
-  background-color: rgba(0, 0, 0, 0.3);
-  height: 60px;
+.bgc-red:before {
+  background-color: red;
 }
 
 /*# sourceMappingURL=main.css.map */

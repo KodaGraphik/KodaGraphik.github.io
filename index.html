@@ -22,45 +22,43 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="Script/vanilla-tilt.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
-<script src="/Script/vanta.fog.min.js"></script>
+	<script src="/Script/vanta.fog.min.js"></script>
 </head>
 <!-- Content -->
-<body class="black-body"id="animated">
-<div class="wrapper">
-<div class="home fadecontainer">
-	<div class="top">
-		<div class="navigation homenav" data-aos="fade-in" data-aos-duration="1000"data-aos-easing="ease-in-sine">
-			<div class="topwrapper">
-			<a href="index.html" class="homebutton brand">
-				<img class="homelogo" src="Images/KodaFull.svg" alt="KODAGRAPHK">
-			</a>
-			</div>
-			<div class="buttons">
-				<a href="about.html" class="navbutton homenav-btn hvr-underline-from-center bgc-red">ABOUT ME</a>
-				<a href="services.html" class="navbutton homenav-btn hvr-underline-from-center bgc-red">SERVICES</a>
-				<a href="portfolio.html" class="navbutton homenav-btn hvr-underline-from-center bgc-red">PORTFOLIO</a>
-				<a href="contact.html" class="navbutton homenav-btn hvr-underline-from-center bgc-red ">CONTACT</a>
-			</div>
-	</div>
-	<div class="bottom"></div>
-</div>
-</div>
-	<!-- SCRIPT STUFF  -->
-	<script>
-		AOS.init();
-	</script>
 
-<script>
-VANTA.FOG({
-  el: "#animated",
-  highlightColor: 0xacacac,
-  lowlightColor: 0x6900ff,
-  baseColor: 0x20013c,
-  blurFactor: 1.5,
-  speed: 3,
-  zoom: 1,
-})
-</script>
+<body class="black-body" id="animated">
+	<div class="wrapper">
+		<div class="home fadecontainer">
+			<div class="homenav" data-aos="fade-up" data-aos-duration="1000">
+				<div class="topwrapper">
+					<a href="index.html" class="homebutton brand">
+						<img class="homelogo" src="Images/KodaFull.svg" alt="KODAGRAPHK">
+					</a>
+					<div class="horizontalrule"></div>
+					<div class="homenav-buttons">
+						<a href="about.html" class="hvr-underline-from-center bgc-red">ABOUT ME</a>
+						<a href="services.html" class="hvr-underline-from-center bgc-red">SERVICES</a>
+						<a href="portfolio.html" class="hvr-underline-from-center bgc-red">PORTFOLIO</a>
+						<a href="contact.html" class="hvr-underline-from-center bgc-red">CONTACT</a>
+					</div>
+				</div>
+			</div>
+			<!-- SCRIPT STUFF  -->
+			<script>
+				AOS.init();
+			</script>
+
+			<script>
+				VANTA.FOG({
+					el: "#animated",
+					highlightColor: 0xacacac,
+					lowlightColor: 0x6900ff,
+					baseColor: 0x20013c,
+					blurFactor: 1.5,
+					speed: 5,
+					zoom: 1,
+				})
+			</script>
 
 </body>
 
