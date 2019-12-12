@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto&display=swap");
 html, body {
   position: relative;
-  overflow-y: hidden;
   overflow-x: hidden;
 }
 
