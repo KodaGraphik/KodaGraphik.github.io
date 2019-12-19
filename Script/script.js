@@ -34,6 +34,7 @@ $(document).ready(function(){
     event.preventDefault();
     newLocation = ($(this).find('a:first').attr('href'));
 		console.log(newLocation);
+    $('.red').fadeIn(300, 'swing');
     $('.pagecontent').fadeOut(500, 'swing');
     $('.page-footer').fadeOut(500, 'swing');
     $('.navigation').fadeOut(500, 'swing');
@@ -45,5 +46,20 @@ $(document).ready(function(){
         }, 0);
       });
   });
-
+  $(document).ready(function () {
+      var color = ['#039', '#00d909', '#C6C', '#b5bf00', '#F93'];
+      $('.navbutton').each(function (i) {
+          $(this).css('color', 'red', 'background-color', 'blue').data('color', color[i])
+      }).hover(function () {
+          $(this).css({
+              backgroundColor: $(this).data('color'),
+              color: "white"
+          })
+      }, function () {
+          $(this).css({
+              color: "black",
+              backgroundColor: "black"
+          })
+      });
+  });
 });

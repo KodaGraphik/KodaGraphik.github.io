@@ -116,4 +116,10 @@
   background-position: left;
 }
 
+@media (max-width: 991px) {
+  .spanhide {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=portfolio.css.map */

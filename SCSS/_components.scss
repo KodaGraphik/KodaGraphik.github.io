@@ -7,6 +7,15 @@ html, body {
   background-color: #292929;
 
 }
+.red{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #af0000;
+  z-index: 200;
+  display: none;
+
+}
 h3{
 font-family: Poppins;
 // color: white;
@@ -83,7 +92,18 @@ font-family: Poppins;
     }
   }
   .active{
-    background-color: firebrick;
+    margin-top: 3px;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    padding: 10px 1vw;
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+    background-color: firebrick!important;
     border-radius: 5px 5px 0px 0px;
     &:hover{
     background-color: #252525;

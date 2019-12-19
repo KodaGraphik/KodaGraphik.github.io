@@ -1,7 +1,25 @@
+$(document).ready(function(){
+    $('.pagecontent').fadeIn(500, 'swing');
+	    $('.page-footer').fadeIn(500, 'swing');
+	    // $('.home-container').fadeIn(500, 'swing');
 
-$(document).ready(function() {
-  $(document.body).css('overflow', 'hidden');
-  $('a[href^="#"]').on('click', function(e) {
+
+
+	$('.navbutton').click(function() {
+    event.preventDefault();
+    newLocation = ($(this).find('a:first').attr('href'));
+		console.log(newLocation);
+    $('.pagecontent').fadeOut(500, 'swing');
+    $('.page-footer').fadeOut(500, 'swing');
+    $('.homepage').fadeOut(500, 'swing');
+    $.when($('.pagecontent').fadeOut())
+      .then(function() {
+        setTimeout(function() {
+          window.location = newLocation;
+        }, 0);
+      });
+  });
+	$('a[href^="#"]').on('click', function(e) {
     // e.preventDefault();
     var target = this.hash,
       $target = $(target);
@@ -12,17 +30,18 @@ $(document).ready(function() {
     });
   });
 
-  // Click Nav Button to Fade Out
-  $('.navbutton').click(function() {
+  $('.brand').click(function() {
     event.preventDefault();
-    newLocation = this.href;
-    $(document.body).css('backgroundColor', 'black');
-      $('#animated').fadeOut(200);
-    $.when($('#animated').fadeOut())
+    newLocation = ($(this).find('a:first').attr('href'));
+		console.log(newLocation);
+    $('.pagecontent').fadeOut(500, 'swing');
+    $('.page-footer').fadeOut(500, 'swing');
+    $('.navigation').fadeOut(500, 'swing');
+    $('.navigation_buttons').fadeOut(500, 'swing');
+    $.when($('.pagecontent').fadeOut())
       .then(function() {
         setTimeout(function() {
           window.location = newLocation;
-        }, 200);
+        }, 0);
       });
   });
-});

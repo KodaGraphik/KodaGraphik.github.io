@@ -14,7 +14,9 @@ p{
     margin-top: 10px;
     margin-bottom: 10px;
   }
+.spanhide{
 
+}
   .portfolio-inner {
     cursor: pointer;
     height: 50vmin;
@@ -47,6 +49,7 @@ p{
       }
     }
     @media (max-width: 991px) {
+
       .bottombar {
         p {
           transform: scaleY(1);
@@ -130,4 +133,9 @@ p{
   background-image: url("/Images/hairdressing.jpg");
   background-position: left;
   // background-color: dodgerblue;
+}
+@media (max-width: 991px) {
+.spanhide{
+  display: none;
+}
 }
