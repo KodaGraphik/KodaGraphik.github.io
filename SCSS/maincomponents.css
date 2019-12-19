@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto&display=swap");
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  background-image: url("/Images/topography.svg");
+  background-size: 300px;
+  background-color: #292929;
+}
+
+h3 {
+  font-family: Poppins;
+  font-weight: 700;
+}
+
+h5 {
+  margin-bottom: 0px;
+  font-family: Poppins;
+  color: white;
+  font-size: 5vmax;
+  font-weight: 700;
+}
+
+p {
+  font-family: Poppins;
+}
+
+.navigation {
+  position: fixed;
+  z-index: 100;
+  user-select: none;
+  width: 100vw;
+  background-color: black;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation .brand img {
+  height: 60px;
+  padding: 5px;
+  text-align: center;
+}
+
+.navigation_buttons {
+  z-index: 100;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 60px;
+  user-select: none;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.navigation_buttons .navbutton {
+  margin-top: 3px;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  padding: 10px 1vw;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease-in-out;
+}
+
+.navigation_buttons .navbutton:hover {
+  background-color: firebrick;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.navigation_buttons .navbutton:active {
+  background-color: black;
+}
+
+.navigation_buttons .active {
+  background-color: firebrick;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.navigation_buttons .active:hover {
+  background-color: #252525;
+}
+
+.navigation_buttons a {
+  user-select: none;
+  color: white;
+  font-size: 13px;
+  font-family: Poppins;
+  font-weight: 700;
+}
+
+.navigation_buttons a:hover {
+  text-decoration: none;
+}
+
+.page-footer {
+  display: none;
+  background-color: black;
+  user-select: none;
+}
+
+.page-footer h3 {
+  color: white;
+}
+
+.page-footer p {
+  color: white;
+  opacity: 0.6;
+}
+
+.page-footer a {
+  color: white;
+  opacity: 0.6;
+}
+
+.page-footer a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.pagecontent {
+  display: none;
+  margin-top: 120px;
+  min-height: 100%;
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: 50px;
+}
+
+/*# sourceMappingURL=maincomponents.css.map */

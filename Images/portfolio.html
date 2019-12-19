@@ -17,7 +17,7 @@
 
 
   <!-- TAB TITLE -->
-  <title>KODAGRAPHIK | CONTACT</title>
+  <title>KODAGRAPHIK | SERVICES</title>
 
   <!-- CSS/JS FRAMEWORKS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -25,8 +25,7 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/SCSS/maincomponents.css">
-  <link rel="stylesheet" href="/SCSS/contact.css">
+  <link rel="stylesheet" href="/SCSS/services.css">
   <script src="Script/script.js"></script>
   <script src="Script/localscroll.js"></script>
 </head>
@@ -36,36 +35,35 @@
 
   <!-- NAVIGATION -->
   <div class="navigation">
+    <div class="hamburger">
+      <div id="nav-icon3">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
     <div class="brand">
-      <a href="/index.html">
       <img src="/Images/KodaNoTag.svg" alt="">
-    </a>
     </div>
   </div>
   <div class="navigation_buttons row" id="buttons">
-    <a href="/about.html">
-    <div class=" navbutton">
+    <div class="col-lg-3 col-md-3 navbutton">
       <a href="/about.html">
-        ABOUT
+        ABOUT ME
       </a>
     </div>
-    </a>
-    <div class=" navbutton" href="/services.html">
+    <div class="col-lg-3 col-md-3 navbutton active">
       <a href="/services.html">
         SERVICES
       </a>
     </div>
-    <div class="navbutton" href="/portfolio.html">
+    <div class="col-lg-3 col-md-3 navbutton">
       <a href="/portfolio.html">
         PORTFOLIO
       </a>
     </div>
-    <div class="navbutton" href="/projects.html">
-      <a href="/projects.html">
-        PROJECTS
-      </a>
-    </div>
-    <div class="navbutton active" href="/contact.html">
+    <div class="col-lg-3 col-md-3 navbutton">
       <a href="/contact.html">
         CONTACT
       </a>
@@ -73,45 +71,9 @@
   </div>
 
   <!-- PAGE CONTENTS -->
-  <div class="pagecontent container contact">
-    <div class="container">
-      <h5>CONTACT</h5>
-      <p>CONTACT ME USING THE DETAILS BELOW</p>
-    </div>
-      <div class="contact-content container row">
-      <div class="col-lg-6 contact-col">
-        <a href="tel:07850478480">
-        <div class="contact-inner phone">
-          <img src="/Images/phone.png" alt="">
-          <h3>Telephone</h3>
-        </div>
-      </a>
-      </div>
-      <div class="col-lg-6 contact-col">
-        <a href="mailto:Rob-b-07@live.co.uk" target="_top">
-        <div class="contact-inner email">
-          <img src="/Images/emailblack.png" alt="">
-          <h3>Email</h3>
-        </div>
-      </a>
-      </div>
-      <div class="col-lg-6 contact-col">
-        <a href="https://www.linkedin.com/in/robert-brown-570000142/">
-        <div class="contact-inner linkedin">
-          <img src="/Images/linkedinblack.png" alt="">
-          <h3>LinkedIn</h3>
-        </div>
-        </a>
-      </div>
-      <div class="col-lg-6 contact-col">
-        <a href="https://www.instagram.com/kodagraphik/">
-        <div class="contact-inner insta">
-          <img src="/Images/instablack.png" alt="">
-          <h3>Instagram</h3>
-        </div>
-      </a>
-      </div>
-    </div>
+  <div class="pagecontent container services">
+    <h5>SERVICES</h5>
+    <p class="phide">Hover to See Details</p>
   </div>
 
   <!-- FOOTER -->
@@ -147,7 +109,7 @@
               <a href="tel:07850478480">07850478480</a>
             </li>
             <li>
-              <a href="mailto:Rob-b-07@live.co.uk" target="_top">Email Me</a>
+              <a href="mailto:Rob-b-07@live.co.uk" target="_top">Email Us</a>
               </p>
             </li>
           </ul>

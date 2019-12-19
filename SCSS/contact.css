@@ -1,0 +1,55 @@
+.contact h3 {
+  color: white;
+}
+
+.contact P {
+  color: white;
+}
+
+.contact .contact-content .contact-col {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.contact .contact-content .contact-col a:hover {
+  text-decoration: none;
+}
+
+.contact .contact-content .contact-col .contact-inner {
+  min-height: 20vw;
+  padding: 20px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 20px;
+  transition: all, 0.25s ease-in-out;
+}
+
+.contact .contact-content .contact-col .contact-inner:hover {
+  transform: scale(0.97);
+}
+
+.contact .contact-content .contact-col img {
+  width: 80px;
+}
+
+.phone {
+  background-color: red;
+}
+
+.email {
+  background-color: forestgreen;
+}
+
+.linkedin {
+  background-color: magenta;
+}
+
+.insta {
+  background-color: cornflowerblue;
+}
+
+/*# sourceMappingURL=contact.css.map */

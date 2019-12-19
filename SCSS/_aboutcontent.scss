@@ -1,0 +1,155 @@
+.about {
+  z-index: -100;
+  user-select: none;
+
+  .about-content {
+    margin-top: 10px;
+  }
+}
+
+.left-content {
+  text-align: right;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin-bottom: 20px;
+
+  a {
+    padding-right: 10px;
+    color: rgba(#ffffff, 0.80);
+
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .left-content {
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+}
+
+h3 {
+  font-family: Poppins;
+  font-size: calc(1vmax + 10px);
+  text-transform: uppercase;
+}
+
+.right-content {
+  scroll-snap-type: y mandatory;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 2;
+
+  h3 {
+    font-family: Poppins;
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font-family: Poppins;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+}
+
+.about-active {
+  padding-left: 0;
+  color: white;
+  font-weight: 700;
+}
+
+.horizontalrule {
+  height: 1px;
+  background-color: black;
+  opacity: 0.3;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.about-inner {
+    background-color: rgba(255,255,255,0.75);
+  scroll-snap-align: start;
+  backdrop-filter: blur(1px);
+  margin-bottom: 15px;
+  padding: 30px;
+}
+
+.clients {
+  .p-small {
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.5;
+  }
+}
+
+.client-logos {
+  margin-bottom: 20px;
+}
+
+.client-logos-secondary {
+  margin-bottom: 30px;
+  opacity: 0.6;
+}
+
+.logocol {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  img {
+    filter: invert(0.7);
+    margin: 0 auto;
+    width: 8vmax;
+  }
+}
+
+.bio {
+
+.bio-inner{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img{
+		padding-right: 30px;
+		opacity: 0.6;
+		height: 150px;
+	}
+}
+}
+@media (max-width: 768px) {
+  .bio-inner {
+    flex-direction: column;
+		padding-right: 0px;
+		// padding-bottom: 10px;
+  }
+}
+
+.education {
+}
+.clients {
+}
+
+.skills {
+}
+
+.cv {
+
+    .cv-icons{
+      img{
+            filter: invert(0.7);
+            width: 20%;
+      }
+    }
+  }

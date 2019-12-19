@@ -1,0 +1,120 @@
+.services {
+  z-index: -100;
+  user-select: none;
+  margin-bottom: 50px;
+
+  .services-content {
+  }
+
+  .service-inner {
+    cursor: pointer;
+    height: 40vmin;
+    min-height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    // max-height: 400px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.2s ease-in-out;
+    background-blend-mode: multiply;
+    // border-radius: 20px;
+    // background-position: 0% 0%;
+    // padding: 2px;
+
+    &:hover {
+      p {
+        padding: 30px;
+        padding-bottom: 100px;
+        font-weight: 700;
+        font-size: 14px;
+        transform: scaleY(1);
+        opacity: 1;
+      }
+
+      h3 {
+        padding: 20px;
+      }
+    }
+    @media (max-width: 991px) {
+      .bottombar {
+        p {
+          transform: scaleY(1);
+          opacity: 1;
+        }
+      }
+    }
+
+    .bottombar {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    h3 {
+      bottom: 0;
+      padding: 6px;
+      transition: all 0.25s ease-in-out;
+      font-size: 18px;
+      background-color: rgba(255,255,255,0.5);
+      backdrop-filter: blur(5px);
+      // border-radius: 20px 20px 0 0;
+      margin-bottom: auto;
+      text-align: center;
+    }
+
+    p {
+      // transform: scaleY(0);
+      // opacity: 0;
+      // border-radius: 0 0 20px 20px;
+      text-align: center;
+      transform-origin: bottom;
+      transition: all 0.25s ease-in-out;
+      margin-block-end: 0;
+      margin-bottom: 0;
+      background-color: rgba(255,255,255,0.5);
+      backdrop-filter: blur(5px);
+      padding: 30px;
+      font-size: 13px;
+      font-family: Roboto;
+    }
+  }
+}
+
+.graphicdesign {
+  background-image: url("/Images/GD.jpg");
+  background-position: right;
+  background-color: rgba(#00a8bf, 0.70);
+}
+
+.webdesign {
+  background-image: url("/Images/WD.jpeg");
+  background-color: red;
+}
+
+.socialmedia {
+  background-image: url("/Images/Social.jpg");
+  background-color: yellow;
+}
+
+.uidesign {
+  background-image: url("/Images/UI.jpeg");
+  background-color: #c400ff;
+}
+
+.logodesign {
+  background-image: url("/Images/LGO.jpg");
+  background-color: hotpink;
+}
+
+.packaging {
+  background-image: url("/Images/PKG.jpg");
+  background-color: limegreen;
+}
+
+.email {
+  background-image: url("/Images/EML.jpg");
+  background-color: dodgerblue;
+}

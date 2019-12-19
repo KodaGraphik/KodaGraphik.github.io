@@ -2,66 +2,85 @@
 <html lang="en">
 
 <head>
-	<!-- BROWSER STUFF -->
+	<!-- HEAD CONTENT -->
+	<!-- BROWSER META -->
 	<meta charset="utf-8">
-	<meta name="theme-color" content="#730000">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- HEADER COLOUR -->
+	<meta name="theme-color" content="#000">
+
 	<!-- META TAGS -->
 	<meta name="description" content="Kodagraphik">
 	<meta name="author" content="Rob Brown">
+
+
 	<!-- TAB TITLE -->
 	<title>KODAGRAPHIK | HOME</title>
-	<!-- CSS -->
+
+	<!-- CSS/JS FRAMEWORKS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<link rel="stylesheet" href="/SCSS/main.css">
-	<script src="Script/home.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="Script/vanilla-tilt.js"></script>
-	<script src="/Script/p5.min.js"></script>
-	<script src="/Script/vanta.topology.min.js"></script>
-	<!-- <script src="/Script/three-r92.min.js"></script>
-	<script src="/Script/vanta.birds.min.js"></script> -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/SCSS/home.css">
+	<script src="Script/script.js"></script>
 </head>
 <!-- Content -->
 
-<body class="black-body" id="animated">
-	<div class="wrapper">
-		<div class="home fadecontainer">
-			<div class="homenav" data-aos="fade-up" data-aos-duration="1000">
-				<div class="topwrapper">
-					<a href="index.html" class="homebutton brand">
-						<img class="homelogo" src="Images/KodaFull.svg" alt="KODAGRAPHK">
+<body>
+
+	<!-- NAVIGATION -->
+	<div class="bg" id="bg"></div>
+	<div class="homepage">
+		<div class="home-container">
+			<div class="navigation">
+				<div class="brand">
+		      <a href="/index.html">
+		      <img src="/Images/KodaNoTag.svg" alt="">
+		    </a>
+		    </div>
+			</div>
+			<div class="navigation_buttons" id="buttons">
+				<div class="navbutton">
+					<a href="/about.html">
+						ABOUT ME
 					</a>
-					<div class="horizontalrule"></div>
-					<div class="homenav-buttons">
-						<a href="about.html" class="hvr-underline-from-center bgc-red">ABOUT ME</a>
-						<a href="services.html" class="hvr-underline-from-center bgc-red">SERVICES</a>
-						<a href="portfolio.html" class="hvr-underline-from-center bgc-red">PORTFOLIO</a>
-						<a href="contact.html" class="hvr-underline-from-center bgc-red">CONTACT</a>
-					</div>
+				</div>
+				<div class="navbutton">
+					<a href="/services.html">
+						SERVICES
+					</a>
+				</div>
+				<div class="navbutton">
+					<a href="/portfolio.html">
+						PORTFOLIO
+					</a>
+				</div>
+				<div class="navbutton">
+					<a href="/projects.html">
+						PROJECTS
+					</a>
+				</div>
+				<div class="navbutton">
+					<a href="/contact.html">
+						CONTACT
+					</a>
 				</div>
 			</div>
-			<!-- SCRIPT STUFF  -->
-			<script>
-				AOS.init();
-			</script>
-
-
-			<script>
-			VANTA.TOPOLOGY({
-			  el: "#animated",
-			  color: 0x0,
-				speed: 1000,
-			  backgroundColor: 0x7e0000
-			})
-			</script>
-
-
-
+		</div>
+	</div>
 </body>
-
+<script src="/Script/three.r92.min.js"></script>
+<script src="/Script/p5.min.js"></script>
+<script src="/Script/vanta.topology.min.js"></script>
+<script>
+VANTA.TOPOLOGY({
+  el: "#bg",
+  color: 0xeb1515,
+  backgroundColor: 0x141414
+})
+</script>
 </html>

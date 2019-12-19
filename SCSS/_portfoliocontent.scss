@@ -1,0 +1,133 @@
+
+.portfolio {
+  z-index: -100;
+  user-select: none;
+  margin-bottom: 50px;
+  span{
+    color: white;
+    font-family: Poppins;
+  }
+p{
+  margin-bottom: 3px;
+}
+  .portfolio-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .portfolio-inner {
+    cursor: pointer;
+    height: 50vmin;
+    min-height: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    // max-height: 400px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.2s ease-in-out;
+    background-blend-mode: multiply;
+    // border-radius: 20px;
+    // background-position: 0% 0%;
+    // padding:10px;
+
+    &:hover {
+      // border: 1px solid white;
+      p {
+        padding: 30px;
+        padding-bottom: 50px;
+        font-weight: 700;
+        font-size: 14px;
+        transform: scaleY(1);
+        opacity: 1;
+
+      }
+
+      h3 {
+        padding: 20px;
+      }
+    }
+    @media (max-width: 991px) {
+      .bottombar {
+        p {
+          transform: scaleY(1);
+          opacity: 1;
+        }
+      }
+    }
+    .bottombar {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    h3 {
+      bottom: 0;
+      padding: 6px;
+      transition: all 0.25s ease-in-out;
+      font-size: 18px;
+      background-color: rgba(0,0,0,0.4);
+      backdrop-filter: blur(10px);
+      // border-radius: 20px 20px 0 0;
+      margin-bottom: auto;
+      text-align: center;
+      color: white;
+    }
+
+    p {
+      transform: scaleY(0);
+      // opacity: 0;
+      // border-radius: 0 0 20px 20px;
+      text-align: center;
+      transform-origin: bottom;
+      transition: all 0.25s ease-in-out;
+      margin-block-end: 0;
+      margin-bottom: 0;
+      background-color: rgba(0,0,0,0.4);
+      color: white;
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      font-size: 13px;
+      font-family: Roboto;
+    }
+
+  }
+}
+
+.playingcards {
+  background-image: url("/Images/playingcards.jpg");
+  background-position: right;
+  // background-color: rgba(#00a8bf, 0.70);
+}
+
+.research {
+  background-image: url("/Images/research.jpg");
+  // background-color: red;
+}
+
+.typeface {
+  background-image: url("/Images/typespec.jpg");
+  // background-color: yellow;
+}
+
+.xlrecords {
+  background-image: url("/Images/XL1.png");
+  // background-color: #c400ff;
+}
+
+.infographics {
+  background-image: url("/Images/INFOGRAPHICS.jpg");
+  // background-color: hotpios
+}
+
+.matryoshka {
+  background-image: url("/Images/matryoshka.png");
+  // background-color: limegreen;
+}
+
+.hairdressing {
+  background-image: url("/Images/hairdressing.jpg");
+  background-position: left;
+  // background-color: dodgerblue;
+}
