@@ -47,7 +47,7 @@ font-family: Poppins;
   }
 }
 .navigation_buttons{
-  z-index: 100;
+  z-index: 10;
   position: fixed;
   left: 0px;
   right: 0px;
@@ -124,8 +124,15 @@ font-family: Poppins;
   display: none;
   margin-top: 120px;
   min-height: 100%;
-
-/* Equal to height of footer */
-/* But also accounting for potential margin-bottom of last child */
 margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .navigation_buttons{
+  .navbutton{
+    a{
+      font-size: 10px;
+    }
+  }
+}
 }

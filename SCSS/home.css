@@ -31,6 +31,7 @@ html body {
 }
 
 .home-container {
+  margin-top: -100px;
   width: 40vw;
   display: -webkit-flex;
   display: -ms-flex;
